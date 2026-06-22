@@ -1,0 +1,947 @@
+{
+  "version": 1,
+  "themes": [
+    {
+      "id": "tmqjwuloq2a98",
+      "name": "data centers",
+      "color": "#4a78b5"
+    },
+    {
+      "id": "tmqjwuofsbtrm",
+      "name": "environment",
+      "color": "#d68a45"
+    },
+    {
+      "id": "tmqjwwshx4uyd",
+      "name": "decisionmaking",
+      "color": "#5aa469"
+    },
+    {
+      "id": "tmqjwxvp5zh61",
+      "name": "consumption",
+      "color": "#c25b5b"
+    },
+    {
+      "id": "tmqjwzubqpdu5",
+      "name": "children",
+      "color": "#8a6db5"
+    },
+    {
+      "id": "tmqjx2dt9ww44",
+      "name": "information",
+      "color": "#4aa6a6"
+    },
+    {
+      "id": "tmqjx3eaod6ep",
+      "name": "cognition",
+      "color": "#c270a0"
+    },
+    {
+      "id": "tmqjx4sokai3o",
+      "name": "moving fast",
+      "color": "#cba53a"
+    },
+    {
+      "id": "tmqjx5scvetdp",
+      "name": "transparency",
+      "color": "#7a8b99"
+    },
+    {
+      "id": "tmqjx8kl61sgn",
+      "name": "positive",
+      "color": "#b5713a"
+    },
+    {
+      "id": "tmqjx9csxvxlh",
+      "name": "indigenous",
+      "color": "#4a78b5"
+    },
+    {
+      "id": "tmqjxamx39xix",
+      "name": "inequality",
+      "color": "#d68a45"
+    },
+    {
+      "id": "tmqjxhz9bnpcq",
+      "name": "privacy",
+      "color": "#5aa469"
+    },
+    {
+      "id": "tmqjxib1t2wcd",
+      "name": "companies",
+      "color": "#c25b5b"
+    },
+    {
+      "id": "tmqjxis0xj9fl",
+      "name": "privacy",
+      "color": "#8a6db5"
+    },
+    {
+      "id": "tmqjxlvbf7yt5",
+      "name": "agency",
+      "color": "#4aa6a6"
+    },
+    {
+      "id": "tmqjxn3yuok20",
+      "name": "public service",
+      "color": "#c270a0"
+    },
+    {
+      "id": "tmqjz38jhor0y",
+      "name": "agency",
+      "color": "#cba53a"
+    },
+    {
+      "id": "tmqjzbumjani9",
+      "name": "mental health",
+      "color": "#7a8b99"
+    },
+    {
+      "id": "tmqjzje1p2us4",
+      "name": "social connection",
+      "color": "#b5713a"
+    },
+    {
+      "id": "tmqjzl41mp4io",
+      "name": "education",
+      "color": "#4a78b5"
+    },
+    {
+      "id": "tmqjzo5x5qscx",
+      "name": "access",
+      "color": "#d68a45"
+    },
+    {
+      "id": "tmqjztotvnyz7",
+      "name": "arts",
+      "color": "#5aa469"
+    },
+    {
+      "id": "tmqjzvxxdqg12",
+      "name": "labor",
+      "color": "#c25b5b"
+    },
+    {
+      "id": "tmqnxmo77cjvy",
+      "name": "action",
+      "color": "#8a6db5"
+    },
+    {
+      "id": "tmqnxt9c7w0wn",
+      "name": "accuracy",
+      "color": "#4aa6a6"
+    }
+  ],
+  "assign": {
+    "df8077d6-dbc9-4ad8-9a80-92fed4b38a62": [
+      "tmqjwuloq2a98",
+      "tmqjwuofsbtrm"
+    ],
+    "c0ebd818-684f-411e-ade7-058761b2070d": [
+      "tmqjwuloq2a98",
+      "tmqjwwshx4uyd"
+    ],
+    "cd83b285-005d-4a46-8e3f-280bd8b4035c": [
+      "tmqjwuofsbtrm",
+      "tmqjwxvp5zh61"
+    ],
+    "3dcc941f-ca2e-429e-bc1f-059e5b51b14d": [
+      "tmqjwzubqpdu5"
+    ],
+    "5b8f9fa0-af35-484f-ad5b-e7f8d7198504": [
+      "tmqjwzubqpdu5"
+    ],
+    "999745d2-8022-4fae-a60f-b1f839af590a": [
+      "tmqjwzubqpdu5"
+    ],
+    "86644e17-e91f-4d6a-a236-d95f10c3a0ad": [
+      "tmqjwzubqpdu5",
+      "tmqjx3eaod6ep"
+    ],
+    "0232b053-28f3-45d8-bca1-30a6e673e218": [
+      "tmqjx2dt9ww44"
+    ],
+    "14172465-d44f-415f-a4f6-9d68b76e2c6b": [
+      "tmqjwxvp5zh61"
+    ],
+    "a589ba15-7382-4381-8d91-172bc3f1da2c": [
+      "tmqjx3eaod6ep"
+    ],
+    "c88dadc8-6b02-41d2-b90f-30151c9b3e03": [
+      "tmqjwwshx4uyd",
+      "tmqjwuloq2a98"
+    ],
+    "83843d95-1271-4e9c-b825-a591c013e3df": [
+      "tmqjx4sokai3o"
+    ],
+    "0fbc2816-58c2-4da6-bf73-711cf2b8a593": [
+      "tmqjwuloq2a98",
+      "tmqjx5scvetdp"
+    ],
+    "6ef129b1-bc32-4cdd-9951-0f3ab36f7cd1": [
+      "tmqjwuofsbtrm"
+    ],
+    "25019800-a435-46d6-a4d8-5786cd36e945": [
+      "tmqjwuloq2a98",
+      "tmqjwuofsbtrm"
+    ],
+    "bdf7a1e4-bb5d-4b95-9e8e-b77da64a3a6e": [
+      "tmqjwwshx4uyd",
+      "tmqjwuloq2a98"
+    ],
+    "227b95ee-8c2a-4bb9-8362-50c5f34fe34e": [
+      "tmqjx8kl61sgn"
+    ],
+    "ba958ccc-5466-4891-9117-04ccb7be5bd0": [
+      "tmqjx8kl61sgn",
+      "tmqjzo5x5qscx"
+    ],
+    "08be8c7d-8385-40f4-a4bc-2e0b14fce81b": [
+      "tmqjx9csxvxlh"
+    ],
+    "5d77033d-2c1e-407e-90f9-cf0bfb6b5584": [
+      "tmqjxamx39xix",
+      "tmqjzo5x5qscx"
+    ],
+    "9203620e-a72d-4fd7-9ec5-671d9447c8fa": [
+      "tmqjx8kl61sgn",
+      "tmqjwuofsbtrm"
+    ],
+    "50be13a7-4f9b-4371-a730-b5c45ddee664": [
+      "tmqjwwshx4uyd"
+    ],
+    "08552187-5cd6-4f87-8f56-751ea0d765cf": [
+      "tmqjwwshx4uyd"
+    ],
+    "671e1262-62ad-4343-9324-80a6ef9f2d15": [
+      "tmqjxhz9bnpcq"
+    ],
+    "c7970696-80b2-4c7b-b184-bd2237509f58": [
+      "tmqjwwshx4uyd",
+      "tmqjxib1t2wcd"
+    ],
+    "30a3ab9c-72b3-4739-886e-5394e341ba8d": [
+      "tmqjxhz9bnpcq"
+    ],
+    "fd95ad77-ced9-4c4b-8805-127c6b6903cb": [
+      "tmqjwwshx4uyd",
+      "tmqjxlvbf7yt5"
+    ],
+    "3caf6280-a888-4be4-a8e1-b3bde73c92bd": [
+      "tmqjwwshx4uyd",
+      "tmqjxlvbf7yt5"
+    ],
+    "2b0ef246-d7ce-48f3-b4e7-10c817e6b73b": [
+      "tmqjxn3yuok20"
+    ],
+    "1ea9bd00-810f-4d7e-8fbb-e9fc1996ca3a": [
+      "tmqjxn3yuok20"
+    ],
+    "bdd27231-0d6f-4524-8b5f-e4acb810b224": [
+      "tmqjx5scvetdp",
+      "tmqjwwshx4uyd"
+    ],
+    "7d2bccae-8b6b-49f6-b547-efd4b84ac01c": [
+      "tmqjx2dt9ww44",
+      "tmqnxt9c7w0wn"
+    ],
+    "551c0bc4-dfa8-44fb-8290-4e8d6bfb8509": [
+      "tmqjxhz9bnpcq"
+    ],
+    "923a31d7-9e69-4db3-8a76-ef50420204bb": [
+      "tmqjxhz9bnpcq"
+    ],
+    "7be5d79b-3bea-4572-bcda-8f728c9fec5a": [
+      "tmqjx5scvetdp"
+    ],
+    "9ceeb50b-592a-41a9-8ece-cefc09d833e2": [
+      "tmqjx2dt9ww44",
+      "tmqjx5scvetdp",
+      "tmqjx8kl61sgn"
+    ],
+    "5f39bdad-4215-4b18-b164-7c6879355c20": [
+      "tmqjxib1t2wcd",
+      "tmqjxhz9bnpcq"
+    ],
+    "78ba0c32-952f-4fcc-9b4f-719169962a52": [
+      "tmqjwwshx4uyd"
+    ],
+    "93c0d744-c72b-4572-a102-39f63e4fffc5": [
+      "tmqjwwshx4uyd",
+      "tmqjxib1t2wcd",
+      "tmqjxn3yuok20"
+    ],
+    "df4fed11-7107-440a-b319-8a47de21d52a": [
+      "tmqjxlvbf7yt5"
+    ],
+    "2c8d26fc-9701-462e-81f0-a57467a99a8b": [
+      "tmqjx8kl61sgn",
+      "tmqjx2dt9ww44"
+    ],
+    "fc6ae269-5a43-446c-9ac6-9e3a5ec15967": [
+      "tmqjx4sokai3o"
+    ],
+    "7725efbb-1a9b-4c75-9b59-e85ae63ff971": [
+      "tmqjwwshx4uyd"
+    ],
+    "96641131-afac-4d0e-b9ab-50d0cbdb4e20": [
+      "tmqjxn3yuok20",
+      "tmqnxt9c7w0wn"
+    ],
+    "a95127eb-0b61-42fe-acc8-2b3b67646a40": [
+      "tmqjxn3yuok20"
+    ],
+    "39e13b06-863f-4902-a3f7-70039a64121c": [
+      "tmqjz38jhor0y",
+      "tmqjx3eaod6ep"
+    ],
+    "994b6971-e826-426f-a24b-c64ebc88a8e0": [
+      "tmqjxn3yuok20",
+      "tmqjx8kl61sgn"
+    ],
+    "d25ce79b-3c6d-4c5a-b44a-ba55f55658cf": [
+      "tmqjxn3yuok20"
+    ],
+    "d37e3b06-6e34-4e0c-9217-02f1d32302d6": [
+      "tmqjzbumjani9"
+    ],
+    "f2b54f03-c373-450e-9b10-a090460d4d0b": [
+      "tmqjwzubqpdu5"
+    ],
+    "f7f2986b-ea24-4c7f-af3b-68ae0cbaafd3": [
+      "tmqjwwshx4uyd"
+    ],
+    "8e7ccb1b-46c7-4a08-9422-e11f2c7f43b9": [
+      "tmqjxamx39xix"
+    ],
+    "5d61ddf4-464e-41ff-9090-284ddb8eb5ef": [
+      "tmqjx9csxvxlh"
+    ],
+    "4cec744e-7ba0-4f8a-bece-dbfc06d5a7b8": [
+      "tmqjx4sokai3o"
+    ],
+    "a0b3cd64-764c-4e9d-a85c-e01a4d2d8bb1": [
+      "tmqjxlvbf7yt5"
+    ],
+    "a8841ba2-31c3-4808-83e6-4b7d3f8d1a9a": [
+      "tmqjxhz9bnpcq"
+    ],
+    "8d1e7ae2-4078-4985-84b1-69d5e25ca584": [
+      "tmqjzje1p2us4"
+    ],
+    "e0400224-a9b1-4120-9fa8-e5adbbd559db": [
+      "tmqjzje1p2us4"
+    ],
+    "a0fe7a68-d8fa-4c24-b6ea-0c9ef54e3758": [
+      "tmqjwzubqpdu5"
+    ],
+    "dc48b44a-73f3-4b50-8309-4eec61d93171": [
+      "tmqjx3eaod6ep",
+      "tmqjxlvbf7yt5",
+      "tmqjzl41mp4io"
+    ],
+    "e092bd68-a726-4604-b7ae-ec03d54bbb77": [
+      "tmqjzl41mp4io"
+    ],
+    "ebce3b5d-3971-4f94-95f1-8ad387e9ecbf": [
+      "tmqjzl41mp4io",
+      "tmqjzje1p2us4"
+    ],
+    "153ecb0a-d91a-41f1-aa28-36994e53e5e2": [
+      "tmqjzl41mp4io"
+    ],
+    "120e6145-7546-4cb2-a46d-f70ed321555c": [
+      "tmqjx2dt9ww44",
+      "tmqjx8kl61sgn"
+    ],
+    "0b55fffc-0460-4632-96a1-aca43e4c4d67": [
+      "tmqjzl41mp4io",
+      "tmqjzo5x5qscx"
+    ],
+    "f2c986bc-3aa4-47c7-8aba-d3790b0feb4f": [
+      "tmqjxamx39xix"
+    ],
+    "b5f34623-ef7b-472a-99c7-d1a107f7e116": [
+      "tmqjx9csxvxlh"
+    ],
+    "da6da169-7a63-482d-ae93-b013b218d58e": [
+      "tmqjxamx39xix"
+    ],
+    "9eb4f840-2326-4e83-a320-ef2f2f24bbab": [
+      "tmqjxamx39xix",
+      "tmqjx9csxvxlh",
+      "tmqjzo5x5qscx"
+    ],
+    "2d7b8fd2-25a2-4134-aa70-c1a197a8ad04": [
+      "tmqjzo5x5qscx",
+      "tmqjxamx39xix"
+    ],
+    "10dd0bee-98f8-4b35-87e8-5b8da0773af6": [
+      "tmqjwuofsbtrm"
+    ],
+    "3361eea0-e22a-44e7-b63d-88d03a03a2ce": [
+      "tmqjzje1p2us4"
+    ],
+    "0fe7e7b8-9ef8-4884-a0f7-c992de0d589d": [
+      "tmqjzje1p2us4"
+    ],
+    "614ace3d-cdc9-4488-a95d-26c74ac86ab8": [
+      "tmqjzje1p2us4"
+    ],
+    "4d9fcbdb-f438-49d2-aa9e-fffa49cb546a": [
+      "tmqjzbumjani9",
+      "tmqjwzubqpdu5"
+    ],
+    "903e82be-22bd-4b33-af29-c5f78fa31393": [
+      "tmqjwzubqpdu5"
+    ],
+    "d1e8d0d5-5332-4f16-8906-579311ad8c7c": [
+      "tmqjztotvnyz7"
+    ],
+    "5cc85c99-6a03-4e1f-9ee0-e7577bb51202": [
+      "tmqjzje1p2us4"
+    ],
+    "15e4f7dc-1498-4df2-b3ba-0356b2074d57": [
+      "tmqjzl41mp4io"
+    ],
+    "4e90ecc6-8f13-45e3-a550-174d1de5660c": [
+      "tmqjxn3yuok20"
+    ],
+    "ea059af3-f12a-4252-ac5d-6ecfce4c9722": [
+      "tmqjzvxxdqg12",
+      "tmqjzl41mp4io"
+    ],
+    "2e5e70df-6cbb-4acf-896d-93bbb718c08b": [
+      "tmqjzbumjani9"
+    ],
+    "cae4f6c4-35da-4c4e-92fa-2c2da1bcd937": [
+      "tmqjzvxxdqg12",
+      "tmqjxib1t2wcd"
+    ],
+    "db10c6a6-795b-46e8-8075-a32f5bbd4cf1": [
+      "tmqjwzubqpdu5",
+      "tmqjzje1p2us4"
+    ],
+    "29f52f44-dad8-49ab-ad3b-0d01a7b75cac": [
+      "tmqjzvxxdqg12"
+    ],
+    "2ea34209-d933-4afc-90aa-a7e97e24a896": [
+      "tmqjzl41mp4io",
+      "tmqnxmo77cjvy"
+    ],
+    "a6cee707-59d4-48e2-910f-123e8892de53": [
+      "tmqjzo5x5qscx",
+      "tmqjx9csxvxlh"
+    ],
+    "2034fee6-f27f-4aa9-a86b-b4d1e35d8b80": [
+      "tmqnxt9c7w0wn"
+    ],
+    "3871e585-7bcf-4332-b321-bd9e342ae037": [
+      "tmqjx4sokai3o"
+    ],
+    "031464ce-2575-4395-ab25-53166e10f3a8": [
+      "tmqjzl41mp4io"
+    ],
+    "5c4942a9-7b18-4ffb-843a-bf13bdf63657": [
+      "tmqjwzubqpdu5"
+    ],
+    "e868a7e9-8deb-421d-865b-85df7598e16a": [
+      "tmqjwzubqpdu5"
+    ],
+    "c03d6bf9-670e-4e56-87b7-3137048f2e59": [
+      "tmqjx3eaod6ep"
+    ],
+    "6d422c2b-274d-4128-9139-ed89de181cbd": [
+      "tmqjxhz9bnpcq",
+      "tmqjzje1p2us4"
+    ],
+    "15a2f317-9358-42ac-9efa-0ccd7ddf190d": [
+      "tmqjwzubqpdu5",
+      "tmqjzje1p2us4"
+    ],
+    "41c22226-b5da-4bb7-a768-c8db568ce629": [
+      "tmqjzl41mp4io"
+    ],
+    "f80f6932-8b69-4acf-a29b-e289f1caa2e8": [
+      "tmqjxlvbf7yt5"
+    ],
+    "68efd887-b10d-4e33-88e2-96bcc48adac8": [
+      "tmqjxamx39xix"
+    ],
+    "12e6914a-5742-4ac9-84dc-be76f1b4639a": [
+      "tmqjzje1p2us4"
+    ],
+    "30bd3f65-7220-44d9-bad6-40e42f3af4ef": [
+      "tmqjzje1p2us4"
+    ],
+    "65e5c8de-6c82-49a9-9d89-1260c962671f": [
+      "tmqjx8kl61sgn"
+    ],
+    "7435644a-dd2f-4b80-ad4b-bf5e8022f1ca": [
+      "tmqjwwshx4uyd",
+      "tmqjx4sokai3o"
+    ]
+  },
+  "fragReports": {
+    "df8077d6-dbc9-4ad8-9a80-92fed4b38a62": {
+      "title": "Comment analysis",
+      "date": "2026-06-01T13:32:13.405Z"
+    },
+    "c0ebd818-684f-411e-ade7-058761b2070d": {
+      "title": "Comment analysis",
+      "date": "2026-06-01T13:32:13.405Z"
+    },
+    "cd83b285-005d-4a46-8e3f-280bd8b4035c": {
+      "title": "Comment analysis",
+      "date": "2026-06-01T13:32:13.405Z"
+    },
+    "3dcc941f-ca2e-429e-bc1f-059e5b51b14d": {
+      "title": "Comment analysis",
+      "date": "2026-06-01T13:32:13.405Z"
+    },
+    "5b8f9fa0-af35-484f-ad5b-e7f8d7198504": {
+      "title": "Comment analysis",
+      "date": "2026-06-01T13:32:13.405Z"
+    },
+    "999745d2-8022-4fae-a60f-b1f839af590a": {
+      "title": "Comment analysis",
+      "date": "2026-06-01T13:32:13.405Z"
+    },
+    "86644e17-e91f-4d6a-a236-d95f10c3a0ad": {
+      "title": "Comment analysis",
+      "date": "2026-06-01T13:32:13.405Z"
+    },
+    "0232b053-28f3-45d8-bca1-30a6e673e218": {
+      "title": "Comment analysis",
+      "date": "2026-06-01T13:32:13.405Z"
+    },
+    "14172465-d44f-415f-a4f6-9d68b76e2c6b": {
+      "title": "Comment analysis",
+      "date": "2026-06-01T13:32:13.405Z"
+    },
+    "a589ba15-7382-4381-8d91-172bc3f1da2c": {
+      "title": "Comment analysis",
+      "date": "2026-06-01T13:32:13.405Z"
+    },
+    "c88dadc8-6b02-41d2-b90f-30151c9b3e03": {
+      "title": "Comment analysis",
+      "date": "2026-06-01T13:32:13.405Z"
+    },
+    "83843d95-1271-4e9c-b825-a591c013e3df": {
+      "title": "Comment analysis",
+      "date": "2026-06-01T13:32:13.405Z"
+    },
+    "0fbc2816-58c2-4da6-bf73-711cf2b8a593": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "6ef129b1-bc32-4cdd-9951-0f3ab36f7cd1": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "25019800-a435-46d6-a4d8-5786cd36e945": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "bdf7a1e4-bb5d-4b95-9e8e-b77da64a3a6e": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "227b95ee-8c2a-4bb9-8362-50c5f34fe34e": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "ba958ccc-5466-4891-9117-04ccb7be5bd0": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z",
+      "text": "And 20% is human, but even the AI stuff, we have humans reviewing that info. It just cuts the time that we're able to do that. That's for Spanish. We don't have translators for all the other languages, and AI allows us to do it in a majority of languages. Uh, and we're able to train models specifically to terminology that is not typically found in your dictionary. So we're training it in extension and university in research language.",
+      "speaker": "spk_5"
+    },
+    "08be8c7d-8385-40f4-a4bc-2e0b14fce81b": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "5d77033d-2c1e-407e-90f9-cf0bfb6b5584": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z",
+      "text": "Inaccessibility or you know, the difference between the haves and have-nots is going to get even bigger because people who don't have access because maybe they don't have broadband, which often you need for this. Although we're starting to see local AI solutions. But if you don't have access to this and you don't learn about it, you could be at a very big disadvantage, even more so than just regular digital skills. So that's, that's one of my big worries.",
+      "speaker": "spk_5"
+    },
+    "9203620e-a72d-4fd7-9ec5-671d9447c8fa": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "50be13a7-4f9b-4371-a730-b5c45ddee664": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "08552187-5cd6-4f87-8f56-751ea0d765cf": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "671e1262-62ad-4343-9324-80a6ef9f2d15": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "c7970696-80b2-4c7b-b184-bd2237509f58": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "30a3ab9c-72b3-4739-886e-5394e341ba8d": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "fd95ad77-ced9-4c4b-8805-127c6b6903cb": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "3caf6280-a888-4be4-a8e1-b3bde73c92bd": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "2b0ef246-d7ce-48f3-b4e7-10c817e6b73b": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "1ea9bd00-810f-4d7e-8fbb-e9fc1996ca3a": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "bdd27231-0d6f-4524-8b5f-e4acb810b224": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "7d2bccae-8b6b-49f6-b547-efd4b84ac01c": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z",
+      "text": "So I, yeah, I think on Jonathan's points of like using it for permitting, say that's an example of where it can be super useful, if it's used correctly, but if a municipality were to just say, OK, the AI is deciding whether or not to approve permits, AI is not good enough, not accurate enough, doesn't have the judgment to be able to do that accurately, so it's gonna end up like approving things that aren't up to code.",
+      "speaker": "spk_4"
+    },
+    "551c0bc4-dfa8-44fb-8290-4e8d6bfb8509": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "923a31d7-9e69-4db3-8a76-ef50420204bb": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "7be5d79b-3bea-4572-bcda-8f728c9fec5a": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "9ceeb50b-592a-41a9-8ece-cefc09d833e2": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "5f39bdad-4215-4b18-b164-7c6879355c20": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "78ba0c32-952f-4fcc-9b4f-719169962a52": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "93c0d744-c72b-4572-a102-39f63e4fffc5": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "df4fed11-7107-440a-b319-8a47de21d52a": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "2c8d26fc-9701-462e-81f0-a57467a99a8b": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z"
+    },
+    "fc6ae269-5a43-446c-9ac6-9e3a5ec15967": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z"
+    },
+    "7725efbb-1a9b-4c75-9b59-e85ae63ff971": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z"
+    },
+    "96641131-afac-4d0e-b9ab-50d0cbdb4e20": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z",
+      "text": "chaos. All right, let's take this community wise. Let's suppose that, uh, Bend City decides that they want to get AI to organize all the traffic lights so that we get around easier and it doesn't work and now you get, you know, there's, there's a chaos period of.",
+      "speaker": "spk_3"
+    },
+    "a95127eb-0b61-42fe-acc8-2b3b67646a40": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z"
+    },
+    "39e13b06-863f-4902-a3f7-70039a64121c": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z"
+    },
+    "994b6971-e826-426f-a24b-c64ebc88a8e0": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z",
+      "text": "You know, reducing the amount of time it takes to get a building permit or get so that productivity gain, so that people who are waiting, you know, industries that are waiting for decisions or those permits can move faster. So then that creates more economic opportunity within.",
+      "speaker": "spk_5"
+    },
+    "d25ce79b-3c6d-4c5a-b44a-ba55f55658cf": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z"
+    },
+    "d37e3b06-6e34-4e0c-9217-02f1d32302d6": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z"
+    },
+    "f2b54f03-c373-450e-9b10-a090460d4d0b": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z"
+    },
+    "f7f2986b-ea24-4c7f-af3b-68ae0cbaafd3": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z"
+    },
+    "8e7ccb1b-46c7-4a08-9422-e11f2c7f43b9": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z"
+    },
+    "5d61ddf4-464e-41ff-9090-284ddb8eb5ef": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z"
+    },
+    "4cec744e-7ba0-4f8a-bece-dbfc06d5a7b8": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z"
+    },
+    "a0b3cd64-764c-4e9d-a85c-e01a4d2d8bb1": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z"
+    },
+    "a8841ba2-31c3-4808-83e6-4b7d3f8d1a9a": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z"
+    },
+    "8d1e7ae2-4078-4985-84b1-69d5e25ca584": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z"
+    },
+    "e0400224-a9b1-4120-9fa8-e5adbbd559db": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z"
+    },
+    "a0fe7a68-d8fa-4c24-b6ea-0c9ef54e3758": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z"
+    },
+    "dc48b44a-73f3-4b50-8309-4eec61d93171": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z",
+      "text": "The thinking on your own, the critical thinking on your own, that you do not wanna lose that. You wanna be able to take some information, formulate your your thought.",
+      "speaker": "spk_0"
+    },
+    "e092bd68-a726-4604-b7ae-ec03d54bbb77": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z"
+    },
+    "ebce3b5d-3971-4f94-95f1-8ad387e9ecbf": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z"
+    },
+    "153ecb0a-d91a-41f1-aa28-36994e53e5e2": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z"
+    },
+    "120e6145-7546-4cb2-a46d-f70ed321555c": {
+      "title": "Comment analysis",
+      "date": "2026-06-18T16:15:21.072Z"
+    },
+    "0b55fffc-0460-4632-96a1-aca43e4c4d67": {
+      "title": "Comment analysis",
+      "date": "2026-06-18T16:15:21.072Z"
+    },
+    "f2c986bc-3aa4-47c7-8aba-d3790b0feb4f": {
+      "title": "Comment analysis",
+      "date": "2026-06-18T16:15:21.072Z"
+    },
+    "b5f34623-ef7b-472a-99c7-d1a107f7e116": {
+      "title": "Comment analysis",
+      "date": "2026-06-18T16:15:21.072Z"
+    },
+    "da6da169-7a63-482d-ae93-b013b218d58e": {
+      "title": "Comment analysis",
+      "date": "2026-06-18T16:15:21.072Z"
+    },
+    "9eb4f840-2326-4e83-a320-ef2f2f24bbab": {
+      "title": "Comment analysis",
+      "date": "2026-06-18T16:15:21.072Z"
+    },
+    "2d7b8fd2-25a2-4134-aa70-c1a197a8ad04": {
+      "title": "Comment analysis",
+      "date": "2026-06-18T16:15:21.072Z",
+      "text": "If you don't have the money and, you know, there's nothing stopping the companies from raising their prices, uh, which they'll probably have to here if they want to make any money at all. Uh, so where does that leave communities, and members that are not able to afford that?",
+      "speaker": "spk_4"
+    },
+    "10dd0bee-98f8-4b35-87e8-5b8da0773af6": {
+      "title": "Comment analysis",
+      "date": "2026-06-18T16:15:21.072Z"
+    },
+    "3361eea0-e22a-44e7-b63d-88d03a03a2ce": {
+      "title": "Comment analysis",
+      "date": "2026-06-18T16:15:21.072Z"
+    },
+    "0fe7e7b8-9ef8-4884-a0f7-c992de0d589d": {
+      "title": "Comment analysis",
+      "date": "2026-06-18T16:15:21.072Z"
+    },
+    "614ace3d-cdc9-4488-a95d-26c74ac86ab8": {
+      "title": "Comment analysis",
+      "date": "2026-06-18T16:15:21.072Z"
+    },
+    "4d9fcbdb-f438-49d2-aa9e-fffa49cb546a": {
+      "title": "Comment analysis",
+      "date": "2026-06-18T16:15:21.072Z"
+    },
+    "903e82be-22bd-4b33-af29-c5f78fa31393": {
+      "title": "Comment analysis",
+      "date": "2026-06-18T16:15:21.072Z"
+    },
+    "d1e8d0d5-5332-4f16-8906-579311ad8c7c": {
+      "title": "Comment analysis",
+      "date": "2026-06-18T16:15:21.072Z"
+    },
+    "5cc85c99-6a03-4e1f-9ee0-e7577bb51202": {
+      "title": "Comment analysis",
+      "date": "2026-06-18T16:15:21.072Z"
+    },
+    "15e4f7dc-1498-4df2-b3ba-0356b2074d57": {
+      "title": "Comment analysis",
+      "date": "2026-06-18T16:15:21.072Z"
+    },
+    "4e90ecc6-8f13-45e3-a550-174d1de5660c": {
+      "title": "Comment analysis",
+      "date": "2026-06-18T16:15:21.072Z"
+    },
+    "ea059af3-f12a-4252-ac5d-6ecfce4c9722": {
+      "title": "Comment analysis",
+      "date": "2026-06-18T16:15:21.072Z"
+    },
+    "2e5e70df-6cbb-4acf-896d-93bbb718c08b": {
+      "title": "Comment analysis",
+      "date": "2026-06-18T16:15:21.072Z"
+    },
+    "cae4f6c4-35da-4c4e-92fa-2c2da1bcd937": {
+      "title": "Comment analysis",
+      "date": "2026-06-18T16:15:21.072Z"
+    },
+    "db10c6a6-795b-46e8-8075-a32f5bbd4cf1": {
+      "title": "Comment analysis",
+      "date": "2026-06-18T16:15:21.072Z",
+      "text": "Building relationships with online, they'd rather talk to their chatbot than, than an adult, um, sometimes even their friends, because a chatbot will always be there for you. It, it will not push back against you, uh, unless you tell it specifically to tell, tell it to push back against you. Uh, but students don't instinctively know that, right?",
+      "speaker": "spk_4"
+    },
+    "29f52f44-dad8-49ab-ad3b-0d01a7b75cac": {
+      "title": "Comment analysis",
+      "date": "2026-06-18T16:15:21.072Z",
+      "text": "There's, there's university students, especially incoming, you know, freshman sophomore who want nothing to do with AI whatsoever. And part of my concern there is, well, if employers are looking for at least a basic knowledge of how AI works, uh, if not a, a working, uh, knowledge.",
+      "speaker": "spk_4"
+    },
+    "2ea34209-d933-4afc-90aa-a7e97e24a896": {
+      "title": "Comment analysis",
+      "date": "2026-06-18T16:15:21.072Z",
+      "text": "A level that um have, um, yeah, organizing bodies of parents having these conversations and, and also just actively um providing context, whether it be in school board or a call to actions to write into your respective um directors and or legislators about the um uh",
+      "speaker": "spk_2"
+    },
+    "a6cee707-59d4-48e2-910f-123e8892de53": {
+      "title": "Comment analysis",
+      "date": "2026-06-18T16:15:21.072Z",
+      "text": "Their, uh, their own people and that their, uh, internet penetration is far less than what we have. So when we talk about access, um, we, we have to remember there are some people who just literally don't have the, the infrastructure for that access. Um, and, and so when we're talking about including in the community, it's not just a stakeholder, it's as a whole, um, it's a whole group that doesn't have that participant part in it. Um,",
+      "speaker": "spk_3"
+    },
+    "2034fee6-f27f-4aa9-a86b-b4d1e35d8b80": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z",
+      "text": "And I put it, put on a scan all the information in, and it would just change weird random things. So, and then I'd be like, Hey, no, you got that wrong, and this one needs to be a yes, not a no. And then it would change like a different random one to a no and then keep that. I was like, You, and then it was like, Oh, pay me $20 and we'll, uh, be better. And I did that and it did not get any better. And so that's, yeah, Chad GBT has lost.",
+      "speaker": "spk_4"
+    },
+    "3871e585-7bcf-4332-b321-bd9e342ae037": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z",
+      "text": "uh, I, well, as far as concern goes for me, it's moving very quickly without a whole lot of forethought. It seems like that kind of touches on, on your concern of how are we actually going to support all of this. I think, um, a lot of the big brains behind.",
+      "speaker": "spk_4"
+    },
+    "031464ce-2575-4395-ab25-53166e10f3a8": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z",
+      "text": "Put this in Alex's folder and then the AI learned, right, the, the tools we're learning that like oh Greg still isn't getting the skill. I'm gonna give him more right without the teacher having to say, you know, it would say like we're gonna test you can you do these two.",
+      "speaker": "spk_2"
+    },
+    "5c4942a9-7b18-4ffb-843a-bf13bdf63657": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z",
+      "text": "And kids growing up and young adults are so susceptible to information that's being kind of bombarded at them, I think before even AI came to the to the next social media.",
+      "speaker": "spk_4"
+    },
+    "e868a7e9-8deb-421d-865b-85df7598e16a": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z",
+      "text": "It was, it was, it was a nightmare trying to regulate the things that she was listening to or watching and then everything was.",
+      "speaker": "spk_4"
+    },
+    "c03d6bf9-670e-4e56-87b7-3137048f2e59": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z",
+      "text": "The firing of dopamine in their brains all the time because they're constantly getting what they want or what they need.",
+      "speaker": "spk_4"
+    },
+    "6d422c2b-274d-4128-9139-ed89de181cbd": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z",
+      "text": "Is a lot better at tailoring that information specifically to a user so it'll it'll track what you're doing. It can track, I mean the phones were doing that before, but it can track how long, how many seconds you've looked at a page and then went to the next one and then it compiles that data and then it tailors information to where it's trying to get you addicted to something which is your phone and then all of a sudden you're not having social interactions with people, you're just having social interactions with the screen.",
+      "speaker": "spk_4"
+    },
+    "15a2f317-9358-42ac-9efa-0ccd7ddf190d": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z",
+      "text": "And with youth, it hits them very hard, and then they get used to that mindset, and then that becomes the way they interact also in person.",
+      "speaker": "spk_4"
+    },
+    "41c22226-b5da-4bb7-a768-c8db568ce629": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z",
+      "text": "So that's really a trade-off that we have is there's great applications, um, potentially in education, and there's, we should be cautious about how people are using this, what's the purpose, um, and then also how impressionable young people",
+      "speaker": "spk_2"
+    },
+    "f80f6932-8b69-4acf-a29b-e289f1caa2e8": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z",
+      "text": "Having, having it almost symbiotic relationship between AI and human, where it's a, a teacher that helps everybody kind of progress through life instead of replacing critical thinking, it enhances critical thinking, um, I think if it developed to that stage, that's probably what everybody wants because that, that hits your three nodes, but as it stands right now, it's just a semi-intelligent entity that can just tell you that you're great at everything.",
+      "speaker": "spk_4"
+    },
+    "68efd887-b10d-4e33-88e2-96bcc48adac8": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z",
+      "text": "Ensuring that what is behind I, I, I felt like this was in the background was, was some equitable application of AI so that it is better for the communities as a whole, um, which is not a given, and it's, it's gotta be taken into account when we figure out how we're using these new tools. I think that's, that to me is,",
+      "speaker": "spk_1"
+    },
+    "12e6914a-5742-4ac9-84dc-be76f1b4639a": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z",
+      "text": "But it's very well written. It really does incorporate everything that we've talked about here in terms of values of human connection and it also has a fair amount of religious aspect of it too in terms of its support, but putting that aside, if, if you're willing to do that. Um, I'm Catholic, so I don't put it aside, but the, the human aspect of it is, is there, and I, I, I think that there is a cry.",
+      "speaker": "spk_0"
+    },
+    "30bd3f65-7220-44d9-bad6-40e42f3af4ef": {
+      "title": "Comment analysis",
+      "date": "2026-06-09T07:44:11.535Z",
+      "text": "But when we don't start with the meaning, what do we want it to do, right? How do we want this to actually support humanity, humanness, connection, etc. right? And we tend to, in a very linear left brain society, think just about what's in structure.",
+      "speaker": "spk_2"
+    },
+    "65e5c8de-6c82-49a9-9d89-1260c962671f": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z",
+      "text": "I don't think we know how it's positively impacted our community because nobody's asking the question.",
+      "speaker": "spk_2"
+    },
+    "7435644a-dd2f-4b80-ad4b-bf5e8022f1ca": {
+      "title": "Comment analysis",
+      "date": "2026-06-08T07:44:27.981Z",
+      "text": "It's going to be able to do well with the code now, and it's going to get better. There's less hallucination than there was 1 year ago, 2 years ago, 5 years ago, but it's still a text prediction tool at this point, and it will get better. It, it's, you can't judge it on what it's like today with any kind of finality, because I tell people, how are you going to put guardrails on something that moves 25,000 miles an hour? And that's one reason a lot of people aren't involved in fear of the unknown because",
+      "speaker": "spk_2"
+    }
+  }
+}

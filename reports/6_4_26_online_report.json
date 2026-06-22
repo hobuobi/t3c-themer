@@ -1,0 +1,3346 @@
+{
+  "data": [
+    "v0.2",
+    {
+      "title": "Comment analysis",
+      "description": "Analysis of comments",
+      "topics": [
+        {
+          "id": "e227e463-ad30-4e81-a402-05c94053410a",
+          "title": "AI Impact on Environment",
+          "description": "AI Impact on Environment",
+          "summary": "The discussion on AI's environmental impact centers around its significant energy consumption and the need for sustainable development. Critics argue that the high energy requirements of AI systems, often outweighing their benefits, contribute to environmental pollution. There is a call for transparency, suggesting that data centers report resource usage like energy and water. Current renewable energy resources are deemed insufficient to meet AI's demands sustainably. Innovations like closed-loop systems in data centers are proposed to reduce water consumption. On the development side, AI's potential for real-time environmental monitoring and mitigation is highlighted, recommending public dashboards for transparency. Additionally, AI's capability to enhance data processing efficiency is recognized, showing its dual role in both impacting and potentially alleviating environmental challenges.",
+          "subtopics": [
+            {
+              "id": "8fc020d3-2ace-4bd2-9295-f0cf2e3d1474",
+              "title": "Energy Consumption",
+              "description": "Energy Consumption",
+              "claims": [
+                {
+                  "id": "ae5112ae-3419-4add-bffc-16170877cd8e",
+                  "title": "AI systems' high energy consumption and environmental impact outweigh their benefits.",
+                  "quotes": [
+                    {
+                      "id": "a7c7e47a-fd64-4e43-8232-38b09429a6e1",
+                      "text": "I don't think AI has benefits that outweigh the environmental and social repercussions of computer-based control over our lives and information.",
+                      "reference": {
+                        "id": "ae3badce-ccdc-479a-9a9a-9422de705238",
+                        "sourceId": "8956854c-20ca-40cb-9f5f-762f5a4c4c50",
+                        "interview": "spk_0",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 286,
+                            "endIdx": 430
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 26,
+                  "similarClaims": [
+                    {
+                      "id": "5396a4a1-d022-4eb8-b327-38a803898fed",
+                      "title": "AI systems contribute significantly to environmental pollution.",
+                      "quotes": [
+                        {
+                          "id": "a899a08b-67d1-4510-b5cf-8f8f571a3d4f",
+                          "text": "the horsepower behind AI does a lot of damage. It, you know, spews noise pollution, light pollution",
+                          "reference": {
+                            "id": "fbea80b0-eb11-4918-8847-2516fbf1e62b",
+                            "sourceId": "01097182-5e07-4f68-b726-d1a3e20f9b61",
+                            "interview": "spk_4",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": 124,
+                                "endIdx": 223
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 27,
+                      "similarClaims": []
+                    },
+                    {
+                      "id": "ac8bc9ba-8484-422f-9980-0e4e7cee69b7",
+                      "title": "AI systems currently demand more power than is justified by their benefits.",
+                      "quotes": [
+                        {
+                          "id": "617d94b7-5d11-40bc-9de1-e8c385f36c7f",
+                          "text": "It's like we went to all this trouble of like replacing our incandescent light bulbs with LEDs, and that doesn't even touch near the order of magnitude of power that AI uses.",
+                          "reference": {
+                            "id": "4231cf46-3a81-401c-830f-16fd48be39e4",
+                            "sourceId": "6ef129b1-bc32-4cdd-9951-0f3ab36f7cd1",
+                            "interview": "spk_4",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": 173,
+                                "endIdx": 347
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 28,
+                      "similarClaims": []
+                    }
+                  ]
+                },
+                {
+                  "id": "8bd3631d-5018-47bf-ad73-92a2f78110d0",
+                  "title": "Data centers should report their resource consumption, including energy and water use.",
+                  "quotes": [
+                    {
+                      "id": "0f230aa0-cda0-4021-b7d9-ade9ebb8355c",
+                      "text": "Data centers, um, Oregon now requires large, um, data centers to report their water use. They should also have to report how much electricity they consume.",
+                      "reference": {
+                        "id": "bd1c6345-ea44-4aa2-a14e-61607427f0e3",
+                        "sourceId": "0b50e258-e796-447d-be20-5978159a3a44",
+                        "interview": "spk_0",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": -1,
+                            "endIdx": 154
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 29,
+                  "similarClaims": []
+                },
+                {
+                  "id": "c61566e0-f63d-4e7f-ab8e-41d70b0bb8a3",
+                  "title": "Current renewable energy resources are insufficient to support AI's energy needs sustainably.",
+                  "quotes": [
+                    {
+                      "id": "d69eca28-24ee-4a5c-82d1-d8fe6ebfbaaf",
+                      "text": "Data centers can be powered by renewable energy, if we had that excess of renewable energy, but right now we don't.",
+                      "reference": {
+                        "id": "d9bc4c41-fa01-4498-aa1c-f30282bfb380",
+                        "sourceId": "6ef129b1-bc32-4cdd-9951-0f3ab36f7cd1",
+                        "interview": "spk_4",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": -1,
+                            "endIdx": 114
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 30,
+                  "similarClaims": []
+                },
+                {
+                  "id": "c58bed01-51e6-42d3-8341-b6ec6260abd3",
+                  "title": "Closed-loop systems can reduce water consumption in AI data centers.",
+                  "quotes": [
+                    {
+                      "id": "b9d0ddca-620c-479a-97ac-bdff14c9c3b5",
+                      "text": "Microsoft just said that their new data centers will have roughly the same water use as in a single restaurant thanks to a closed-loop system where they reuse the same water.",
+                      "reference": {
+                        "id": "089a556f-11eb-4c7a-8c5b-ff57e9823469",
+                        "sourceId": "25019800-a435-46d6-a4d8-5786cd36e945",
+                        "interview": "spk_2",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 109,
+                            "endIdx": 283
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 31,
+                  "similarClaims": []
+                }
+              ]
+            },
+            {
+              "id": "f45e9353-fadd-4dda-8245-c1951bd619da",
+              "title": "Sustainable AI Development",
+              "description": "Sustainable AI Development",
+              "claims": [
+                {
+                  "id": "88e52d7c-1545-4be1-8143-c5ea68a8aa63",
+                  "title": "AI should be used for real-time monitoring and mitigation of environmental impacts, with accessible dashboards.",
+                  "quotes": [
+                    {
+                      "id": "b8d884fa-eeb0-452e-9ade-cb2751c898e3",
+                      "text": "I would love to see dashboards, public accessible dashboards around data centers, around communities so that people can see the effects as they're happening.",
+                      "reference": {
+                        "id": "abedbd1e-39f2-4de9-8ec0-079a5aa375ff",
+                        "sourceId": "0fbc2816-58c2-4da6-bf73-711cf2b8a593",
+                        "interview": "spk_5",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 201,
+                            "endIdx": 358
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 32,
+                  "similarClaims": [
+                    {
+                      "id": "ec19c16e-2778-4bf4-9899-b2f2a909a795",
+                      "title": "AI can be used to monitor and mitigate its environmental impact in real time.",
+                      "quotes": [
+                        {
+                          "id": "23f98d1d-5a7a-4ec8-b9e2-a046815989c4",
+                          "text": "Using AI in real time to measure the effects as they're happening. And then if we see things that are going past certain what parameters that we set, it's like, OK, what can we do to slow things down, change things, and whatnot.",
+                          "reference": {
+                            "id": "7cdbd251-650f-42e9-bd7f-717b639e5a8c",
+                            "sourceId": "3865388c-9dfd-4351-93fe-40732949d54c",
+                            "interview": "spk_5",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": 0,
+                                "endIdx": 228
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 33,
+                      "similarClaims": []
+                    },
+                    {
+                      "id": "0a47e0e8-6dcf-4b09-a3b4-ca0f9bfe0de4",
+                      "title": "AI can help solve the environmental problems it creates.",
+                      "quotes": [
+                        {
+                          "id": "b47a7806-7536-4fc0-bab5-79232d46fea3",
+                          "text": "AI can, can help solve the problems that it creates.",
+                          "reference": {
+                            "id": "9b43ca9c-d798-4e5a-85f1-a9ee0830b17e",
+                            "sourceId": "25019800-a435-46d6-a4d8-5786cd36e945",
+                            "interview": "spk_2",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": 21,
+                                "endIdx": 73
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 34,
+                      "similarClaims": []
+                    }
+                  ]
+                },
+                {
+                  "id": "162a7c23-66fd-42e9-8deb-5027b198863e",
+                  "title": "AI can enhance data processing efficiency beyond human capabilities.",
+                  "quotes": [
+                    {
+                      "id": "fe46edd0-2ec1-41fc-b819-df6bda0fd2cb",
+                      "text": "being able to process large amounts of data, uh, where it's, it's harder for a human to efficiently do that than it is with a little bit of help.",
+                      "reference": {
+                        "id": "c1ba2262-8486-4e2e-b5bd-a901078bdce5",
+                        "sourceId": "9203620e-a72d-4fd7-9ec5-671d9447c8fa",
+                        "interview": "spk_3",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 86,
+                            "endIdx": 231
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 35,
+                  "similarClaims": []
+                }
+              ]
+            }
+          ],
+          "topicColor": "greenLeaf"
+        },
+        {
+          "id": "67683f38-f3a8-4919-b4b4-04011b774ffc",
+          "title": "AI in Education",
+          "description": "AI in Education",
+          "summary": "The discussion on AI in Education encompasses two key subtopics: Responsible AI Use and Transparent AI Use. Participants emphasize responsible AI integration, advocating for its inclusion in educational curriculums and recognizing the potential to widen accessibility disparities. Concerns about the limitations of unpaid AI platforms and the necessity of retaining human oversight in decision-making emerge. Opinions vary on AI as a tool, with some accepting its use as an enhanced search engine. Transparency is crucial to mitigate societal issues, with calls for openness in AI application. Additionally, AI's capability to facilitate multilingual communication is noted, showcasing its potential. Overall, the conversation balances AI's opportunities with essential ethical considerations.",
+          "subtopics": [
+            {
+              "id": "0a8ff66b-6d12-4ef5-b29d-018bab8c9e7a",
+              "title": "Responsible AI Use",
+              "description": "Responsible AI Use",
+              "claims": [
+                {
+                  "id": "0fe5f028-f636-4fbe-8c33-ec4053f3a05c",
+                  "title": "AI's impact on education should include responsible usage and addressing accessibility disparities.",
+                  "quotes": [
+                    {
+                      "id": "1f27ba44-f0c0-4978-892c-c91958422876",
+                      "text": "on education, learning how to use AI responsibly should be part of every Oregon student's education.",
+                      "reference": {
+                        "id": "965c2726-5fab-4bd4-9f56-8b83a58640cf",
+                        "sourceId": "8956854c-20ca-40cb-9f5f-762f5a4c4c50",
+                        "interview": "spk_0",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 131,
+                            "endIdx": 231
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 1,
+                  "similarClaims": [
+                    {
+                      "id": "42043952-5e32-4008-9f71-6129391e5343",
+                      "title": "AI in education may widen the gap between those with and without access to technology.",
+                      "quotes": [
+                        {
+                          "id": "a5c0aef4-5767-4eb8-8ef8-ba392ef9a931",
+                          "text": "Inaccessibility or you know, the difference between the haves and have-nots is going to get even bigger because people who don't have access [...] could be at a very big disadvantage.",
+                          "reference": {
+                            "id": "183c06e6-858e-4bec-845f-b6475e8b2521",
+                            "sourceId": "5d77033d-2c1e-407e-90f9-cf0bfb6b5584",
+                            "interview": "spk_5",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": -1,
+                                "endIdx": 182
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 2,
+                      "similarClaims": []
+                    }
+                  ]
+                },
+                {
+                  "id": "fc27ccb9-fc26-4e25-9f9f-e6fb9e2cea48",
+                  "title": "There are significant limitations and accessibility issues with unpaid AI platforms.",
+                  "quotes": [
+                    {
+                      "id": "6de42bcd-2981-4d48-a407-197bebdb5c78",
+                      "text": "There's also real limitations with AI platforms if you don't pay for it.",
+                      "reference": {
+                        "id": "5d6dcd40-1a76-4f58-a2e0-f530bb4425a7",
+                        "sourceId": "1ecad6bb-185b-4a77-9fce-cf669e25a824",
+                        "interview": "spk_3",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 69,
+                            "endIdx": 141
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 3,
+                  "similarClaims": [
+                    {
+                      "id": "c867015f-dd57-4e4d-a426-92a8b5d193b7",
+                      "title": "AI in education may widen the gap between those with and without access to technology.",
+                      "quotes": [
+                        {
+                          "id": "b48c50c7-427b-4634-a48c-2e160dae9dd3",
+                          "text": "Inaccessibility or you know, the difference between the haves and have-nots is going to get even bigger because people who don't have access [...] could be at a very big disadvantage.",
+                          "reference": {
+                            "id": "c2c5bfd1-5845-4680-a920-d0b884fdb92b",
+                            "sourceId": "5d77033d-2c1e-407e-90f9-cf0bfb6b5584",
+                            "interview": "spk_5",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": -1,
+                                "endIdx": 182
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 4,
+                      "similarClaims": []
+                    }
+                  ]
+                },
+                {
+                  "id": "265a912c-cdea-40a3-9c9d-ec0ff6b7625e",
+                  "title": "AI technology can be specialized to understand industry-specific terminology.",
+                  "quotes": [
+                    {
+                      "id": "80d43d01-b1b3-4c47-b1fa-969f6af9126b",
+                      "text": "We're training it in extension and university in research language.",
+                      "reference": {
+                        "id": "12fb293b-477c-49fb-80db-0bdd140ee28e",
+                        "sourceId": "ba958ccc-5466-4891-9117-04ccb7be5bd0",
+                        "interview": "spk_5",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": -1,
+                            "endIdx": 66
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 5,
+                  "similarClaims": []
+                },
+                {
+                  "id": "7dff5c7f-2ab0-4feb-88b9-f150834b9b6c",
+                  "title": "Human judgment should remain primary over AI in decision-making processes.",
+                  "quotes": [
+                    {
+                      "id": "da1c2376-5616-4d28-9a18-54fa350903a0",
+                      "text": "we need human in the lead.",
+                      "reference": {
+                        "id": "f5c0b485-3735-4609-8c3c-393ab361865a",
+                        "sourceId": "df4fed11-7107-440a-b319-8a47de21d52a",
+                        "interview": "spk_5",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 91,
+                            "endIdx": 117
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 6,
+                  "similarClaims": []
+                },
+                {
+                  "id": "9801c597-6af2-4500-b0eb-c338e572da5f",
+                  "title": "Using AI as an enhanced search tool is considered acceptable.",
+                  "quotes": [
+                    {
+                      "id": "4564c6b7-d662-47e4-8107-0553cd074b76",
+                      "text": "don't you dare feel guilty for using AI as a glorified search engine.",
+                      "reference": {
+                        "id": "e557d11b-9b2f-4898-b42f-a7565e5850a6",
+                        "sourceId": "d12c81da-fd82-4145-af22-6d710bf5d93e",
+                        "interview": "spk_2",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 26,
+                            "endIdx": 95
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 7,
+                  "similarClaims": []
+                }
+              ]
+            },
+            {
+              "id": "9314ff77-3efb-4ea4-89eb-d34325648ac1",
+              "title": "Transparent AI Use",
+              "description": "Transparent AI Use",
+              "claims": [
+                {
+                  "id": "a880b34f-8ce4-4d3a-bd48-0af3293313ff",
+                  "title": "Greater transparency in AI applications is essential to prevent societal issues",
+                  "quotes": [
+                    {
+                      "id": "b274c897-05a6-41e5-870c-d3061f0fb6fb",
+                      "text": "on education that we need stronger transparency, um, and how it's being used in the education system.",
+                      "reference": {
+                        "id": "09bb2336-60a9-4058-8e0b-4acca2bf30f3",
+                        "sourceId": "0b50e258-e796-447d-be20-5978159a3a44",
+                        "interview": "spk_0",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 415,
+                            "endIdx": 516
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 8,
+                  "similarClaims": [
+                    {
+                      "id": "8702b356-02d9-49c9-9b9e-e3975e75e3d5",
+                      "title": "Lack of transparency in AI use is harmful to society.",
+                      "quotes": [
+                        {
+                          "id": "42fd8677-d43a-4116-a97e-8a7b8fc0e55b",
+                          "text": "being introduced to communities, backdoor deals, all of that, uh, it doesn't look like it's going in the right direction for the betterment of society.",
+                          "reference": {
+                            "id": "6de473a0-0b7f-4348-936e-35f0f2bfa9ab",
+                            "sourceId": "bdd27231-0d6f-4524-8b5f-e4acb810b224",
+                            "interview": "spk_3",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": 40,
+                                "endIdx": 191
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 9,
+                      "similarClaims": []
+                    },
+                    {
+                      "id": "cbef7786-f5f1-4df9-b548-f88af381818e",
+                      "title": "Transparency in AI applications is essential to avoid further problems.",
+                      "quotes": [
+                        {
+                          "id": "f39de115-f211-45c5-b584-74fe6f0bd91b",
+                          "text": "Talk about the issues versus trying to hide things. It just creates more problems.",
+                          "reference": {
+                            "id": "215a4fce-e226-4a4c-a14d-eecaf9bfb341",
+                            "sourceId": "1bb8a722-fa4f-4350-b5ea-227406f15747",
+                            "interview": "spk_5",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": 0,
+                                "endIdx": 82
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 10,
+                      "similarClaims": []
+                    }
+                  ]
+                },
+                {
+                  "id": "2b8e1365-a6f3-4d07-bbec-b34385948659",
+                  "title": "AI enhances communication by enabling multilingual translations",
+                  "quotes": [
+                    {
+                      "id": "9fe41359-a78a-449b-a7e0-805af33b365e",
+                      "text": "We don't have translators for all the other languages, and AI allows us to do it in a majority of languages.",
+                      "reference": {
+                        "id": "571317f8-e54f-4dc9-9018-25f72f2fefdd",
+                        "sourceId": "ba958ccc-5466-4891-9117-04ccb7be5bd0",
+                        "interview": "spk_5",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 147,
+                            "endIdx": 255
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 11,
+                  "similarClaims": []
+                }
+              ]
+            }
+          ],
+          "topicColor": "brown"
+        },
+        {
+          "id": "2e2330a3-9dc0-4e05-957d-7c66569e6999",
+          "title": "AI and Privacy",
+          "description": "AI and Privacy",
+          "summary": "The discussion on 'AI and Privacy' highlights major concerns around transparency, regulation, data collection, and usage. Key themes include the necessity for transparency in AI companies' operations and financial transactions, alongside legislative protection against data misuse. Participants express skepticism about the efficacy of government regulation, emphasizing that AI development should benefit the public rather than prioritize corporate profits. Privacy threats from expansive data collection, erosion of anonymity, and potential surveillance by both government and corporations are noted, with calls for safeguarding personal data against misuse. The debate underscores a prevalent apprehension about AI's role in diminishing online privacy and anonymity, necessitating urgent regulatory attention and public discourse.",
+          "subtopics": [
+            {
+              "id": "cdeaee27-0567-4a93-8176-8dade9f0b9a9",
+              "title": "Transparency and Regulation",
+              "description": "Transparency and Regulation",
+              "claims": [
+                {
+                  "id": "8ddb927e-3328-47cc-be0a-d26266b48522",
+                  "title": "Transparency is needed in technology and financial dealings of AI companies for public evaluation.",
+                  "quotes": [
+                    {
+                      "id": "4684b71f-c3d3-4c28-acb4-29cbfaf5d79b",
+                      "text": "can we at least have some transparency and be able to evaluate for ourselves.",
+                      "reference": {
+                        "id": "e17874b3-dffa-4644-92cf-9282983d3760",
+                        "sourceId": "8b0ef8ee-951c-4ee1-a48e-bd31a70ec9a1",
+                        "interview": "spk_5",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 207,
+                            "endIdx": 284
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 12,
+                  "similarClaims": [
+                    {
+                      "id": "35bb710d-91d0-4af5-a45e-8ebb02e3dc21",
+                      "title": "There is a need for transparency in financial dealings of AI companies.",
+                      "quotes": [
+                        {
+                          "id": "f0598405-a9d1-4502-bc21-69fd36dfd0f3",
+                          "text": "how about you having an easy access to how much money they are getting from who",
+                          "reference": {
+                            "id": "ad105792-e72a-4fc6-9e1f-2475557d184b",
+                            "sourceId": "51bf3f59-e777-4743-9cf3-d456395f92e5",
+                            "interview": "spk_2",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": 4,
+                                "endIdx": 83
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 13,
+                      "similarClaims": []
+                    }
+                  ]
+                },
+                {
+                  "id": "c7901729-b723-4c69-96d4-fc07aba16408",
+                  "title": "Legislation is needed to protect citizens from data misuse and address lobbying undermining data privacy laws.",
+                  "quotes": [
+                    {
+                      "id": "477608bd-31f0-455d-8873-5403fb6f65eb",
+                      "text": "Pass something that protects Americans from having their data swooped up into this [...]",
+                      "reference": {
+                        "id": "4abb1ab1-3aee-41c5-b0da-3fbde481f3d8",
+                        "sourceId": "dad8a931-3c8d-4974-bbbc-bd9cdd694923",
+                        "interview": "spk_3",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": -1,
+                            "endIdx": 87
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 14,
+                  "similarClaims": [
+                    {
+                      "id": "2d2c9053-eda3-4455-bba5-18f02fb5ff23",
+                      "title": "Lobbying undermines data privacy legislation.",
+                      "quotes": [
+                        {
+                          "id": "4f5ee433-b1b8-4a9f-a41c-6a30e39f11da",
+                          "text": "the legislature had a solution to keep our data private, and then the Axon and Flock lobbyists came in and he was like, no, we need to strike that because we would need to have access to everybody's data",
+                          "reference": {
+                            "id": "112476e4-ae47-45c2-ac06-2751996531d8",
+                            "sourceId": "93c0d744-c72b-4572-a102-39f63e4fffc5",
+                            "interview": "spk_4",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": 146,
+                                "endIdx": 349
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 15,
+                      "similarClaims": []
+                    }
+                  ]
+                },
+                {
+                  "id": "cdd26be9-e26a-4f61-bde4-6f753da9ce43",
+                  "title": "AI developments should prioritize public benefit over corporate profit.",
+                  "quotes": [
+                    {
+                      "id": "b7f16fce-ba13-466f-8c3d-378beb35f023",
+                      "text": "I'd like to see them invest that $2.5 million in the hardware and software so that the public can come through, uh, help the the leaders create the laws that protect the public, and everything's used for the common good.",
+                      "reference": {
+                        "id": "711cadc9-bdd5-43a7-a371-98ff428bc113",
+                        "sourceId": "78ba0c32-952f-4fcc-9b4f-719169962a52",
+                        "interview": "spk_3",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 31,
+                            "endIdx": 251
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 16,
+                  "similarClaims": []
+                },
+                {
+                  "id": "07837a03-6223-4af9-8690-0047ecc96085",
+                  "title": "Skepticism exists about the effectiveness of government regulation.",
+                  "quotes": [
+                    {
+                      "id": "021400c8-85f5-4572-802e-2335b34d3f52",
+                      "text": "We all know that government regulation solves very little, if anything.",
+                      "reference": {
+                        "id": "4e781c2f-598d-4f28-a8f2-990a7b2ca55e",
+                        "sourceId": "74313f05-7f2e-4312-aec3-11de55b8a0b4",
+                        "interview": "spk_2",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 83,
+                            "endIdx": 154
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 17,
+                  "similarClaims": []
+                }
+              ]
+            },
+            {
+              "id": "9648ec52-9f59-4c72-973a-bf2b434c06fc",
+              "title": "Data Collection and Usage",
+              "description": "Data Collection and Usage",
+              "claims": [
+                {
+                  "id": "b8a04552-cc88-4b66-94eb-ba073fe90d1d",
+                  "title": "AI and data practices threaten privacy through unnecessary data collection and erosion of anonymity.",
+                  "quotes": [
+                    {
+                      "id": "54e7988a-8eb4-4a6f-b43f-696756ed3734",
+                      "text": "they're swooping up Americans' data too",
+                      "reference": {
+                        "id": "be8765c3-3023-4305-9f10-3af098475d21",
+                        "sourceId": "671e1262-62ad-4343-9324-80a6ef9f2d15",
+                        "interview": "spk_3",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 170,
+                            "endIdx": 209
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 18,
+                  "similarClaims": [
+                    {
+                      "id": "3cf4876e-d386-4402-800d-ae05ec407ff6",
+                      "title": "Current data practices allow for unauthorized government surveillance of citizens.",
+                      "quotes": [
+                        {
+                          "id": "c613c503-9e13-4a53-b096-bfd3fb04a003",
+                          "text": "[...] having the US government do warrantless surveillance on American citizens, which is how the FISA Section 702 is currently working.",
+                          "reference": {
+                            "id": "a551962d-eb75-43f9-ae9e-7f6790ed7665",
+                            "sourceId": "dad8a931-3c8d-4974-bbbc-bd9cdd694923",
+                            "interview": "spk_3",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": -1,
+                                "endIdx": 135
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 19,
+                      "similarClaims": []
+                    },
+                    {
+                      "id": "04674a91-f37b-4fd2-aefa-67e1a39a853d",
+                      "title": "AI threatens individual privacy by eroding anonymity.",
+                      "quotes": [
+                        {
+                          "id": "f1f650f0-b092-489f-b8f0-eaa76c151485",
+                          "text": "Anyway you have uh to go out and be anonymous, that's slowly being taken away.",
+                          "reference": {
+                            "id": "cdc600b9-3879-4d4e-bf42-dd16c2785391",
+                            "sourceId": "714a476f-e375-4b79-9222-8af00988c00b",
+                            "interview": "spk_3",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": 0,
+                                "endIdx": 78
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 20,
+                      "similarClaims": []
+                    },
+                    {
+                      "id": "a9ce5615-86a2-4015-ba7d-603ffb0f254b",
+                      "title": "AI processing compromises personal anonymity.",
+                      "quotes": [
+                        {
+                          "id": "13c21736-c809-4325-b4fc-517809b48fe1",
+                          "text": "And once you're, you can't be anonymous at all, and all your data is being processed [...]",
+                          "reference": {
+                            "id": "287871ee-4f14-4142-ad5c-5867c84332b6",
+                            "sourceId": "d176464a-ac62-4eed-838c-52b419c52431",
+                            "interview": "spk_3",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": -1,
+                                "endIdx": 89
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 21,
+                      "similarClaims": []
+                    },
+                    {
+                      "id": "39927fd5-cfa9-421a-b1df-78bbb831127d",
+                      "title": "AI data collection raises privacy concerns due to tracking capabilities.",
+                      "quotes": [
+                        {
+                          "id": "65ff27a6-9833-4704-a76e-e519ac074df0",
+                          "text": "the red light camera [...] is tracking everybody that drives by",
+                          "reference": {
+                            "id": "0988a02a-a0d2-4cee-aad0-f0d0825f19d6",
+                            "sourceId": "29cf3858-c3a9-4af9-a7ed-835406c8ba78",
+                            "interview": "spk_4",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": -1,
+                                "endIdx": 62
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 22,
+                      "similarClaims": []
+                    }
+                  ]
+                },
+                {
+                  "id": "addc9af0-527f-40b7-b560-08e4624a5cb3",
+                  "title": "Government and corporate surveillance enabled by AI undermines online anonymity and privacy.",
+                  "quotes": [
+                    {
+                      "id": "e85478c2-32eb-4543-bfb2-7a68f40e5ab2",
+                      "text": "Pretty soon there's not gonna be, if, if this keeps going that way, there's not gonna be any anonymity online.",
+                      "reference": {
+                        "id": "3f207c45-85a9-4c64-ad62-99b27e44c59a",
+                        "sourceId": "551c0bc4-dfa8-44fb-8290-4e8d6bfb8509",
+                        "interview": "spk_3",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 183,
+                            "endIdx": 293
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 23,
+                  "similarClaims": [
+                    {
+                      "id": "9acbf13f-8ec6-4947-8e45-790d0fac8624",
+                      "title": "Centralized data collection risks detailed personal profiling.",
+                      "quotes": [
+                        {
+                          "id": "f13fc825-3682-4a4a-81e6-b40bd36c8b47",
+                          "text": "the less diversity in databases where they all funnel up to one, the more detailed the profiles are.",
+                          "reference": {
+                            "id": "46f8f9b8-1ae5-4557-ae43-dcdfdd5f6410",
+                            "sourceId": "30a3ab9c-72b3-4739-886e-5394e341ba8d",
+                            "interview": "spk_3",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": 46,
+                                "endIdx": 146
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 24,
+                      "similarClaims": []
+                    }
+                  ]
+                },
+                {
+                  "id": "ae44ab6c-04fb-4f7a-ac86-64ac553d8265",
+                  "title": "AI processing should ensure protection against corporate misuse of personal data.",
+                  "quotes": [
+                    {
+                      "id": "847bbe2a-a3c5-48a8-b793-bf0ae751b5ea",
+                      "text": "Anything that involves people's data being processed through AI instead of them freely handing that data over to third party corporations...",
+                      "reference": {
+                        "id": "ddbb7d74-338a-462e-94aa-213202acd08d",
+                        "sourceId": "5f39bdad-4215-4b18-b164-7c6879355c20",
+                        "interview": "spk_3",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": -1,
+                            "endIdx": 139
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 25,
+                  "similarClaims": []
+                }
+              ]
+            }
+          ],
+          "topicColor": "blueSky"
+        },
+        {
+          "id": "a39d5883-4561-4daf-82a7-b40def685df7",
+          "title": "AI and Jobs",
+          "description": "AI and Jobs",
+          "summary": "The discussion on AI and Jobs highlights the critical importance of maintaining human oversight in AI applications, emphasizing that AI lacks the judgment for independent decision-making. This is echoed across multiple speakers who stress the necessity for humans to control and supervise AI technology. Additionally, there is an advocacy for transparency, ensuring workers are informed when AI influences performance evaluations. In terms of skill development, fostering collaborations between AI companies and universities is seen as beneficial for students, positioning them advantageously in the job market. The overall discourse underscores a balance between leveraging AI advancements and safeguarding human roles and transparency within workplaces.",
+          "subtopics": [
+            {
+              "id": "64b90122-75cd-44fb-914b-4ef35ec8ef32",
+              "title": "Workplace Oversight",
+              "description": "Workplace Oversight",
+              "claims": [
+                {
+                  "id": "8cac5d55-eb6f-4d70-aaf1-b716285acabd",
+                  "title": "Human oversight and control are essential in AI applications.",
+                  "quotes": [
+                    {
+                      "id": "c0743ed8-fd91-4018-9e63-59e4ab21e0b6",
+                      "text": "if a municipality were to just say, OK, the AI is deciding whether or not to approve permits, AI is not good enough, not accurate enough, doesn't have the judgment to be able to do that accurately",
+                      "reference": {
+                        "id": "ad382ed1-437b-44a4-bc78-c1bcd80b8bd1",
+                        "sourceId": "7d2bccae-8b6b-49f6-b547-efd4b84ac01c",
+                        "interview": "spk_4",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 157,
+                            "endIdx": 353
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 36,
+                  "similarClaims": [
+                    {
+                      "id": "b9b7b2a8-31cf-49ff-95c2-80ea504780a6",
+                      "title": "Human oversight is essential in AI applications.",
+                      "quotes": [
+                        {
+                          "id": "fac8fecf-db4f-4221-94d9-357daec90d0b",
+                          "text": "There always has to be human oversight.",
+                          "reference": {
+                            "id": "63b70b17-aec3-4b1f-8e83-e1d721c95de7",
+                            "sourceId": "338f17ec-80ed-4d91-9020-7ce2ccb75305",
+                            "interview": "spk_3",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": 0,
+                                "endIdx": 39
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 37,
+                      "similarClaims": []
+                    },
+                    {
+                      "id": "d9d8ee6e-7720-4c47-862c-eb23d914c45d",
+                      "title": "Humans must remain in control of AI technology decisions.",
+                      "quotes": [
+                        {
+                          "id": "e27f08fc-9579-4772-9c32-594658353524",
+                          "text": "We have to have humans still being in control of the technology and making the decisions whether to be used or not.",
+                          "reference": {
+                            "id": "f4058aee-5b95-4571-bdcf-272a9ebfaafa",
+                            "sourceId": "fd95ad77-ced9-4c4b-8805-127c6b6903cb",
+                            "interview": "spk_5",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": 60,
+                                "endIdx": 175
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 38,
+                      "similarClaims": []
+                    }
+                  ]
+                },
+                {
+                  "id": "4891dde4-b714-49a6-8de7-768c169857a6",
+                  "title": "Workers should have the right to know when AI is used for performance evaluations.",
+                  "quotes": [
+                    {
+                      "id": "d8931ee4-8426-4333-8660-f20bd2e99134",
+                      "text": "workers should have the right to know when AI is being used to evaluate their performance or their productivity.",
+                      "reference": {
+                        "id": "bef4aa42-35b5-4750-b182-f90970ff2df5",
+                        "sourceId": "0b50e258-e796-447d-be20-5978159a3a44",
+                        "interview": "spk_0",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 142,
+                            "endIdx": 254
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 39,
+                  "similarClaims": []
+                }
+              ]
+            },
+            {
+              "id": "11506c5e-6e71-450d-858c-34b6ffff88fa",
+              "title": "Skill Development",
+              "description": "Skill Development",
+              "claims": [
+                {
+                  "id": "90536c30-4d39-4199-8ba0-9409cbf8caaa",
+                  "title": "Collaborations between AI companies and universities can give students an advantage in the job market.",
+                  "quotes": [
+                    {
+                      "id": "2d8efd42-3f9b-4bd9-947f-e129d4aaf6e9",
+                      "text": "AI companies sending ambassadors to Oregon universities will give our students a leg up in the job market.",
+                      "reference": {
+                        "id": "5c196ec4-91ea-499a-8434-96cc0d9920d9",
+                        "sourceId": "43487c2e-ca37-481f-ba66-72969ef27531",
+                        "interview": "spk_0",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 25,
+                            "endIdx": 131
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 40,
+                  "similarClaims": []
+                }
+              ]
+            }
+          ],
+          "topicColor": "purple"
+        }
+      ],
+      "sources": [
+        {
+          "id": "2945a27e-5fb0-41f8-a096-4c2b1fc65011",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Let's see, let's start."
+            }
+          ]
+        },
+        {
+          "id": "6dc6f2bb-f630-4cf1-8350-27b43f89521e",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Perfect. OK, um, we have a"
+            }
+          ]
+        },
+        {
+          "id": "2b54f186-5506-4692-8aa6-9c02d8daee7d",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "question. You had a question. Sorry, go ahead. No, no."
+            }
+          ]
+        },
+        {
+          "id": "23670b10-b607-4310-a363-0c2e97f5b586",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "You're muted, Barney."
+            }
+          ]
+        },
+        {
+          "id": "eae95f64-0f72-4ae4-8bbe-8506138bad45",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Well, it's more a comment than a question, but I can wait till you get to that part of the presentation of the, of the forum."
+            }
+          ]
+        },
+        {
+          "id": "69b86194-f168-47bd-810c-360310efe285",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "OK, perfect. Yeah, thank you. Um, we've just got a little bit more kind of this intro background stuff here, and then we'll dive in. So, um, let's just kind of go through this quickly. Just for anyone who might not be familiar, the open poll is this tool. It's like you, yeah, do it on your phone, um, and you agree or disagree or pass on sort of these existing statements about AI."
+            }
+          ]
+        },
+        {
+          "id": "81b2ca52-9b96-4ce3-98ca-aa470849a619",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Um, and then you can also add your own statement, and then that, um, other people who take the poll after you, um, can respond to your statement. And so it's kind of this like, um, almost like a, an asynchronous discussion a little bit that um."
+            }
+          ]
+        },
+        {
+          "id": "60a0306c-307d-40d6-b415-747d101fe5b1",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "That we can, you know, learn what the community is thinking about this topic, and so the results kind of show that where there's agreement across groups, where there could be common ground, that, you know, across groups that might not otherwise agree on other things. So I think we can probably move to the next slide here."
+            }
+          ]
+        },
+        {
+          "id": "8956854c-20ca-40cb-9f5f-762f5a4c4c50",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Um, so what we've found here so far, or COCAP has found over 300 people have responded and a few places where people disagree. So, on education, learning how to use AI responsibly should be part of every Oregon student's education. This other person here on just kind of AI in general, I don't think AI has benefits that outweigh the environmental and social repercussions of computer-based control over our lives and information."
+            }
+          ]
+        },
+        {
+          "id": "43487c2e-ca37-481f-ba66-72969ef27531",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "And then regarding jobs, AI companies sending ambassadors to Oregon universities will give our students a leg up in the job market. So there's disagreement on that about some people who are sort of optimistic versus more cautious."
+            }
+          ]
+        },
+        {
+          "id": "0b50e258-e796-447d-be20-5978159a3a44",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Um, next slide, please. All right, so, um, but yeah, we have some potential common ground, um, that seems to be emerging. So workers' rights, workers should have the right to know when AI is being used to evaluate their performance or their productivity. Data centers, um, Oregon now requires large, um, data centers to report their water use. They should also have to report how much electricity they consume, and on education that we need stronger transparency, um, and how it's being used in the education system."
+            }
+          ]
+        },
+        {
+          "id": "562d0532-215c-4fb4-947f-90a60d85b4ab",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "All right, next slide, please."
+            }
+          ]
+        },
+        {
+          "id": "c88da310-d89f-40aa-a333-9195b15eca81",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "So, um, yeah, we just wanna kinda start, start discussing now here, um, so this poll, how often do you use or encounter AI tools?"
+            }
+          ]
+        },
+        {
+          "id": "2c70febe-df8c-4270-9c35-2eb83c673928",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "OK. Most, yeah, so we, uh, yeah, basically everyone says a lot, um, so that's, yeah, I think we have everyone responded, so that's pretty convincing, OK."
+            }
+          ]
+        },
+        {
+          "id": "29ba3b43-fe94-4921-9277-b3d61815b100",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Anyone that doesn't say a lot doesn't know how AI is being used in every search engine. It's everywhere. You can't avoid it now."
+            }
+          ]
+        },
+        {
+          "id": "07fa5a00-3062-474d-877b-75a1f21e4854",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Right, yeah, sometimes we don't even know we're encountering it, probably, some of us, you know, but yeah, great."
+            }
+          ]
+        },
+        {
+          "id": "32d73988-be85-4a16-83ed-d4321e35e41d",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Um, OK, I think, uh, probably next slide, please."
+            }
+          ]
+        },
+        {
+          "id": "fa54b38e-4e61-48de-a6a1-49ebe55b9422",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "All right. So, um, yeah, so we have a few minutes now to actually dive in. Um, so let's, we have these two kind of questions, and I think, um, you know, maybe we can take a few minutes and actually just, how do you, uh, this typically work, do it kind of one by one or either one? People can respond to either."
+            }
+          ]
+        },
+        {
+          "id": "778f4b72-e31c-4f31-8c62-166221909538",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "Um, either way, you know, the"
+            }
+          ]
+        },
+        {
+          "id": "edc3a4a9-79bc-48ed-87d5-4110aa0ee16e",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "Most of the, the rest of the discussion here is going to be you guys talking, not us. So we kind of set the framework and now we wanna know, what do you think is, you know, how can AI be used positively in the community? What are the concerns that you have? Um, so, you know, maybe we can try just everybody unmute and start talking rather than, than trying to moderate it, and we'll see how that goes."
+            }
+          ]
+        },
+        {
+          "id": "282b6fa7-772e-4223-9d3a-8c28ce58edb2",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "Barney, just behave yourself."
+            }
+          ]
+        },
+        {
+          "id": "05b3a5f9-4f9e-42f9-af8c-5f089b037bda",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Uh, I'll try to let other people get a word in edgewise first."
+            }
+          ]
+        },
+        {
+          "id": "3d007411-90ee-4c15-b031-085dd753fd1a",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "So,"
+            }
+          ]
+        },
+        {
+          "id": "2b0ef246-d7ce-48f3-b4e7-10c817e6b73b",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "I'll start. Something I considered last night, uh, at the city council meeting, they were talking about how, uh, long the permitting process takes, and I think there are a set of rules that have to be applied before a permit is issued. And I think that instead of having human view those sets of rules to see if the permit that the person is applying for, it could be, uh, the process could be sped up with AI. There are things like, uh,"
+            }
+          ]
+        },
+        {
+          "id": "1ea9bd00-810f-4d7e-8fbb-e9fc1996ca3a",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Traffic flow could be helped with AI. Other things like that. Uh, what worries me is that, uh, AI is increasingly being used for surveillance of the citizens, which will, uh, eventually will lead to control and restricted movement and all the things that are currently happening with the Uyghurs in China right now."
+            }
+          ]
+        },
+        {
+          "id": "f1a940e0-4a27-4391-981c-8de6dcbf9f1d",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "And I'm concerned that the uh the major players in this game don't have the best interest of the United States public at heart, and"
+            }
+          ]
+        },
+        {
+          "id": "bdd27231-0d6f-4524-8b5f-e4acb810b224",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "That the uh the way that this is going, being introduced to communities, backdoor deals, all of that, uh, it doesn't look like it's going in the right direction for the betterment of society. It's going in a direction that's going to ultimately hurt us."
+            }
+          ]
+        },
+        {
+          "id": "ef43f1a9-317b-4194-9ca7-81a746a043f6",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "Thank you."
+            }
+          ]
+        },
+        {
+          "id": "7d2bccae-8b6b-49f6-b547-efd4b84ac01c",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "So I, yeah, I think on Jonathan's points of like using it for permitting, say that's an example of where it can be super useful, if it's used correctly, but if a municipality were to just say, OK, the AI is deciding whether or not to approve permits, AI is not good enough, not accurate enough, doesn't have the judgment to be able to do that accurately, so it's gonna end up like approving things that aren't up to code."
+            }
+          ]
+        },
+        {
+          "id": "1e4e63ed-78ff-4655-bdc3-74b9ccb281e2",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Rejecting things that are up to code and so on, and so I think keeping in mind how to do that, how to use it as a tool without those side effects. So I don't know if that means, you know, what type of human oversight that means."
+            }
+          ]
+        },
+        {
+          "id": "338f17ec-80ed-4d91-9020-7ce2ccb75305",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "There always has to be human oversight."
+            }
+          ]
+        },
+        {
+          "id": "581c22b2-445f-43d0-bd81-1d81cb24817e",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "I'm"
+            }
+          ]
+        },
+        {
+          "id": "98fd0bb3-8518-4698-9c5c-9d1e6ca56d0e",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Uh, you know, the, the thing about it, and it's very interesting, you've started with homelessness and you've moved to AI. Nothing like taking on simple little issues, uh, you know, um."
+            }
+          ]
+        },
+        {
+          "id": "3eda589b-d7ed-4fcb-a4c1-7091b9678958",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "I, I, they're both very, very, very difficult issues to come to agreement on, much less to resolve, to shed more light than heat."
+            }
+          ]
+        },
+        {
+          "id": "a6d971f1-5480-4b13-bd5c-b939711cb259",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "And not turn into just foxholes and"
+            }
+          ]
+        },
+        {
+          "id": "0d69ce2a-55f2-4bbf-9988-74515178ddec",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "You know, to promote open-minded discussion, I, I've been thinking about doing something called, I've been wanting to do something called the High Desert Forum for decades, and I'm thinking maybe the High Desert AI Forum because here's the thing."
+            }
+          ]
+        },
+        {
+          "id": "65e5c8de-6c82-49a9-9d89-1260c962671f",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "I don't think we know how it's positively impacted our community because nobody's asking the question."
+            }
+          ]
+        },
+        {
+          "id": "89d7cc5a-3a9b-4e12-aae4-47fcb3b9f602",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "And it always reminds me of dieting."
+            }
+          ]
+        },
+        {
+          "id": "20fb9e6b-1d41-4a82-9443-28fd0d194b4b",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "The way a diet works isn't when you go, no, no, no. You find new healthy things to say yes to, and it crowds the other crap off the plate. It's not something where it's going to solve everything or it's not the devil incarnate. The Pope took a middle ground, but of course people picked things out."
+            }
+          ]
+        },
+        {
+          "id": "16891d2b-d880-407f-bc0b-e34790882376",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "That, that weren't also reminds me of the delegator's dilemma. Anybody who's been in management knows it can take longer to train someone how to do something and then to clean up behind them than to just do it yourself. You mentioned about city permits, and I'm thinking with that, of course."
+            }
+          ]
+        },
+        {
+          "id": "7435644a-dd2f-4b80-ad4b-bf5e8022f1ca",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "It's going to be able to do well with the code now, and it's going to get better. There's less hallucination than there was 1 year ago, 2 years ago, 5 years ago, but it's still a text prediction tool at this point, and it will get better. It, it's, you can't judge it on what it's like today with any kind of finality, because I tell people, how are you going to put guardrails on something that moves 25,000 miles an hour? And that's one reason a lot of people aren't involved in fear of the unknown because"
+            }
+          ]
+        },
+        {
+          "id": "227b95ee-8c2a-4bb9-8362-50c5f34fe34e",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "You learn it today, and that's out of date tomorrow because a new model comes out. So people have had great reasons for not diving in, fear of the unknown, all the kind of human nature things. But I think we have to shed more light on how it's being used positively, and I'm thinking I'm going to probably do stories about that. There was a magazine from the street called The Power of AI, and it had all these bite-sized nuggets of all these fields, medicine and education, everything of things that were being done well with it."
+            }
+          ]
+        },
+        {
+          "id": "f2462ab2-3752-48f8-b1e8-7d8aa350705a",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "That nobody's heard about because we're all focused on the latest model and the arguments between anthropic and OpenAI and the where where the politicians are taking it and where the markets are taking it. I think we have to get back to the human centered, people oriented, what has it done for you? And when it's done something well for you, letting people know or helping them tell their story, it'll stop there."
+            }
+          ]
+        },
+        {
+          "id": "86d4c83a-f4f7-4e82-98c0-cdf506e9b0dc",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "I will say, um."
+            }
+          ]
+        },
+        {
+          "id": "b772fd7b-5752-44b1-954a-84b0c3d37de7",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "I, I do have stories of a positive impact. I work a lot on equity and access, uh, with around technology. AI is allowing us to, to reach people who maybe English is not their primary language. So language access access is a huge thing, especially as a lot of forms, uh, ways that you do business is going all online. There's"
+            }
+          ]
+        },
+        {
+          "id": "b30c5080-0a77-4595-b45c-772476f240f5",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "There's less and less paper, uh, and you have to access it, but it's, it's not available in, in multiple languages. Well, with AI it can be, and we, we do that definitely at the university. So all of our extension."
+            }
+          ]
+        },
+        {
+          "id": "5e980765-7587-4857-9f84-9400079594eb",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "Uh, website, um."
+            }
+          ]
+        },
+        {
+          "id": "c26c277c-e032-4ea8-91fe-626c8d4312a1",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "80% is done by AI, um."
+            }
+          ]
+        },
+        {
+          "id": "ba958ccc-5466-4891-9117-04ccb7be5bd0",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "And 20% is human, but even the AI stuff, we have humans reviewing that info. It just cuts the time that we're able to do that. That's for Spanish. We don't have translators for all the other languages, and AI allows us to do it in a majority of languages. Uh, and we're able to train models specifically to terminology that is not typically found in your dictionary. So we're training it in extension and university in research language."
+            }
+          ]
+        },
+        {
+          "id": "d9b66ee4-3bf4-47ab-86e5-79420f79dc82",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "In the different languages. Um, so it's brought about efficiencies, being able to talk with people who are neurodiverse and give them access, uh, give access to technology to communities who have never had access to"
+            }
+          ]
+        },
+        {
+          "id": "1ce53c48-6e1c-4be9-95c0-c0bd27de0088",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "High tech"
+            }
+          ]
+        },
+        {
+          "id": "08be8c7d-8385-40f4-a4bc-2e0b14fce81b",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "Um, I've been working with Confederate tribes selects Indians and developing a workshop, which is not an AI workshop, it's actually an indigenous storytelling workshop, and we just use AI generative AI platforms to help them tell their stories. But in doing so, we're able to explore and discuss."
+            }
+          ]
+        },
+        {
+          "id": "40ec9196-c998-434e-a1d2-df5c6d13fc9d",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "The limitations of the Gen AI platforms. We're able to talk about bias and data sovereignty and copyright because we are working with the high school students and"
+            }
+          ]
+        },
+        {
+          "id": "b851fdfe-9c9f-40c8-b65c-e5710e81eb99",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "The gen AI together to explore and find those limitations, but also."
+            }
+          ]
+        },
+        {
+          "id": "b3a6b90f-d9d2-4f69-8ccf-58e79e80cb58",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "Where it is helpful and it augments and it complements. So being able to reach communities who have not traditionally had access and have experienced a lot of like hand me down technology, you know, oh, you get to use computers, you get to use this, you, if you get even access to that, now we're able to put like the latest, greatest in their hands."
+            }
+          ]
+        },
+        {
+          "id": "13987a4d-6795-484d-9af2-2e8ce048a0c5",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "And have them."
+            }
+          ]
+        },
+        {
+          "id": "de091c0d-575e-4d6f-9cbc-2022fe193e41",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "Have input."
+            }
+          ]
+        },
+        {
+          "id": "67c2d423-b55a-491e-8444-4943175728b9",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "Uh, into this, is this working, this is not. Does this represent your community and your personal identity or does it not? And so now they are able to inform a lot of that research versus waiting until it's been done and we thrust it upon people. So being able to do that."
+            }
+          ]
+        },
+        {
+          "id": "5a6b5b68-b5fa-4d45-9f45-6a1716eb48a4",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "At scale is, is a good positive impact. What worries me is, yes, it can give more access, but at the same time, it can create even higher, um,"
+            }
+          ]
+        },
+        {
+          "id": "5d77033d-2c1e-407e-90f9-cf0bfb6b5584",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "Inaccessibility or you know, the difference between the haves and have-nots is going to get even bigger because people who don't have access because maybe they don't have broadband, which often you need for this. Although we're starting to see local AI solutions. But if you don't have access to this and you don't learn about it, you could be at a very big disadvantage, even more so than just regular digital skills. So that's, that's one of my big worries."
+            }
+          ]
+        },
+        {
+          "id": "a9f51942-42a3-49d6-a97d-d4a1b78655a5",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "Well, thank"
+            }
+          ]
+        },
+        {
+          "id": "699111a9-ec49-44e2-9892-ec8e03b7c22b",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "you. Oh, go ahead."
+            }
+          ]
+        },
+        {
+          "id": "2dac46f0-8148-4d2a-8f91-ada37f0ca946",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "I was just gonna say piggybacking off of that, uh, for the."
+            }
+          ]
+        },
+        {
+          "id": "1ecad6bb-185b-4a77-9fce-cf669e25a824",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "I guess underserved communities that don't have access to broadband. There's also real limitations with AI platforms if you don't pay for it."
+            }
+          ]
+        },
+        {
+          "id": "740d144e-ff5d-4146-9b92-46ef3966f92b",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "So that could also distinguish the haves from the have-nots."
+            }
+          ]
+        },
+        {
+          "id": "584dab8b-16c3-4579-a9de-fe54c10df85e",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Um, yeah, thank you all. We'll have like time in a, in a moment to continue, you know, this. Um, I wanted to just point us to also, um, Solomar had put a comment in the chat, so I just wanted to, um, Solomar give you space if you wanted to voice that aloud, but if not, we got it in the chat, so, um."
+            }
+          ]
+        },
+        {
+          "id": "d0411e2d-094e-431c-b297-13643fb57250",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "OK."
+            }
+          ]
+        },
+        {
+          "id": "448b9430-454e-4fd4-be0d-18f22526656f",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "So, um, let's, we'll, we'll, uh, like I said, we'll be able to come back to all these kinds of, um, you know, topics in just a moment. So, uh, let's move on to the next slide here. So this section, we're talking about values and trade-offs and kind of all of that complicated stuff, and it will not feel like enough time to talk about that."
+            }
+          ]
+        },
+        {
+          "id": "ff13f040-954e-4576-85ae-840c3a3c1921",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "But we wanted to move into that section here and start actually with this brief kind of little um poll. So like, um you can just write in the chat maybe when you think about potential impacts of AI, which of these issue areas do you think of first, and you can also choose more than one."
+            }
+          ]
+        },
+        {
+          "id": "84e6671f-e079-4fd2-adc0-4b16726b170f",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Awesome."
+            }
+          ]
+        },
+        {
+          "id": "a1a4d1d6-c6c5-489e-8a60-5120f190d0d1",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "If there's any particular ones that come to mind, drop them in the chat."
+            }
+          ]
+        },
+        {
+          "id": "b341d335-b2d9-4608-a6e5-a8900ad597b9",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "OK."
+            }
+          ]
+        },
+        {
+          "id": "85703cd2-fff6-42eb-b6b6-5d779898d82e",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Great. And um"
+            }
+          ]
+        },
+        {
+          "id": "c4957b9e-4a94-47f8-be15-b81329544d08",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Great. While you are doing that, um, we can move on to the next, uh, slide maybe."
+            }
+          ]
+        },
+        {
+          "id": "4274bd87-490b-40e9-8ef6-ef7525733379",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "OK, so yeah, we have a few minutes here, um, about, yeah, 20 minutes or so to have this, this part of the conversation. So this is the bulk of it here. So what effects do we want, like in this, in this group, want AI to have in our communities? So we want to think about the effects for who are we talking about. For some people, you know, some groups of people or everyone."
+            }
+          ]
+        },
+        {
+          "id": "a485d60f-a240-4650-a7ed-ca0266c87d1f",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "You know, yeah, all these different ways you can sort of think about differences that people have, people in the present, you know, currently or in the future, all these things. We want to think about what are the risks. Are they worth taking or managing? There's always these trade-offs, right? So do we think these risks are worth it and are there things that we don't want to change? So yeah, this is, I think we have a small enough group. We're not going to do breakouts. We're just going to have one conversation here."
+            }
+          ]
+        },
+        {
+          "id": "d8191a48-1a59-480c-815c-2b7fb117afc5",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Um, but let's talk about some of these questions next."
+            }
+          ]
+        },
+        {
+          "id": "a9c05329-c25e-4241-ba74-e73be7c2da1d",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Mm."
+            }
+          ]
+        },
+        {
+          "id": "72ca9594-d7e3-4c6d-b5de-2b9845013400",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "It was a very hard question. Yeah,"
+            }
+          ]
+        },
+        {
+          "id": "5315fe80-ce95-42e1-bac7-32e488fb38e6",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "they're, yeah, they're hard."
+            }
+          ]
+        },
+        {
+          "id": "38371f5b-d982-4cbe-a46c-e202ba1baa30",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "So go ahead. Uh,"
+            }
+          ]
+        },
+        {
+          "id": "754115f4-1114-4fbc-82f7-c76361fa9cbf",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "I think it was, uh, 15 years ago, I was, uh, researching how Google was maintaining their data centers and they used AI to, uh, reduce their electricity bill. And I think that the kind of effects that we could have in our community is analyzing, uh, municipal water usage and"
+            }
+          ]
+        },
+        {
+          "id": "9203620e-a72d-4fd7-9ec5-671d9447c8fa",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Uh, electricity, things like that, and finding efficiencies, uh, based on just simply being able to process large amounts of data, uh, where it's, it's harder for a human to efficiently do that than it is with a little bit of help."
+            }
+          ]
+        },
+        {
+          "id": "0fbc2816-58c2-4da6-bf73-711cf2b8a593",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "I completely agree on that, and I've been talking about, we now have the technology of sensors and being able to put sensors everywhere and have AI analyze analyze the data that's coming in real time. I would love to see dashboards, public accessible dashboards around data centers, around communities so that people can see the effects as they're happening."
+            }
+          ]
+        },
+        {
+          "id": "a713bd75-e81a-46d9-b7f2-9053a53fa452",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "And able to mitigate it because they are now more informed versus trying to rely on"
+            }
+          ]
+        },
+        {
+          "id": "8b0ef8ee-951c-4ee1-a48e-bd31a70ec9a1",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "Uh, the tech industry to, to release their information, right? So it's like, OK, you're going to put something here, if you have to, uh, you know, some of them are needed and some of them are already there, can we at least have some transparency and be able to evaluate for ourselves."
+            }
+          ]
+        },
+        {
+          "id": "3865388c-9dfd-4351-93fe-40732949d54c",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "Using AI in real time to measure the effects as they're happening. And then if we see things that are going past certain what parameters that we set, it's like, OK, what can we do to slow things down, change things, and whatnot. So, similar to what you're talking there, Johnson, it's like using the technology itself to see how we can better it and lessen the impact on environment."
+            }
+          ]
+        },
+        {
+          "id": "a4e9b9ee-9bee-4d4e-a5c9-cbc804477548",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "I, I just remembered Google had another project, I think in, uh, uh, maybe 2014, uh, Project Loon, where they were using AI to process massive amounts of NOAAA data to be able to send a weather balloon out of California."
+            }
+          ]
+        },
+        {
+          "id": "0a4212ec-b0ae-444d-838b-bb42cb61b1fb",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "And have it land in Australia a block or two from their original target just based on the wind patterns, and all they had to do is raise the balloon or lower the balloon, uh, based on the wind speeds and, and direction in order to get that there. Uh, and they were using it as a, a spot, a way to get, uh, internet capability into areas that had been hit by disaster."
+            }
+          ]
+        },
+        {
+          "id": "1e8a6c6a-5d6a-4f32-91e4-ead640c9f658",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "And that's an an example of how AI can be used for good."
+            }
+          ]
+        },
+        {
+          "id": "c1d4b494-7e52-47ec-a5dc-58673923cf54",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Uh."
+            }
+          ]
+        },
+        {
+          "id": "97aafcfb-4514-45f3-a563-4d7f41b0f31b",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "The risk, that's a, that's a tough one for for me. I think that uh."
+            }
+          ]
+        },
+        {
+          "id": "50be13a7-4f9b-4371-a730-b5c45ddee664",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Like you can kind of see in real time with Gronk, how if Gronk has an output of something that Elon Musk doesn't like, he just goes in and changes the code, so that Gronk's."
+            }
+          ]
+        },
+        {
+          "id": "c34bb766-0da1-47c1-a027-8e267bd6ccbe",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Views are aligned with musks, and if there are a handful of people."
+            }
+          ]
+        },
+        {
+          "id": "f743fb10-4104-472f-a4a9-0f10dc6ef034",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Uh, in charge of the major AI companies out there."
+            }
+          ]
+        },
+        {
+          "id": "a5daac8e-6fb7-402a-af64-933fb2dd7adf",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "They could be feeding large groups of the population, a narrative that uh."
+            }
+          ]
+        },
+        {
+          "id": "97bf68be-8d12-45da-ac3d-b73d1b3b55c2",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "That shapes and forms their opinions, and that scares me."
+            }
+          ]
+        },
+        {
+          "id": "37ce452c-529b-4535-807a-9f2b84dfcd2e",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "I, I think one part of tech we have to."
+            }
+          ]
+        },
+        {
+          "id": "11f904e5-07d8-4add-b552-94dc59b2d330",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Use AI however we can to"
+            }
+          ]
+        },
+        {
+          "id": "c9518c7f-a849-4eb1-bde8-4b7c0fe1936c",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Kick to the curb is."
+            }
+          ]
+        },
+        {
+          "id": "7c613b49-2645-492e-a1fc-028cb7b09416",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "How"
+            }
+          ]
+        },
+        {
+          "id": "b54adfc0-30df-489a-b5e5-817e7fa115ae",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "You know, businesses have to make a profit, but algorithms in social media have led to the thing that."
+            }
+          ]
+        },
+        {
+          "id": "68353419-6690-42f2-b8f2-5098e2990505",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "We feared 30, 40 years ago about the internet when it was just really taking off, and I was a beta tester for America Online, and that was what I referred to back then as the Daily Me, where you just read things that reinforce your biases and stereotypes."
+            }
+          ]
+        },
+        {
+          "id": "6f301f5d-d335-43c2-8b96-3a81f5f4358e",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "So it's, it's"
+            }
+          ]
+        },
+        {
+          "id": "7ba15e92-f5aa-41c4-9025-1e62db1be9be",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "You know, self-driving cars will save thousands of lives, but if they kill one person,"
+            }
+          ]
+        },
+        {
+          "id": "08552187-5cd6-4f87-8f56-751ea0d765cf",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "We want to ban them. And, and finding the middle ground on these issues isn't easy, but we have to try. We thought it would, you know, the internet would connect the world. It did that, but"
+            }
+          ]
+        },
+        {
+          "id": "54d43ee4-4e42-4483-90e5-bd6de03883ff",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Get, get in a restaurant now and see a family of 6 all staring at their screens. Unintended consequences, trade-offs, messy details. We can't, like I wrote in one of my blog pieces recently, life is never binary. Why do we expect AI to be? It's, it's the biggest Rorschach test ever created. We get what we put in, and it can do amazing things if we use it as a collaborator, a brainstormer, but not the whole."
+            }
+          ]
+        },
+        {
+          "id": "b9b40b59-17d3-4ced-8dbc-7a59ffc1fb1b",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "You know, when we have self-driving cars, we're gonna figure out how to drive."
+            }
+          ]
+        },
+        {
+          "id": "b4c2be93-3c33-439b-bcbd-08a6fc7ac275",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Depending on balance, and, and we come back to the word balance, so"
+            }
+          ]
+        },
+        {
+          "id": "5acb0e17-3be5-4290-9908-f3043faf1b3d",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "I'll stop there."
+            }
+          ]
+        },
+        {
+          "id": "510e2182-1e23-47bf-b905-9b74448c05e1",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "I don't mind if we forget how to drive, if self-driving cars can do it for us, like."
+            }
+          ]
+        },
+        {
+          "id": "f708e240-c4ec-404e-805f-8e807ded85bc",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "How many Gen Z know how to use a clutch, I guess they don't anymore, um, but"
+            }
+          ]
+        },
+        {
+          "id": "01cd7fcf-3a3e-44e9-b474-52e2293e3f57",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "14% of Americans."
+            }
+          ]
+        },
+        {
+          "id": "1b50120d-b01b-4890-a402-ca0de5d62355",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "But I think on that number 2 on the risks, um, the environmental, I mean, car analogy is great, it's like I get in my car, I drive to Ben, I'm spewing out emissions, is it worth it? And maybe it is if I have to drive somewhere important, if I'm"
+            }
+          ]
+        },
+        {
+          "id": "01097182-5e07-4f68-b726-d1a3e20f9b61",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Just going for a drive that I don't need to go on, maybe I should have carpooled, maybe it's not worth it. So, I mean, the, the horsepower behind AI does a lot of damage. It, you know, spews noise pollution, light pollution,"
+            }
+          ]
+        },
+        {
+          "id": "6ef129b1-bc32-4cdd-9951-0f3ab36f7cd1",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Um, emissions and CO2 from the power generated, and yes, data centers can be powered by renewable energy, if we had that excess of renewable energy, but right now we don't. It's like we went to all this trouble of like replacing our incandescent light bulbs with LEDs, and that doesn't even touch near the order of magnitude of power that AI uses. So, I think the, is it worth it, and what that balance is, is something."
+            }
+          ]
+        },
+        {
+          "id": "ef2fc5b8-99d6-445a-9698-be3df7b29053",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "To really think about, and just like with, you know, driving the car, it's like if I'm using AI to create a picture of my dog in a Superman costume, that's adorable, but it's not worth it."
+            }
+          ]
+        },
+        {
+          "id": "c598fa73-cb3d-4b15-927c-a2562aacfa38",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "But there are a lot of uses that may be worth it."
+            }
+          ]
+        },
+        {
+          "id": "25019800-a435-46d6-a4d8-5786cd36e945",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "So keep in mind that AI can, can help solve the problems that it creates. Today, one of my many newsletters, Microsoft just said that their new data centers will have roughly the same water use as in a single restaurant thanks to a closed-loop system where they reuse the same water."
+            }
+          ]
+        },
+        {
+          "id": "431e72ef-307e-4ed0-9b67-458bca05570b",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Yeah, it's just a small example of if we point it in the right way and we, we ask it the right questions."
+            }
+          ]
+        },
+        {
+          "id": "5ad29576-24ed-4126-abdf-ad8d613d5e24",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "We, we, it can help temper the negative impacts, but if we just, we can't unring the bell. We just have to learn to ring the bell better. You can't reverse. I mean, it's like people who, you know, were against calculators and classes or, you know, buggy whips, uh, you know, creators. I mean, you can't go backwards. You have to find a better way forward."
+            }
+          ]
+        },
+        {
+          "id": "6ccf8f18-eef2-4de4-8b1f-5d34c1504071",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Yeah, I mean, the, the closed loop thing is a whole other issue that doesn't live up to its promise, but like, yeah, that, you know, we, we have it. How do we deal with it, kind of like with cars, we have them, so we, you know, create catalytic converters and more fuel efficient cars and taking lead out of gasoline and kind of what can we do and encourage carpooling, public transit, what can we do to reduce the impact while still having it as a useful tool for transportation."
+            }
+          ]
+        },
+        {
+          "id": "aed210e7-ea57-46af-b7af-d6dbd0e48f37",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "I, I can see a future where every household has a TPU that's connected to a solar power that powers that one TPU, and they're all connected by a mesh network and everything's working that way. Uh, I can see building a future like that, but I, I don't think that we're there yet."
+            }
+          ]
+        },
+        {
+          "id": "6e8a341a-cfe7-4132-af14-9d55f3bbf530",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "Yeah, and video is actually starting to experiment with that now, with new construction, so having a personal local GPU, um, instead of having to go out to a data center, and if you have enough of those, you know, in a city at some point, so, so there are creative solutions, uh,"
+            }
+          ]
+        },
+        {
+          "id": "b9458932-13a6-4826-b261-d3d37e972801",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "The thing I also tell people is like we could all stop using AI completely."
+            }
+          ]
+        },
+        {
+          "id": "8f5d690e-55cc-4a21-99ec-4590aec53b4c",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "And DOD and the government use alone is going to create so much havoc and use from it. Because what we do compared to what the government is doing because we're at war with China and everybody else trying to, you know,"
+            }
+          ]
+        },
+        {
+          "id": "14f8d3d4-bfaf-4bec-b393-cacd6d8c55e7",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "Reach this goal of general AI, uh, and when the AI wars, it's, it's much more than we all could ever affect. Not to say that we shouldn't, everybody should consider what their use of technology in general, uh, is. And just because we have access to it doesn't mean that we should use it. But we have to be informed enough of to, you know, what are we doing and how does it"
+            }
+          ]
+        },
+        {
+          "id": "dc344fcc-9979-45f5-aad7-b30f4ca9fcc8",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "At the same time, we still don't know all the risks. There isn't, there's stuff that we won't know for a while."
+            }
+          ]
+        },
+        {
+          "id": "9dafeb1b-4269-4bb4-8220-3b66beec45ad",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "I just put something. Oh, go ahead,"
+            }
+          ]
+        },
+        {
+          "id": "7d2ebdd2-5b89-4984-825a-05bc22d85162",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "sorry. Uh, I was just gonna say I've, I've recently, like, uh, 2 or 3 months ago, got involved with an organization called Restore the Fourth, and, uh,"
+            }
+          ]
+        },
+        {
+          "id": "671e1262-62ad-4343-9324-80a6ef9f2d15",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Right now the government's using these AI systems to collect data on on foreign nations, uh, people they deem as threats, and they're swooping up everything. And in that they're swooping up Americans' data too, and I have seen how much resistance the politicians have to."
+            }
+          ]
+        },
+        {
+          "id": "dad8a931-3c8d-4974-bbbc-bd9cdd694923",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Pass something that protects Americans from having their data swooped up into this and having the US government do warrantless surveillance on American citizens, which is how the FISA Section 702 is currently working. And"
+            }
+          ]
+        },
+        {
+          "id": "3ee17261-5425-4c96-b2f2-101a13c536d8",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "It seems to me that every time we get close to a good solution."
+            }
+          ]
+        },
+        {
+          "id": "5de34c5b-6d98-4609-8280-6f0971efb1d0",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "There's corporate lobbying and how do you fight?"
+            }
+          ]
+        },
+        {
+          "id": "c7970696-80b2-4c7b-b184-bd2237509f58",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Uh, corruption and money to get things right. That's another thing that you've got to, we've got to factor in, in conversations like these is that, uh, it's really hard to get decent legislation passed when there's so much money like OpenAI right now is uh and Meta are funding the age verification thing at operating system level and uh."
+            }
+          ]
+        },
+        {
+          "id": "551c0bc4-dfa8-44fb-8290-4e8d6bfb8509",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "You have to, I keep telling like my state rep, you've, you've gotta really think about what the end goal is there, and why, uh, why they're putting so much money into these projects. Pretty soon there's not gonna be, if, if this keeps going that way, there's not gonna be any anonymity online."
+            }
+          ]
+        },
+        {
+          "id": "60b7b8c7-11fa-4d85-acb1-43dfeaacc18e",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "And"
+            }
+          ]
+        },
+        {
+          "id": "10c3f9ca-e5a4-4b5b-80ce-09f47a3c30f7",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "there's anonymity online? Where?"
+            }
+          ]
+        },
+        {
+          "id": "5d1f6ae0-ce1e-4d24-9c1f-76cde39baf7b",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Oh, there's still ways, but uh they're, they're slowly, like they're some people are trying to push legislation to get rid of VPNs, uh."
+            }
+          ]
+        },
+        {
+          "id": "ef8e768c-f185-49ea-8169-2e6b310a0931",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Right now, any."
+            }
+          ]
+        },
+        {
+          "id": "714a476f-e375-4b79-9222-8af00988c00b",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Anyway you have uh to go out and be anonymous, that's slowly being taken away."
+            }
+          ]
+        },
+        {
+          "id": "d176464a-ac62-4eed-838c-52b419c52431",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "And once you're, you can't be anonymous at all, and all your data is being processed by, uh, artificial intelligence and profiles are being made about you, uh."
+            }
+          ]
+        },
+        {
+          "id": "41e86ad5-977f-4970-bcee-c9e5b4b559b0",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Right now, uh, we've given up a lot of those rights by turning, signing terms and conditions to our cell phone providers and computer software providers where we freely give up that information, but the, the databases are being consolidated more and more through corporate acquisitions and other methods, and the less people that"
+            }
+          ]
+        },
+        {
+          "id": "30a3ab9c-72b3-4739-886e-5394e341ba8d",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Have control over the databases, the, or the, the less diversity in databases where they all funnel up to one, the more detailed the profiles are. And once you have a detailed profile of everywhere a person goes, everything they buy, uh, every aspect of their life, where they go to church, what, uh, hospitals they go to, every single portion of everything they do."
+            }
+          ]
+        },
+        {
+          "id": "144d202e-0f87-4a88-bd63-dc96e95e88aa",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Then"
+            }
+          ]
+        },
+        {
+          "id": "923a31d7-9e69-4db3-8a76-ef50420204bb",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "People will be able to be manipulated through, uh, programmatically targeted advertisements and just a myriad of other ways."
+            }
+          ]
+        },
+        {
+          "id": "d480baee-aa54-4acd-9b77-f8947e345e1f",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "That's already happening."
+            }
+          ]
+        },
+        {
+          "id": "b748c64a-0e30-4c2f-9871-80b12de90eb4",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Oh, I know, yeah, but not, not to the scale of what Jonathan's talking about."
+            }
+          ]
+        },
+        {
+          "id": "d0637269-5ec1-4dbd-b74b-0e5d1501e936",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Well, I understand, but here's and they're"
+            }
+          ]
+        },
+        {
+          "id": "f4143705-a89e-430d-96f3-83d95d2e8982",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "putting cameras now everywhere and, and they've got signal trace where they can track every, uh, device that travels in the car with you. Like it's, it's insane. The,"
+            }
+          ]
+        },
+        {
+          "id": "9f635194-af07-4e00-8d4a-3c0058978c13",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "this is what started a blog 15 years ago called Rejecting the Blame Society."
+            }
+          ]
+        },
+        {
+          "id": "5246b936-a28e-4ecc-8021-80c350ebae71",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "And the bumper sticker slogan I use for that is the cognitive dissonance of I want to have my cake, eat it too, not get fat, have someone else pay the bill, and if I can't, it's the fill in the blanks fault."
+            }
+          ]
+        },
+        {
+          "id": "e3eee193-86a2-423e-9c0a-fa5ad9122b15",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Those those red light cameras are aimed at saving lives. They're not aimed at generating ticket revenue. They're aimed at saving lives."
+            }
+          ]
+        },
+        {
+          "id": "db1e468f-3bf0-48ec-b649-1a351461824d",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "And I get that the"
+            }
+          ]
+        },
+        {
+          "id": "25e58d7a-be73-4d14-a33c-a3db05be61a4",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "trade-offs are, are the trade-offs worth"
+            }
+          ]
+        },
+        {
+          "id": "23d3033b-0082-48e7-93be-dda575267ae5",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "it."
+            }
+          ]
+        },
+        {
+          "id": "29cf3858-c3a9-4af9-a7ed-835406c8ba78",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Yeah, I mean, that's a big trade-off though is because the red light camera isn't just catching people running red lights, it's tracking everybody that drives by there knows that your license plate was in that place at that time, can correlate it to all the other data that Jonathan's talking about collecting"
+            }
+          ]
+        },
+        {
+          "id": "a2b66260-0218-44cf-bdf2-382a2857e68d",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "and building that"
+            }
+          ]
+        },
+        {
+          "id": "74313f05-7f2e-4312-aec3-11de55b8a0b4",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "more debate about flock, about what it, what these things should be allowed to do. We all know that government regulation solves very little, if anything."
+            }
+          ]
+        },
+        {
+          "id": "cda22fdd-6a15-4ec2-876a-71403e96531f",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "And, and that's because, you know, people promise big changes. They get into government and they find out not that they're bought off, but they find out why things were done that way in the first place. We can't leave human nature out of the equation."
+            }
+          ]
+        },
+        {
+          "id": "7be5d79b-3bea-4572-bcda-8f728c9fec5a",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "I, I think a big problem is the, the lack of transparency. Uh, if people actually had input and knew what was happening and people were open, technology was, there was dialogue, it would be a lot easier to"
+            }
+          ]
+        },
+        {
+          "id": "e2801bf8-3a58-4957-875a-9db0082ec639",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "I mean, there's gonna be some compromise"
+            }
+          ]
+        },
+        {
+          "id": "9ceeb50b-592a-41a9-8ece-cefc09d833e2",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "that happen. I, let me tell you a site, I don't know if any of you have ever heard of called Citizen Portal. It's not perfect, but one of the things they're doing as a special project with another organization is they're down to the level of City of Bend. They are recording meetings and they can use AI to transcribe and summarize, and one of my grand visions, and I have a lot of them, is one where when the Bend City Council is dealing with an issue you care about, you get an immediate alert."
+            }
+          ]
+        },
+        {
+          "id": "95ac6aa6-70bb-499b-bba6-76bf1c3622cf",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "or you get a digest of what they're doing and they're working with another organization that tracks where the money is going. And these, these ideas are, you know, how you stay involved without having to go to, you know, four-hour city council meetings. The technology fueled by AI can make sure you're aware. What they can't make you care, but they can at least keep you informed."
+            }
+          ]
+        },
+        {
+          "id": "5ca6b701-deec-4def-baf5-7af63d82bf34",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "Right. And if you're talking about local government or just government in general, there are ways that you can do that. But when you're talking about private industry, they don't necessarily have, because we don't have regulations on, you know, transparency. So it's really hard."
+            }
+          ]
+        },
+        {
+          "id": "299758ea-7975-45d3-baad-cba8ce66a379",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "To"
+            }
+          ]
+        },
+        {
+          "id": "5a8173eb-989f-4dea-bbb8-202cc5ddf5fe",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "Protest, uh, especially if you don't know exactly what, what's going on in the background until it's too late."
+            }
+          ]
+        },
+        {
+          "id": "51bf3f59-e777-4743-9cf3-d456395f92e5",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "But how about you having an easy access to how much money they are getting from who, and you don't have to go digging through 5 miles deep of databases."
+            }
+          ]
+        },
+        {
+          "id": "ac32c297-7a37-4824-a5a8-f7be462916c2",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "Sure, but you'd have to regulate"
+            }
+          ]
+        },
+        {
+          "id": "7bdd851c-83d4-4c63-b207-266b5c705c87",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "that perfect answer, but it's"
+            }
+          ]
+        },
+        {
+          "id": "d3673575-e1ab-480e-a1e3-a5476c4a3605",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "a piece of the answer."
+            }
+          ]
+        },
+        {
+          "id": "e980cb90-5792-4bc7-a9e7-426854066a7f",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "Yeah, and you'd have to regulate that because you can't, there, there's, you know, there's"
+            }
+          ]
+        },
+        {
+          "id": "7ce24e60-3194-4d1e-85cb-743b314df9af",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "Ways of hiding that. I mean, they're using third parties, they're"
+            }
+          ]
+        },
+        {
+          "id": "ab96d19a-56d3-47ff-97da-4f2cb7fcf105",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Well, who wins most land use fights? The lawyers."
+            }
+          ]
+        },
+        {
+          "id": "39a2ddd8-495d-4b09-8020-c9e844a11dd9",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "You know, government is in a position where if they haven't set rules that prevent something because state land use law says you got to be able to grow up because you're not going to sprawl through the countryside and the voters backed that 3 times, you can't look for perfect answers. You have to weigh the trade-offs."
+            }
+          ]
+        },
+        {
+          "id": "6597ab5e-7f14-47a8-b583-d404187f4253",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Sorry."
+            }
+          ]
+        },
+        {
+          "id": "2c79c82d-12d5-49ee-8f4c-8ad5d236b226",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "No, I totally agree. I think that's what we're saying here. Um,"
+            }
+          ]
+        },
+        {
+          "id": "1d0b90b6-cdaf-4896-a8f2-e46309fc2b48",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "I'm just gonna, oh, sorry, go ahead."
+            }
+          ]
+        },
+        {
+          "id": "c9e96aff-eab4-47cf-8f11-47b2b17d0d16",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "Well, I, I think people just want to be able to, to speak their mind and see action, uh, based on that and have more transparency and people be willing to"
+            }
+          ]
+        },
+        {
+          "id": "1bb8a722-fa4f-4350-b5ea-227406f15747",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "Talk about the issues versus trying to hide things. It just creates more problems."
+            }
+          ]
+        },
+        {
+          "id": "bce26d37-b303-4cf1-844e-b96424e44d6c",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "I'm just gonna um just take another moment and I wanted to ask um Solomar if uh you wanted to add anything, um, you already have before in the chat and we, yeah, appreciate that, but wanted to just give you some space if you wanted to add anything else at this moment."
+            }
+          ]
+        },
+        {
+          "id": "ed67200c-5240-4f73-af18-5e23d7d9bdb7",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Just pause for a second."
+            }
+          ]
+        },
+        {
+          "id": "cb19daba-69bf-4233-8c68-5b3db795ef40",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "No, I don't need to add"
+            }
+          ]
+        },
+        {
+          "id": "c31b32c4-d111-492e-aa61-56de42a387be",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "anything."
+            }
+          ]
+        },
+        {
+          "id": "20bd416d-a0e7-4ccb-9e02-22c416f26dfb",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "OK, wonderful. Thank you. Um, perfect. So, um, we've got just a couple more minutes, um, to, before we need to kinda start wrapping up, so, um,"
+            }
+          ]
+        },
+        {
+          "id": "cb7fdbd9-5c9d-4d0f-90f4-477b528fa365",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "I think if maybe if anyone wants to share, you know, a last thought before we move into just a couple minute reflection on sort of the process here and wrap up, so any one last comment, I know this is totally not enough time to actually explore this, you know, this issue fully, but last sort of comment for everyone if, if you'd like."
+            }
+          ]
+        },
+        {
+          "id": "08427f90-a3bb-4236-8c5b-5b3f0e9de021",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Uh, I'll go. I'd like to see a world where, uh,"
+            }
+          ]
+        },
+        {
+          "id": "1cf48887-8858-459e-a8a8-e6163916aba6",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "The government takes over some of this instead of."
+            }
+          ]
+        },
+        {
+          "id": "5f39bdad-4215-4b18-b164-7c6879355c20",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Anything that involves people's data being processed through AI instead of them freely handing that data over to third party corporations that are their profits are increasing every quarter and they're multi-billion dollar corporations and instead of them giving them."
+            }
+          ]
+        },
+        {
+          "id": "78ba0c32-952f-4fcc-9b4f-719169962a52",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Another $2.5 million contract. I'd like to see them invest that $2.5 million in the hardware and software so that the public can come through, uh, help the the leaders create the laws that protect the public, and everything's used for the common good. There's no profit going to corporations that don't deserve it."
+            }
+          ]
+        },
+        {
+          "id": "98e1095a-80fc-4916-9f77-167c9ff7a9d9",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "There is everything is is for the people by the people of the people."
+            }
+          ]
+        },
+        {
+          "id": "c236a048-5f4a-4f88-9a9b-e657fa7f48a5",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Right, thank you."
+            }
+          ]
+        },
+        {
+          "id": "1b5d4fbc-ff55-42cb-ac85-4f65ed0353b5",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Yeah, I think building off of that, keeping in mind."
+            }
+          ]
+        },
+        {
+          "id": "71f016fe-a39a-4e4b-b37c-21774809926f",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "On what our solutions is there's"
+            }
+          ]
+        },
+        {
+          "id": "93c0d744-c72b-4572-a102-39f63e4fffc5",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Like many things in politics, there's massive profit motives behind it, and I mean that's what's driving the stuff Jonathan's talking about, like the legislature had a solution to keep our data private, and then the Axon and Flock lobbyists came in and he was like, no, we need to strike that because we would need to have access to everybody's data, and they did. And so we can come up with the best, most functional solutions in the world, but then how do we actually get those to happen."
+            }
+          ]
+        },
+        {
+          "id": "1a0b1c61-ed6c-4a5a-9587-40a8f72e3ad6",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "If they're not in line with profit motives."
+            }
+          ]
+        },
+        {
+          "id": "cdbf69b1-083c-4c4a-85a8-c9fa36ba7578",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Thank you."
+            }
+          ]
+        },
+        {
+          "id": "e61b9df8-436e-40ce-8d9d-fe634247e153",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Uh, Victor Barney."
+            }
+          ]
+        },
+        {
+          "id": "9606d028-c92f-4ca1-998e-38bad0a7cf43",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Go ahead, Victor."
+            }
+          ]
+        },
+        {
+          "id": "2e6c8a79-de10-41af-9315-928a82197587",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "I would say, uh, I'm, I'm sure many of you have heard the term, the human in the loop. And I'm, I'm actually getting away from that because you can still have the human in the loop and still not and still have AI taking over. Uh, an example is someone just doing the question answer, right? You're entering a prompt, you get a result, like you have the human in the loop."
+            }
+          ]
+        },
+        {
+          "id": "df4fed11-7107-440a-b319-8a47de21d52a",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "But you're still relying on AI to give you the answer. So what I'm starting to say is like we need human in the lead."
+            }
+          ]
+        },
+        {
+          "id": "fd95ad77-ced9-4c4b-8805-127c6b6903cb",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "And, and that's something that I don't ever want to change. We have to have humans still being in control of the technology and making the decisions whether to be used or not. I don't want AI systems to make just across the board, oh, we're just going to decide to do this, especially when it comes to weaponization. Uh, but we've seen the federal government didn't want to work with anthropic because anthropic did not want to."
+            }
+          ]
+        },
+        {
+          "id": "3caf6280-a888-4be4-a8e1-b3bde73c92bd",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "Uh, use cloud for a weaponization, um, but because it's money, OpenAI said, hey, we'll do it, we'll take the money, and, uh, so if we get to where the machines are making decisions on human lives, that's, that's a hard stop for me."
+            }
+          ]
+        },
+        {
+          "id": "d12c81da-fd82-4145-af22-6d710bf5d93e",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "One of my blog posts was, don't you dare feel guilty for using AI as a glorified search engine."
+            }
+          ]
+        },
+        {
+          "id": "2c8d26fc-9701-462e-81f0-a57467a99a8b",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Because it is Mr. Know it all, as I used in one of my blog things. You just, and one of the nice things I love about perplexity, and I, but I'm the weirdo who loves Wikipedia, even though anybody can change it, but it's the most heavily footnoted to legitimate sources in the world, and that's what all the LLMs are doing, along with getting longer memories so that you don't have to repeat yourself. And there is so much information out there from people who are"
+            }
+          ]
+        },
+        {
+          "id": "6b99e569-687b-41da-83bd-6a134bdc0c2f",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Well, people are trying to sell people on selling people on selling people. There's a multi-level marketing to AI right now in training, but you have to cut through that. I've been helping a company or hope to help a company called Learn Air based right up in Redmond to do a training. The AA AI training and their slogan is not a bad one. It's don't forget the human part. And, and the point is,"
+            }
+          ]
+        },
+        {
+          "id": "f0001ced-4b79-40a7-aa78-cf9fb2b11105",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "You can get great answers there. You need to check them. It's trust but verify, you know, and I really think we just need to."
+            }
+          ]
+        },
+        {
+          "id": "2dce7c49-6fd0-4e57-ba86-f87108eb8f91",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Balance our debate. I'm part of a group called Braver Angels that brings the red bucket and the blue bucket together with a system on how to talk to each other, how to listen to each other, how to do those messy things called compromise. And to me, I, I was on the international debate a few weeks ago, and I said, no, you need purple because it's the people who are not in diametrically opposed camps who are, you know, feeding off of the things that only say bad or only say good, and it's the people in the messy middle that are really going to solve this stuff."
+            }
+          ]
+        },
+        {
+          "id": "205a1996-5eb9-4f3f-b6f5-9ebff4ecfb45",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Well, thank you so much, and I, on that note, I think that you all are the people in the messy middle that are doing this hard work of trying to grapple with these questions that, you know, we as a society need to. And so just thank you. Like this is helping this actually, you know, like we were talking about at the beginning, this is informing future conversations in"
+            }
+          ]
+        },
+        {
+          "id": "01f9d00e-ed83-47f6-9d6d-fb7324aa3874",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Um, Central Oregon, and hopefully, you know, informing community decisions on what to do about this. So thanks again for being here. Um, so yeah, some possible next things you might be able to do to stay involved, um, share the open poll, uh, take it yourself if you haven't. You can recommend that others sign up for these kinds of conversations. I think there's some others that are in person."
+            }
+          ]
+        },
+        {
+          "id": "b1e20865-8f45-4f64-9e08-f7b67857d276",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "And, uh, and then maybe one or two others that are online. I'm not sure if they've happened yet or not, but they're, you know, they're happening now. So, um, sign up on the mailing list, uh, yeah, and, and volunteer if you feel like, you know, you want to facilitate or know someone who wants to facilitate a conversation like this or just any of the other things that, um, uh, COCAP is, is working on, um, yeah, just get involved and, yeah, anything, any comments that you have, you know, maybe send them to Patty or, um."
+            }
+          ]
+        },
+        {
+          "id": "db1aaff7-7aa2-4b43-a7c7-6d4a218516dc",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Or uh someone at at CCAP to see, you know, how, how you think we might be able to improve. Um, let's see. Patty any last uh thoughts that you wanted to share?"
+            }
+          ]
+        },
+        {
+          "id": "c2360b54-7370-42a5-bfec-40078caef0aa",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "Just that this has been great. We really appreciate everybody's um participation and would love to keep the, the dialogue going. So, um, if you haven't already given us your contact information, if you go to the poll, uh, at the bottom of the poll page, there's a place for you to put in an email address. We promise that we won't abuse it or sell it, or, uh, you know, throw it into an AI somewhere. Um,"
+            }
+          ]
+        },
+        {
+          "id": "93f11deb-1d20-4090-bf32-d9c6a3e2e62f",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "But that we will, uh, keep you in the loop with, uh, what we're doing with the next phases of this, and, um,"
+            }
+          ]
+        },
+        {
+          "id": "41b9afe2-4b1c-4bfd-bee9-41f3a6ff1205",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "You know, let you know where it all comes out in the end."
+            }
+          ]
+        },
+        {
+          "id": "7f5ec30a-8c01-40aa-b493-e6a94acceb56",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "And let's keep talking because that's, that's really the only answer. Um, I tell, I tell people as a reporter, I said I don't know anything. I just usually know who knows and I try to ask the right questions and quite often I tell myself, I don't have to tell the story, I have to help them tell the story and I gotta get out of the way and I think, you know, these different issues."
+            }
+          ]
+        },
+        {
+          "id": "ef07f266-1647-432c-844f-bf148ed5189e",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "are not going to solve themselves if we just dig in deeper into our foxholes. They, they are never going to get easier, especially when you think about the AI brain in a robot that looks like people. We think we're having issues now. Wait for human looking robots and hidden AI, you know, right now it's a chatbot, but it will be part of things that we will have trouble telling what AI is doing because it's not this finite separate thing."
+            }
+          ]
+        },
+        {
+          "id": "64a95f99-a327-4067-8bc9-2a8cb19d4e24",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "So this debate is going to evolve as the technology does."
+            }
+          ]
+        },
+        {
+          "id": "1a472f69-0f4f-4b36-854d-be816749aaf0",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "Absolutely, and I think, you know, the, the key tenet of COCAP is to include lots of voices in that discussion. You know, decisions are gonna be made, even if that decision is, oh, we're not gonna regulate it, we're just gonna let them do whatever the heck they want, but if we don't share our, our concerns, our advantages, um, then those decisions are gonna be made that don't include our perspective."
+            }
+          ]
+        },
+        {
+          "id": "bdf7a1e4-bb5d-4b95-9e8e-b77da64a3a6e",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "And I think that's a big part of the, the issue that people have and why people, you know, don't like data centers in part is because they just happen and then you find out about it later, right? So, continuing to be part of the discussion, I think is vital."
+            }
+          ]
+        },
+        {
+          "id": "91f5e4a6-dd25-4709-9685-1231f6db9069",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "I always say about government, it's like people are told, no, it's too early to talk about that. We haven't made up our mind yet, or no, it's too late, the decision is made. The trick, speaking of messy middle, getting to that middle point where the, where you can really affect the outcome is tricky and things like Citizen Portal might help us at least be aware and"
+            }
+          ]
+        },
+        {
+          "id": "e7591279-c1b3-4f28-ab9e-2ece091fcad6",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "But we gotta keep talking too,"
+            }
+          ]
+        },
+        {
+          "id": "9f5b0043-2a29-448d-8c0d-4a731182b3f3",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "so absolutely. So talk to your friends, encourage them to complete the open poll and become part of this discussion as well. And thank you so much for, for joining us and have a wonderful rest of your evening."
+            }
+          ]
+        },
+        {
+          "id": "d4ca9a9a-965e-48d9-a560-f8dd91580893",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Thank you all. Thank"
+            }
+          ]
+        },
+        {
+          "id": "d27d5958-ed8a-4bc4-a07e-45f8bba9f496",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "you for hosting this."
+            }
+          ]
+        },
+        {
+          "id": "0e94b14a-e374-4ffa-a2ab-da2d53cd00a7",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Yeah. Take care."
+            }
+          ]
+        }
+      ],
+      "date": "2026-06-08T07:44:27.981Z"
+    }
+  ],
+  "metadata": [
+    "v0.2",
+    {
+      "duration": 0,
+      "startTimestamp": 1780904570696,
+      "totalCost": "",
+      "author": "",
+      "organization": ""
+    }
+  ]
+}

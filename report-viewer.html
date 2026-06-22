@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report Viewer</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5; color: #1a1a1a; margin: 0; background: #fafafa; }
+
+  /* ---------- welcome ---------- */
+  #screen-welcome { display:flex; align-items:center; justify-content:center; min-height:100vh; padding:40px 20px; }
+  .welcome-box { text-align:center; max-width:440px; }
+  .welcome-box h1 { font-size:1.8rem; margin:0 0 8px; }
+  .welcome-sub { color:#666; margin:0 0 28px; }
+  .open-btn { padding:12px 28px; font-size:1rem; background:#5aa469; color:#fff; border:none;
+    border-radius:8px; cursor:pointer; font-weight:600; }
+  .open-btn:hover { background:#4a9058; }
+  .err-msg { color:#c25b5b; font-size:0.88rem; margin-top:12px; min-height:1.4em; }
+  .welcome-note { color:#aaa; font-size:0.78rem; margin-top:20px; }
+  .welcome-note a { color:#aaa; }
+
+  /* ---------- report list ---------- */
+  #screen-reports { min-height:100vh; }
+  .rlist-header { display:flex; align-items:center; gap:12px; padding:14px 24px;
+    background:#fff; border-bottom:1px solid #e2e2e2; position:sticky; top:0; z-index:10; }
+  .folder-label { font-size:0.9rem; color:#555; }
+  .folder-label strong { color:#1a1a1a; }
+  .rlist-header button { margin-left:auto; padding:6px 12px; border:1px solid #ccc;
+    background:#fff; border-radius:6px; cursor:pointer; font-size:0.85rem; }
+  .rlist-header button:hover { background:#f0f0f0; }
+  .rlist-wrap { max-width:880px; margin:0 auto; padding:28px 20px; }
+  .rlist-title { font-size:1.1rem; color:#888; font-weight:500; margin:0 0 16px; }
+  .rlist-grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap:14px; }
+  .report-card { background:#fff; border:1px solid #e2e2e2; border-radius:10px; padding:18px 20px;
+    cursor:pointer; transition:border-color .15s, box-shadow .15s; }
+  .report-card:hover { border-color:#5aa469; box-shadow:0 2px 10px rgba(90,164,105,.15); }
+  .report-card h3 { margin:0 0 4px; font-size:1rem; }
+  .report-card .rc-date { color:#999; font-size:0.78rem; margin:0 0 10px; }
+  .report-card .rc-stats { color:#777; font-size:0.82rem; display:flex; gap:10px; }
+  .rlist-empty { color:#aaa; font-size:0.9rem; padding:20px 0; }
+  .rlist-section-title { font-size:1rem; color:#888; font-weight:500; margin:32px 0 12px; border-top:1px solid #eee; padding-top:28px; }
+
+  /* ---------- viewer ---------- */
+  .viewer-wrap { max-width:880px; margin:0 auto; padding:0 20px 90px; }
+  .topbar { position:sticky; top:0; z-index:20; background:#fafafa; padding-top:16px; }
+  .back-btn { background:none; border:none; color:#5aa469; cursor:pointer; font-size:0.88rem;
+    padding:0; margin-bottom:6px; display:inline-flex; align-items:center; gap:4px; }
+  .back-btn:hover { text-decoration:underline; }
+  header h1 { font-size:1.5rem; margin:0 0 4px; }
+  header .desc { color:#666; margin:0 0 16px; font-size:0.95rem; }
+
+  .tabs { display:flex; gap:4px; border-bottom:1px solid #ddd; margin-bottom:16px; }
+  .tabs button { border:none; background:none; padding:10px 14px; cursor:pointer; font-size:0.95rem;
+    color:#777; border-bottom:2px solid transparent; margin-bottom:-1px; }
+  .tabs button.active { color:#1a1a1a; font-weight:600; border-bottom-color:#5aa469; }
+
+  .controls { display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-bottom:20px;
+    position:sticky; top:var(--topbar-h, 132px); z-index:19; background:#fafafa;
+    padding:8px 0; border-bottom:1px solid #eee; }
+  .controls input[type=search], .controls input[type=text] {
+    flex:1 1 200px; padding:8px 10px; border:1px solid #ccc; border-radius:6px; font-size:0.95rem; }
+  .controls select { padding:8px 10px; border:1px solid #ccc; border-radius:6px; font-size:0.9rem; background:#fff; }
+  .controls button { padding:8px 12px; border:1px solid #ccc; background:#fff; border-radius:6px;
+    cursor:pointer; font-size:0.85rem; }
+  .controls button:hover { background:#f0f0f0; }
+  .stats { color:#888; font-size:0.8rem; margin-left:auto; }
+  .muted { color:#999; font-size:0.9rem; }
+
+  /* analysis */
+  .topic { background:#fff; border:1px solid #e2e2e2; border-radius:8px; margin-bottom:14px; overflow:hidden; }
+  .topic > summary { cursor:pointer; padding:14px 16px; font-weight:600; font-size:1.1rem; list-style:none; display:flex; align-items:center; gap:8px; }
+  .topic > summary::-webkit-details-marker { display:none; }
+  .topic > summary .count { font-weight:400; color:#999; font-size:0.8rem; }
+  .topic > summary .tcolor { width:10px; height:10px; border-radius:50%; flex:none; }
+  .topic-summary { padding:0 16px 12px 34px; color:#555; font-size:0.9rem; }
+  .subtopic { border-top:1px solid #eee; padding:4px 0; }
+  .subtopic > summary { cursor:pointer; padding:10px 16px 10px 34px; font-weight:600; font-size:0.98rem; list-style:none; color:#333; }
+  .subtopic > summary::-webkit-details-marker { display:none; }
+  .subtopic > summary .count { font-weight:400; color:#aaa; font-size:0.78rem; margin-left:6px; }
+  .subtopic-desc { padding:0 16px 8px 34px; color:#777; font-size:0.85rem; }
+  .claim { margin:6px 16px 14px 34px; padding-left:12px; border-left:3px solid #e0e0e0; }
+  .claim-title { font-weight:500; margin:8px 0 4px; }
+  .claim-title .num { color:#bbb; font-weight:400; font-size:0.8rem; margin-right:6px; }
+  .quote { background:#f6f6f4; border-radius:6px; padding:8px 10px; margin:6px 0; font-size:0.9rem; color:#333; }
+  .quote .spk { display:block; font-size:0.75rem; margin-top:6px; }
+  .quote.jump { cursor:pointer; }
+  .quote.jump:hover { background:#eef3ee; }
+  .quote.jump:hover::after { content:"jump to transcript \2197"; display:block; color:#5aa469; font-size:0.72rem; margin-top:4px; }
+  .tfrag.jump .ttext { cursor:pointer; }
+  .tfrag.jump:hover { background:#f6f9f6; }
+  .ftext.jump, .ttext.jump { cursor:pointer; }
+  .ftext.jump:hover, .ttext.jump:hover { text-decoration:underline; text-decoration-color:#cdddcd; }
+  .ftext.jump:hover::after, .ttext.jump:hover::after { content:" ↗"; color:#5aa469; font-size:0.8em; }
+  .tfrag.jump:hover .ttext { text-decoration:underline; text-decoration-color:#cdddcd; }
+  .tx-frag { scroll-margin-top: calc(var(--topbar-h, 132px) + 64px); }
+  .tx-frag.flash { animation: txflash 1.9s ease-out; }
+  @keyframes txflash { 0% { box-shadow: inset 0 0 0 9999px #fff0bf; } 100% { box-shadow: inset 0 0 0 9999px transparent; } }
+  .similar { margin-left:14px; border-left-color:#efefef; }
+  .similar-label { font-size:0.72rem; text-transform:uppercase; letter-spacing:.04em; color:#b0b0b0; margin-top:6px; }
+
+  /* sources */
+  .spk-group { background:#fff; border:1px solid #e2e2e2; border-radius:8px; margin-bottom:14px; overflow:hidden; }
+  .spk-group > summary { cursor:pointer; padding:14px 16px; font-weight:600; font-size:1.05rem; list-style:none; display:flex; align-items:center; gap:8px; }
+  .spk-group > summary::-webkit-details-marker { display:none; }
+  .spk-group > summary .count { font-weight:400; color:#999; font-size:0.8rem; }
+  .frag { padding:8px 16px; border-top:1px solid #f0f0f0; font-size:0.9rem; color:#333; display:flex; gap:10px; align-items:flex-start; }
+  .frag-left { display:flex; flex-direction:column; align-items:center; gap:2px; flex:none; min-width:30px; }
+  .frag .ord { color:#ccc; font-size:0.72rem; text-align:center; padding-top:2px; }
+  .star-btn { border:none; background:none; cursor:pointer; font-size:0.85rem; color:#ddd; padding:0; line-height:1; }
+  .star-btn:hover, .star-btn.starred { color:#f0b429; }
+  .frag.starred-frag { background:#fffbea; }
+  .tfrag.starred-frag { background:#fffbea; }
+  .frag.cited { background:#f4f9f5; }
+  .frag .citedtag { flex:none; font-size:0.65rem; text-transform:uppercase; letter-spacing:.04em; color:#5aa469; border:1px solid #cfe6d4; border-radius:4px; padding:1px 5px; margin-top:1px; }
+  .frag-main { flex:1; }
+  .chrono-list { background:#fff; border:1px solid #e2e2e2; border-radius:8px; overflow:hidden; }
+  .chrono-list .frag:first-child { border-top:none; }
+  .frag-spk { display:inline-flex; align-items:center; gap:4px; font-size:0.7rem; border:1px solid; border-radius:4px; padding:0 6px 0 4px; margin-bottom:4px; }
+  .spk-dot { width:6px; height:6px; border-radius:50%; flex:none; display:inline-block; }
+  .cite-labels { display:flex; flex-wrap:wrap; gap:5px; margin-bottom:5px; }
+  .cite-label { font-size:0.68rem; color:#555; background:#fff; border:1px solid #e2e2e2;
+    border-left:3px solid #bbb; border-radius:4px; padding:1px 7px; display:inline-block; line-height:1.5; }
+  .frag-themes { margin-top:5px; display:flex; flex-wrap:wrap; gap:5px; align-items:center; }
+  .theme-chip { font-size:0.72rem; border:1px solid #ccc; border-radius:10px; padding:1px 4px 1px 8px; display:inline-flex; align-items:center; gap:2px; color:#444; }
+  .chip-x { border:none; background:none; cursor:pointer; font-size:0.85rem; line-height:1; color:#999; padding:0 3px; }
+  .chip-x:hover { color:#c25b5b; }
+  .tag-btn { font-size:0.72rem; border:1px dashed #bbb; background:#fff; color:#777; border-radius:10px; padding:2px 8px; cursor:pointer; }
+  .tag-btn:hover { border-color:#5aa469; color:#5aa469; }
+
+  /* popover */
+  #tagPopover { position:fixed; display:none; z-index:50; width:240px; background:#fff; border:1px solid #ccc;
+    border-radius:8px; box-shadow:0 6px 24px rgba(0,0,0,.15); padding:8px; font-size:0.85rem; }
+  #tagPopover .pop-head { font-weight:600; font-size:0.78rem; color:#888; text-transform:uppercase; letter-spacing:.04em; margin:2px 4px 6px; }
+  .pop-list { max-height:200px; overflow:auto; }
+  .pop-row { display:flex; align-items:center; gap:7px; padding:4px 4px; border-radius:5px; cursor:pointer; }
+  .pop-row:hover { background:#f4f4f4; }
+  .pop-row .sw { width:10px; height:10px; border-radius:50%; flex:none; }
+  .pop-empty { color:#999; padding:6px 4px; }
+  .pop-new { display:flex; gap:5px; border-top:1px solid #eee; margin-top:6px; padding-top:8px; }
+  .pop-new input { flex:1; padding:5px 7px; border:1px solid #ccc; border-radius:5px; font-size:0.82rem; min-width:0; }
+  .pop-new button { border:1px solid #5aa469; background:#5aa469; color:#fff; border-radius:5px; padding:5px 8px; cursor:pointer; font-size:0.78rem; white-space:nowrap; }
+
+  /* themes tab */
+  .theme-block { background:#fff; border:1px solid #e2e2e2; border-radius:8px; margin-bottom:12px; overflow:hidden; }
+  .theme-block > summary { cursor:pointer; padding:13px 16px; font-weight:600; list-style:none; display:flex; align-items:center; gap:8px; }
+  .theme-block > summary::-webkit-details-marker { display:none; }
+  .theme-block > summary .sw { width:12px; height:12px; border-radius:50%; flex:none; }
+  .theme-block > summary .count { font-weight:400; color:#999; font-size:0.8rem; }
+  .theme-actions { padding:0 16px 8px 36px; display:flex; gap:8px; }
+  .theme-actions button { font-size:0.78rem; border:1px solid #ccc; background:#fff; border-radius:5px; padding:3px 9px; cursor:pointer; }
+  .theme-actions .delete:hover { border-color:#c25b5b; color:#c25b5b; }
+  .tfrag { display:flex; gap:10px; align-items:flex-start; padding:7px 16px 7px 36px; border-top:1px solid #f3f3f3; font-size:0.88rem; }
+  .tfrag .spk { font-size:0.72rem; flex:none; padding-top:2px; }
+  .tfrag .ttext { flex:1; min-width:0; }
+  .tfrag .unassign { border:none; background:none; color:#bbb; cursor:pointer; font-size:0.75rem; flex:none; }
+  .tfrag .unassign:hover { color:#c25b5b; text-decoration:underline; }
+  .ttext-wrap { flex:1; display:flex; flex-direction:column; gap:2px; }
+  .frag-report { font-size:0.68rem; color:#555; font-weight:500; }
+  .frag-meta { font-size:0.68rem; color:#888; margin-top:2px; }
+  .frag-themes-ro { display:flex; flex-wrap:wrap; gap:4px; margin-top:4px; }
+  .themes-intro { background:#fff; border:1px solid #e2e2e2; border-radius:8px; padding:12px 16px; margin-bottom:16px; font-size:0.88rem; color:#555; }
+  .json-panel { background:#fff; border:1px solid #e2e2e2; border-radius:8px; padding:12px 16px; margin-bottom:16px; }
+  .json-bar { display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-bottom:8px; }
+  .json-bar button { padding:7px 11px; border:1px solid #ccc; background:#fff; border-radius:6px; cursor:pointer; font-size:0.83rem; }
+  .json-bar button:hover { background:#f0f0f0; }
+  .json-help { margin:0 0 8px; font-size:0.82rem; color:#888; }
+  #jsonArea { width:100%; min-height:200px; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:0.8rem; border:1px solid #ccc; border-radius:6px; padding:10px; resize:vertical; white-space:pre; }
+
+  mark { background:#ffe9a8; padding:0 1px; }
+  .nohit { display:none !important; }
+  .hidden { display:none !important; }
+  footer { margin-top:30px; color:#aaa; font-size:0.78rem; text-align:center; }
+</style>
+</head>
+<body>
+
+<!-- WELCOME SCREEN -->
+<div id="screen-welcome">
+  <div class="welcome-box">
+    <h1>Report Viewer</h1>
+    <p class="welcome-sub" id="welcome-sub">Open the folder containing your report JSON files.<br>
+    Themes are saved automatically to <code>themes.json</code> in that folder.</p>
+    <button id="reopenFolderBtn" class="open-btn hidden">Open reports</button>
+    <button id="openFolderBtn" class="open-btn">Open folder…</button>
+    <p id="welcome-err" class="err-msg"></p>
+    <p class="welcome-note">Requires Chrome, Edge, or Safari 15.2+ (File System Access API).</p>
+  </div>
+</div>
+
+<!-- REPORT LIST SCREEN -->
+<div id="screen-reports" class="hidden">
+  <div class="rlist-header">
+    <span class="folder-label">📁 <strong id="folder-name"></strong></span>
+    <button id="changeFolderBtn">Change folder</button>
+  </div>
+  <div class="rlist-wrap">
+    <p class="rlist-title" id="rlist-status"></p>
+    <div id="report-list" class="rlist-grid"></div>
+    <div id="starred-section" class="hidden">
+      <h2 class="rlist-section-title">Starred</h2>
+      <div id="starred-list"></div>
+    </div>
+    <div id="all-themes-section" class="hidden">
+      <h2 class="rlist-section-title">Themes</h2>
+      <div id="all-themes-list"></div>
+    </div>
+  </div>
+</div>
+
+<!-- REPORT VIEWER SCREEN -->
+<div id="screen-viewer" class="hidden">
+  <div class="viewer-wrap">
+    <div class="topbar">
+      <header>
+        <div style="display:flex;align-items:center;justify-content:space-between;">
+          <button class="back-btn" id="backBtn">← All reports</button>
+          <span id="saveStatus" style="font-size:0.78rem;color:#aaa;"></span>
+        </div>
+        <h1 id="title"></h1>
+        <p class="desc" id="desc"></p>
+      </header>
+      <div class="tabs">
+        <button id="tab-analysis" class="active">Analysis</button>
+        <button id="tab-sources">Sources</button>
+        <button id="tab-transcript">Transcript</button>
+        <button id="tab-themes">My Themes</button>
+      </div>
+    </div>
+
+    <!-- ANALYSIS -->
+    <div id="view-analysis">
+      <div class="controls">
+        <input type="search" id="search-a" placeholder="Filter claims &amp; quotes…" autocomplete="off">
+        <button id="expandAll">Expand all</button>
+        <button id="collapseAll">Collapse all</button>
+        <span class="stats" id="stats-a"></span>
+      </div>
+      <div id="report"></div>
+    </div>
+
+    <!-- SOURCES -->
+    <div id="view-sources" class="hidden">
+      <div class="controls">
+        <input type="search" id="search-s" placeholder="Filter transcript fragments…" autocomplete="off">
+        <select id="spkFilter"><option value="">All speakers</option></select>
+        <select id="themeFilter"><option value="">All themes</option></select>
+        <label style="font-size:0.85rem;color:#666;display:flex;align-items:center;gap:4px;">
+          <input type="checkbox" id="citedOnly"> cited only
+        </label>
+        <button id="srcExpand">Expand all</button>
+        <button id="srcCollapse">Collapse all</button>
+        <span class="stats" id="stats-s"></span>
+      </div>
+      <div id="sources"></div>
+    </div>
+
+    <!-- TRANSCRIPT -->
+    <div id="view-transcript" class="hidden">
+      <div class="controls">
+        <input type="search" id="search-t" placeholder="Filter transcript…" autocomplete="off">
+        <select id="spkFilter-t"><option value="">All speakers</option></select>
+        <label style="font-size:0.85rem;color:#666;display:flex;align-items:center;gap:4px;">
+          <input type="checkbox" id="citedOnly-t"> cited only
+        </label>
+        <span class="stats" id="stats-t"></span>
+      </div>
+      <div id="transcript"></div>
+    </div>
+
+    <!-- MY THEMES -->
+    <div id="view-themes" class="hidden">
+      <div class="themes-intro">
+        Build your own flat set of themes here, then tag transcript fragments to them from the <strong>Sources</strong>
+        tab (each fragment has a <em>+ tag</em> button). Themes and tags are shared across all reports and saved
+        automatically to <code>themes.json</code> in your folder.
+      </div>
+      <div class="controls">
+        <input type="text" id="newThemeNameTop" placeholder="New theme name…" autocomplete="off">
+        <button id="addThemeTop">Add theme</button>
+        <button id="exportBtn">View / edit themes.json</button>
+      </div>
+      <div id="jsonPanel" class="json-panel hidden">
+        <div class="json-bar">
+          <button id="jsonCopy">Copy to clipboard</button>
+          <button id="jsonApply">Load from this box</button>
+          <button id="jsonClose">Close</button>
+          <span class="stats" id="jsonMsg"></span>
+        </div>
+        <p class="json-help">Raw <code>themes.json</code> content. Copy to back up. To restore or merge themes from
+          another session, paste saved JSON here and click <strong>Load from this box</strong>.</p>
+        <textarea id="jsonArea" spellcheck="false"></textarea>
+      </div>
+      <div id="themesList"></div>
+    </div>
+
+    <footer id="foot"></footer>
+  </div>
+</div>
+
+<!-- SHARED POPOVER -->
+<div id="tagPopover">
+  <div class="pop-head">Tag as…</div>
+  <div class="pop-list"></div>
+  <div class="pop-new">
+    <input id="popNewName" type="text" placeholder="New theme…">
+    <button id="popNewAdd">Add &amp; tag</button>
+  </div>
+</div>
+
+<script>
+(async function () {
+  /* ───────────── constants ───────────── */
+  const palette = {
+    greenLeaf:"#5aa469", blue:"#4a78b5", purple:"#8a6db5", orange:"#d68a45",
+    red:"#c25b5b", teal:"#4aa6a6", pink:"#c270a0", yellow:"#cba53a"
+  };
+  const THEME_COLORS = ["#4a78b5","#d68a45","#5aa469","#c25b5b","#8a6db5",
+                        "#4aa6a6","#c270a0","#cba53a","#7a8b99","#b5713a"];
+  const THEMES_FILENAME = "themes.json";
+
+  /* ───────────── shared state ───────────── */
+  let dirHandle = null;
+  // themes + assignments are shared across all reports
+  const state = { themes: [], assign: {}, fragReports: {}, starred: {} };
+  let allThemesFragReport = {};
+
+  /* ───────────── helpers ───────────── */
+  function esc(s){ return (s==null?"":String(s)).replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+  function speakerColor(name){
+    let h = 0;
+    const s = name || "";
+    for(let i = 0; i < s.length; i++) h = (Math.imul(31, h) + s.charCodeAt(i)) | 0;
+    return THEME_COLORS[Math.abs(h) % THEME_COLORS.length];
+  }
+  function spkBadge(name){
+    const c = speakerColor(name);
+    return '<span class="frag-spk" style="border-color:'+c+';color:'+c+'">' +
+           '<span class="spk-dot" style="background:'+c+'"></span>' + esc(name) + '</span>';
+  }
+  function show(id){ document.getElementById(id).classList.remove("hidden"); }
+  function hide(id){ document.getElementById(id).classList.add("hidden"); }
+  function showScreen(name){
+    ["screen-welcome","screen-reports","screen-viewer"].forEach(id=>{
+      document.getElementById(id).classList.toggle("hidden", id !== name);
+    });
+  }
+
+  /* ───────────── IndexedDB handle persistence ───────────── */
+  function idbRequest(fn){
+    return new Promise((res, rej) => {
+      const req = indexedDB.open("report-viewer-v1", 1);
+      req.onupgradeneeded = e => e.target.result.createObjectStore("kv");
+      req.onerror = () => rej(req.error);
+      req.onsuccess = e => fn(e.target.result, res, rej);
+    });
+  }
+  function idbGet(key){
+    return idbRequest((db, res) => {
+      const r = db.transaction("kv","readonly").objectStore("kv").get(key);
+      r.onsuccess = () => res(r.result ?? null);
+      r.onerror = () => res(null);
+    });
+  }
+  function idbPut(key, value){
+    return idbRequest((db, res) => {
+      const tx = db.transaction("kv","readwrite");
+      tx.objectStore("kv").put(value, key);
+      tx.oncomplete = () => res();
+      tx.onerror = () => res();
+    });
+  }
+
+  /* ───────────── File System helpers ───────────── */
+  async function readJsonFile(fh){
+    const file = await fh.getFile();
+    return JSON.parse(await file.text());
+  }
+  async function writeJsonFile(name, data){
+    if(!dirHandle) return;
+    const fh = await dirHandle.getFileHandle(name, { create: true });
+    const w = await fh.createWritable();
+    await w.write(JSON.stringify(data, null, 2));
+    await w.close();
+  }
+
+  /* ───────────── themes persistence ───────────── */
+  let persistTimer = null;
+  function saveStatus(msg){ const el=document.getElementById("saveStatus"); if(el) el.textContent=msg; }
+  function persist(){
+    clearTimeout(persistTimer);
+    persistTimer = setTimeout(async () => {
+      try {
+        await writeJsonFile(THEMES_FILENAME, { version:1, themes:state.themes, assign:state.assign, fragReports:state.fragReports, starred:state.starred });
+        saveStatus("saved ✓");
+      } catch(e){
+        saveStatus("save failed — re-open folder?");
+      }
+    }, 400);
+  }
+  async function loadThemes(){
+    try {
+      const fh = await dirHandle.getFileHandle(THEMES_FILENAME);
+      const o = await readJsonFile(fh);
+      if(o && Array.isArray(o.themes)) state.themes = o.themes;
+      if(o && o.assign && typeof o.assign === "object") state.assign = o.assign;
+      if(o && o.fragReports && typeof o.fragReports === "object") state.fragReports = o.fragReports;
+      if(o && o.starred && typeof o.starred === "object") state.starred = o.starred;
+    } catch(e){ /* themes.json doesn't exist yet — start fresh */ }
+  }
+  function themeById(id){ return state.themes.find(t=>t.id===id); }
+  function readOnlyChips(fragId){
+    return (state.assign[fragId]||[]).map(tid=>{
+      const t=themeById(tid); if(!t) return "";
+      return '<span class="theme-chip" style="background:'+t.color+'22;border-color:'+t.color+'">'+esc(t.name)+'</span>';
+    }).join("");
+  }
+  function toggleStar(fragId){
+    if(state.starred[fragId]) delete state.starred[fragId];
+    else state.starred[fragId] = true;
+    const on = !!state.starred[fragId];
+    document.querySelectorAll('.star-btn[data-frag="'+CSS.escape(fragId)+'"]').forEach(btn=>{
+      btn.textContent = on ? '★' : '☆';
+      btn.classList.toggle('starred', on);
+      const row = btn.closest('.frag, .tfrag');
+      if(row) row.classList.toggle('starred-frag', on);
+    });
+    persist();
+  }
+
+  /* ───────────── directory scanning ───────────── */
+  async function scanReports(){
+    const reports = [];
+    for await (const [name, fh] of dirHandle.entries()){
+      if(name === THEMES_FILENAME || !name.endsWith(".json") || fh.kind !== "file") continue;
+      try {
+        const data = await readJsonFile(fh);
+        if(data && Array.isArray(data.data) && data.data[0] === "v0.2" && data.data[1]){
+          const payload = data.data[1];
+          const meta = (data.metadata && data.metadata[1]) || {};
+          reports.push({ name, fh, payload, meta });
+        }
+      } catch(e){ /* not a valid report */ }
+    }
+    reports.sort((a,b) => a.name.localeCompare(b.name));
+    return reports;
+  }
+
+  /* ───────────── open / restore directory ───────────── */
+  async function openDirectory(pick = false){
+    let handle = null;
+    if(!pick){
+      handle = await idbGet("dir");
+      if(handle){
+        const perm = await handle.queryPermission({ mode:"readwrite" });
+        if(perm === "granted"){
+          dirHandle = handle;
+        } else {
+          const p2 = await handle.requestPermission({ mode:"readwrite" });
+          dirHandle = (p2 === "granted") ? handle : null;
+        }
+      }
+    }
+    if(pick || !dirHandle){
+      try {
+        handle = await window.showDirectoryPicker({ mode:"readwrite" });
+        dirHandle = handle;
+        await idbPut("dir", handle);
+      } catch(e){
+        if(e.name !== "AbortError") document.getElementById("welcome-err").textContent = "Error: " + e.message;
+        return false;
+      }
+    }
+    return !!dirHandle;
+  }
+
+  /* ───────────── report list screen ───────────── */
+  async function showReportList(){
+    document.getElementById("folder-name").textContent = dirHandle.name;
+    document.getElementById("rlist-status").textContent = "Scanning…";
+    showScreen("screen-reports");
+
+    const reports = await scanReports();
+    const status = reports.length
+      ? reports.length + " report" + (reports.length===1?"":"s") + " found"
+      : "No reports found in this folder.";
+    document.getElementById("rlist-status").textContent = status;
+
+    const grid = document.getElementById("report-list");
+    if(!reports.length){
+      grid.innerHTML = '<p class="rlist-empty">Drop <code>*.json</code> report files (format v0.2) into the folder and refresh.</p>';
+      return;
+    }
+    grid.innerHTML = reports.map((r,i) => {
+      const date = r.payload.date ? String(r.payload.date).slice(0,10) : "";
+      const sc = (r.payload.sources||[]).length;
+      const tc = (r.payload.topics||[]).length;
+      const tagged = (r.payload.sources||[]).filter(s => state.assign[s.id]).length;
+      return `<div class="report-card" data-idx="${i}">
+        <h3>${esc(r.name.replace(/\.json$/i, ""))}</h3>
+        ${date ? `<p class="rc-date">${esc(date)}</p>` : ""}
+        <div class="rc-stats">
+          <span>${tc} topic${tc===1?"":"s"}</span>
+          <span>${sc} fragments</span>
+          ${tagged ? `<span>${tagged} tagged</span>` : ""}
+        </div>
+      </div>`;
+    }).join("");
+
+    grid.querySelectorAll(".report-card").forEach(card => {
+      card.addEventListener("click", () => loadReport(reports[+card.dataset.idx]));
+    });
+
+    renderAllThemes(reports);
+  }
+
+  function renderAllThemes(reports){
+    const section = document.getElementById("all-themes-section");
+    const container = document.getElementById("all-themes-list");
+
+    const assignedFragIds = Object.keys(state.assign);
+    section.classList.remove("hidden");
+    if(!state.themes.length){
+      container.innerHTML = '<p class="muted">No themes yet. Open a report and create themes in the My Themes tab.</p>';
+      return;
+    }
+
+    // Build cross-report indexes
+    const fragIndex = {};
+    allThemesFragReport = {};
+    reports.forEach(r => {
+      (r.payload.sources || []).forEach(s => {
+        fragIndex[s.id] = {
+          text: (s.data && s.data[1] && s.data[1].text) || "",
+          speaker: s.interview || "unknown",
+          reportTitle: r.name.replace(/\.json$/i, ""),
+          reportDate: r.payload.date ? String(r.payload.date).slice(0, 10) : ""
+        };
+        allThemesFragReport[s.id] = r;
+      });
+    });
+
+    // Starred section
+    const starredSection = document.getElementById("starred-section");
+    const starredList = document.getElementById("starred-list");
+    const starredEntries = Object.keys(state.starred).map(fid => ({fid, f: fragIndex[fid]})).filter(({f}) => f);
+    if(starredEntries.length){
+      starredList.innerHTML = starredEntries.map(({fid, f}) =>
+        '<div class="tfrag starred-frag">' +
+          '<div class="ttext-wrap">' +
+            '<span class="ttext jump" data-frag="'+esc(fid)+'">'+esc(f.text)+'</span>' +
+            '<div class="frag-themes-ro">'+readOnlyChips(fid)+'</div>' +
+            '<span class="frag-meta">'+esc(f.reportTitle)+' | '+esc(f.speaker)+'</span>' +
+          '</div>' +
+          '<button class="star-btn starred" data-frag="'+esc(fid)+'">★</button>' +
+        '</div>'
+      ).join("");
+      starredSection.classList.remove("hidden");
+    } else {
+      starredSection.classList.add("hidden");
+    }
+
+    const themeRows = state.themes.map(t => {
+      const fragIds = assignedFragIds.filter(fid => (state.assign[fid] || []).includes(t.id));
+      const entries = fragIds.map(fid => ({ fid, f: fragIndex[fid] })).filter(({f}) => f);
+      return { t, entries };
+    });
+    themeRows.sort((a, b) => b.entries.length - a.entries.length);
+
+    container.innerHTML = themeRows.map(({ t, entries }) => {
+      const count = entries.length;
+      const inner = count ? entries.map(({fid, f}) => {
+        const on=!!state.starred[fid];
+        return '<div class="tfrag'+(on?' starred-frag':'')+'">' +
+          '<div class="ttext-wrap">' +
+            '<span class="ttext jump" data-frag="' + esc(fid) + '">' + esc(f.text) + '</span>' +
+            '<div class="frag-themes-ro">'+readOnlyChips(fid)+'</div>' +
+            '<span class="frag-meta">' + esc(f.reportTitle) + ' | ' + esc(f.speaker) + '</span>' +
+          '</div>' +
+          '<button class="star-btn'+(on?' starred':'')+'" data-frag="'+esc(fid)+'">'+(on?'★':'☆')+'</button>' +
+        '</div>';
+      }).join("") : '<div class="muted" style="padding:6px 16px 10px;">No fragments tagged.</div>';
+
+      return '<details class="theme-block">' +
+        '<summary><span class="sw" style="background:' + t.color + '"></span>' +
+        esc(t.name) + ' <span class="count">' + count + ' fragment' + (count === 1 ? '' : 's') + '</span></summary>' +
+        inner + '</details>';
+    }).join("");
+
+    section.classList.remove("hidden");
+  }
+
+  function jumpFromHomepage(e){
+    const sb = e.target.closest(".star-btn"); if(sb){ toggleStar(sb.getAttribute("data-frag")); return; }
+    const ttext = e.target.closest(".ttext.jump[data-frag]");
+    if(!ttext) return;
+    const fragId = ttext.getAttribute("data-frag");
+    const r = allThemesFragReport[fragId];
+    if(!r) return;
+    loadReport(r);
+    showTab("transcript");
+    requestAnimationFrame(() => {
+      const el = document.getElementById("transcript").querySelector('.tx-frag[data-id="'+CSS.escape(fragId)+'"]');
+      if(!el) return;
+      el.scrollIntoView({behavior:"smooth", block:"start"});
+      el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash");
+      setTimeout(() => el.classList.remove("flash"), 1900);
+    });
+  }
+  document.getElementById("starred-list").addEventListener("click", jumpFromHomepage);
+  document.getElementById("all-themes-list").addEventListener("click", jumpFromHomepage);
+
+  /* ───────────── report viewer ───────────── */
+  let currentSources = [];  // used by themes view
+
+  function loadReport(r){
+    const payload = r.payload;
+    const meta = r.meta || {};
+    currentSources = payload.sources || [];
+
+    document.getElementById("title").textContent = r.name.replace(/\.json$/i, "");
+    document.getElementById("desc").textContent = payload.description || "";
+    document.title = r.name.replace(/\.json$/i, "") + " — Viewer";
+
+    // reset all dynamic containers + filters
+    ["report","sources","transcript","themesList"].forEach(id => { document.getElementById(id).innerHTML=""; });
+    ["spkFilter","spkFilter-t"].forEach(id => {
+      const s = document.getElementById(id); s.innerHTML = '<option value="">All speakers</option>';
+    });
+    document.getElementById("search-a").value = "";
+    document.getElementById("search-s").value = "";
+    document.getElementById("search-t").value = "";
+    showTab("analysis");
+
+    const citedSourceIds = new Set();
+    const citedPaths = {};
+    (function buildCited(){
+      function add(sid, topic, sub, color){
+        if(!sid) return;
+        citedSourceIds.add(sid);
+        const arr = citedPaths[sid] || (citedPaths[sid]=[]);
+        if(!arr.some(p=>p.topic===topic && p.sub===sub)) arr.push({topic,sub,color});
+      }
+      function walk(arr, topic, sub, color){
+        (arr||[]).forEach(c=>{
+          (c.quotes||[]).forEach(q=>{ const r=q.reference||{}; add(r.sourceId,topic,sub,color); });
+          walk(c.similarClaims, topic, sub, color);
+        });
+      }
+      (payload.topics||[]).forEach(t=>{
+        const color = palette[t.topicColor] || "#bbb";
+        (t.subtopics||[]).forEach(st=>walk(st.claims, t.title, st.title, color));
+      });
+    })();
+
+    function citeLabelsInner(sid){
+      return (citedPaths[sid]||[]).map(p=>
+        '<span class="cite-label" style="border-left-color:'+p.color+'">'+esc(p.topic)+' › '+esc(p.sub)+'</span>'
+      ).join("");
+    }
+
+    /* ── analysis ── */
+    const reportEl = document.getElementById("report");
+    function renderQuotes(quotes){
+      if(!quotes||!quotes.length) return "";
+      return quotes.map(q=>{
+        const ref=q.reference||{}; const sid=ref.sourceId;
+        const attr=sid?' data-frag="'+esc(sid)+'"':'';
+        const cls='quote searchable'+(sid?' jump':'');
+        return '<div class="'+cls+'"'+attr+'>'+esc(q.text)+(ref.interview?'<span class="spk">'+spkBadge(ref.interview)+'</span>':'')+' </div>';
+      }).join("");
+    }
+    function renderClaim(claim, similar){
+      let h='<div class="claim'+(similar?' similar':'')+'">';
+      const num=(claim.number!=null)?'<span class="num">#'+esc(claim.number)+'</span>':'';
+      h+='<div class="claim-title searchable">'+num+esc(claim.title)+'</div>';
+      h+=renderQuotes(claim.quotes);
+      if(claim.similarClaims&&claim.similarClaims.length){
+        h+='<div class="similar-label">Similar claims</div>';
+        h+=claim.similarClaims.map(sc=>renderClaim(sc,true)).join("");
+      }
+      return h+'</div>';
+    }
+    let topicCount=0, subCount=0, claimCount=0, quoteCount=0;
+    function countClaims(arr){ (arr||[]).forEach(c=>{ claimCount++; quoteCount+=(c.quotes||[]).length; countClaims(c.similarClaims); }); }
+    (payload.topics||[]).forEach(topic=>{
+      topicCount++;
+      const color=palette[topic.topicColor]||"#bbb";
+      const subs=topic.subtopics||[];
+      subs.forEach(st=>{ subCount++; countClaims(st.claims); });
+      let th='<details class="topic" open><summary><span class="tcolor" style="background:'+color+'"></span>'+
+        esc(topic.title)+' <span class="count">'+subs.length+' subtopics</span></summary>';
+      if(topic.summary) th+='<div class="topic-summary">'+esc(topic.summary)+'</div>';
+      subs.forEach(st=>{
+        th+='<details class="subtopic" open><summary>'+esc(st.title)+' <span class="count">'+(st.claims||[]).length+' claims</span></summary>';
+        if(st.description) th+='<div class="subtopic-desc">'+esc(st.description)+'</div>';
+        th+=(st.claims||[]).map(c=>renderClaim(c,false)).join("")+'</details>';
+      });
+      reportEl.insertAdjacentHTML("beforeend", th+'</details>');
+    });
+    document.getElementById("stats-a").textContent =
+      topicCount+" topics · "+subCount+" subtopics · "+claimCount+" claims · "+quoteCount+" quotes";
+
+    /* ── sources ── */
+    const sourcesEl = document.getElementById("sources");
+    const sources = payload.sources || [];
+    const groups = {};
+    sources.forEach((s,i)=>{ const spk=s.interview||"unknown"; (groups[spk]=groups[spk]||[]).push({s,ord:i}); });
+    const spkNames = Object.keys(groups).sort();
+    const spkSel = document.getElementById("spkFilter");
+    spkNames.forEach(spk=>{ const o=document.createElement("option"); o.value=spk; o.textContent=spk+" ("+groups[spk].length+")"; spkSel.appendChild(o); });
+
+    function fragThemesInner(fragId){
+      const ids=state.assign[fragId]||[];
+      let h="";
+      ids.forEach(tid=>{ const t=themeById(tid); if(!t) return;
+        h+='<span class="theme-chip" style="background:'+t.color+'22;border-color:'+t.color+'">'+esc(t.name)+
+           '<button class="chip-x" title="remove" data-frag="'+esc(fragId)+'" data-theme="'+esc(tid)+'">×</button></span>'; });
+      h+='<button class="tag-btn" data-frag="'+esc(fragId)+'">+ tag</button>';
+      return h;
+    }
+    function renderFragThemes(fragId){
+      document.querySelectorAll('.frag-themes[data-id="'+CSS.escape(fragId)+'"]').forEach(el=>{ el.innerHTML=fragThemesInner(fragId); });
+    }
+    function allFragChipsRerender(){ document.querySelectorAll(".frag-themes").forEach(el=>{ el.innerHTML=fragThemesInner(el.getAttribute("data-id")); }); }
+
+    function fragHTML(f, spk, showSpk){
+      const txt=(f.s.data&&f.s.data[1]&&f.s.data[1].text)||"";
+      const cited=citedSourceIds.has(f.s.id);
+      let h='<div class="frag'+(cited?' cited':'')+'" data-id="'+esc(f.s.id)+'" data-spk="'+esc(spk)+'" data-cited="'+(cited?1:0)+'">';
+      const isStarred=!!state.starred[f.s.id];
+      if(isStarred) h=h.replace('class="frag','class="frag starred-frag');
+      h+='<div class="frag-left"><span class="ord">'+(f.ord+1)+'</span><button class="star-btn'+(isStarred?' starred':'')+'" data-frag="'+esc(f.s.id)+'">'+(isStarred?'★':'☆')+'</button></div><div class="frag-main">';
+      if(showSpk) h+=spkBadge(spk);
+      if(cited) h+='<div class="cite-labels">'+citeLabelsInner(f.s.id)+'</div>';
+      h+='<span class="searchable ftext jump" data-frag="'+esc(f.s.id)+'">'+esc(txt)+'</span>';
+      h+='<div class="frag-themes" data-id="'+esc(f.s.id)+'">'+fragThemesInner(f.s.id)+'</div></div></div>';
+      return h;
+    }
+
+    let citedTotal=0;
+    spkNames.forEach(spk=>{ citedTotal+=groups[spk].filter(f=>citedSourceIds.has(f.s.id)).length; });
+
+    function renderSources(){
+      let h="";
+      spkNames.forEach(spk=>{
+        const frags=groups[spk];
+        const citedN=frags.filter(f=>citedSourceIds.has(f.s.id)).length;
+        h+='<details class="spk-group" data-spk="'+esc(spk)+'" open><summary>'+
+           '<span class="spk-dot" style="background:'+speakerColor(spk)+'"></span>'+esc(spk)+
+           ' <span class="count">'+frags.length+' fragments · '+citedN+' cited</span></summary>';
+        h+=frags.map(f=>fragHTML(f,spk,false)).join("")+'</details>';
+      });
+      sourcesEl.innerHTML=h;
+    }
+    renderSources();
+    document.getElementById("stats-s").textContent =
+      sources.length+" fragments · "+spkNames.length+" speakers · "+citedTotal+" cited in claims";
+
+    /* ── transcript ── */
+    const transcriptEl = document.getElementById("transcript");
+    const spkSelT = document.getElementById("spkFilter-t");
+    spkNames.forEach(spk=>{ const o=document.createElement("option"); o.value=spk; o.textContent=spk+" ("+groups[spk].length+")"; spkSelT.appendChild(o); });
+    function renderTranscript(){
+      let h='<div class="chrono-list">';
+      sources.forEach((s,i)=>{
+        const txt=(s.data&&s.data[1]&&s.data[1].text)||"";
+        const cited=citedSourceIds.has(s.id);
+        h+='<div class="frag tx-frag'+(cited?' cited':'')+'" data-id="'+esc(s.id)+'" data-spk="'+esc(s.interview||"unknown")+'" data-cited="'+(cited?1:0)+'">';
+        const isStar=!!state.starred[s.id];
+        if(isStar) h=h.replace(/"frag tx-frag/,'"frag tx-frag starred-frag');
+        h+='<div class="frag-left"><span class="ord">'+(i+1)+'</span><button class="star-btn'+(isStar?' starred':'')+'" data-frag="'+esc(s.id)+'">'+(isStar?'★':'☆')+'</button></div><div class="frag-main">';
+        h+=spkBadge(s.interview||"unknown");
+        if(cited) h+='<div class="cite-labels">'+citeLabelsInner(s.id)+'</div>';
+        h+='<span class="ftext">'+esc(txt)+'</span>';
+        h+='<div class="frag-themes" data-id="'+esc(s.id)+'">'+fragThemesInner(s.id)+'</div></div></div>';
+      });
+      transcriptEl.innerHTML=h+'</div>';
+    }
+    renderTranscript();
+    document.getElementById("stats-t").textContent = sources.length+" fragments · in conversation order";
+
+    function applyTranscriptFilter(){
+      const term=(document.getElementById("search-t").value||"").trim().toLowerCase();
+      const spk=spkSelT.value;
+      const citedOnly=document.getElementById("citedOnly-t").checked;
+      transcriptEl.querySelectorAll(".ftext").forEach(clearMarks);
+      transcriptEl.querySelectorAll(".tx-frag").forEach(frag=>{
+        let ok=true;
+        if(spk && frag.getAttribute("data-spk")!==spk) ok=false;
+        if(ok && citedOnly && frag.getAttribute("data-cited")!=="1") ok=false;
+        if(ok && term){ const ft=frag.querySelector(".ftext"); if(!ft.textContent.toLowerCase().includes(term)) ok=false; }
+        frag.classList.toggle("nohit", !ok);
+        if(ok && term) highlight(frag.querySelector(".ftext"), term);
+      });
+    }
+    document.getElementById("search-t").addEventListener("input", applyTranscriptFilter);
+    spkSelT.addEventListener("change", applyTranscriptFilter);
+    document.getElementById("citedOnly-t").addEventListener("change", applyTranscriptFilter);
+
+    /* ── tagging ── */
+    function toggleAssign(fragId, themeId){
+      const set=state.assign[fragId]||(state.assign[fragId]=[]);
+      const i=set.indexOf(themeId);
+      if(i>=0) set.splice(i,1); else {
+        set.push(themeId);
+        const src = sources.find(s => s.id === fragId);
+        const text = (src && src.data && src.data[1] && src.data[1].text) || "";
+        state.fragReports[fragId] = { title: payload.title || "", date: payload.date || "", text, speaker: src ? (src.interview || "") : "" };
+      }
+      if(set.length===0){ delete state.assign[fragId]; delete state.fragReports[fragId]; }
+      renderFragThemes(fragId); refreshThemeUI(); persist();
+    }
+
+    const pop = document.getElementById("tagPopover");
+    let currentFrag = null;
+    function populatePopover(fragId){
+      const list=pop.querySelector(".pop-list");
+      if(!state.themes.length){ list.innerHTML='<div class="pop-empty">No themes yet — create one below.</div>'; }
+      else {
+        list.innerHTML="";
+        state.themes.forEach(t=>{
+          const checked=(state.assign[fragId]||[]).includes(t.id);
+          const row=document.createElement("label"); row.className="pop-row";
+          row.dataset.name=t.name.toLowerCase();
+          row.innerHTML='<input type="checkbox" '+(checked?"checked":"")+
+            '><span class="sw" style="background:'+t.color+'"></span>'+esc(t.name);
+          row.querySelector("input").addEventListener("change",()=>toggleAssign(fragId,t.id));
+          list.appendChild(row);
+        });
+      }
+    }
+    function openPopover(fragId, anchor){
+      currentFrag=fragId;
+      const popInput=pop.querySelector("#popNewName");
+      popInput.value="";
+      populatePopover(fragId);
+      pop.style.display="block";
+      const r=anchor.getBoundingClientRect();
+      const pw=pop.offsetWidth;
+      let left=r.left, top=r.bottom+4;
+      if(left+pw>window.innerWidth-8) left=window.innerWidth-8-pw;
+      if(top+pop.offsetHeight>window.innerHeight-8) top=r.top-pop.offsetHeight-4;
+      pop.style.left=Math.max(8,left)+"px"; pop.style.top=Math.max(8,top)+"px";
+      popInput.focus();
+    }
+    function fragTagClick(e){
+      const tb=e.target.closest(".tag-btn"); if(tb){ openPopover(tb.getAttribute("data-frag"),tb); return; }
+      const cx=e.target.closest(".chip-x"); if(cx){ toggleAssign(cx.getAttribute("data-frag"),cx.getAttribute("data-theme")); return; }
+      const ft=e.target.closest(".ftext.jump"); if(ft){ jumpToTranscript(ft.getAttribute("data-frag")); return; }
+      const sb=e.target.closest(".star-btn"); if(sb){ toggleStar(sb.getAttribute("data-frag")); return; }
+    }
+    sourcesEl.addEventListener("click", fragTagClick);
+    transcriptEl.addEventListener("click", fragTagClick);
+
+    pop.querySelector("#popNewAdd").onclick = () => {
+      const inp=pop.querySelector("#popNewName"); const t=createTheme(inp.value);
+      if(t && currentFrag){ inp.value=""; toggleAssign(currentFrag,t.id); populatePopover(currentFrag); }
+    };
+    pop.querySelector("#popNewName").onkeydown = e => { if(e.key==="Enter") pop.querySelector("#popNewAdd").click(); };
+    pop.querySelector("#popNewName").addEventListener("input", e => {
+      const term = e.target.value.toLowerCase();
+      pop.querySelectorAll(".pop-row").forEach(row => {
+        row.classList.toggle("hidden", term !== "" && !row.dataset.name.includes(term));
+      });
+    });
+    document.addEventListener("click", function popClose(e){
+      if(pop.style.display!=="block") return;
+      if(e.target.closest("#tagPopover")||e.target.closest(".tag-btn")) return;
+      pop.style.display="none";
+    });
+
+    /* ── themes view ── */
+    const themesList = document.getElementById("themesList");
+    const themeFilter = document.getElementById("themeFilter");
+
+    function renderThemeFilterOptions(){
+      const cur=themeFilter.value;
+      themeFilter.innerHTML='<option value="">All themes</option><option value="__untag">Untagged</option>'+
+        state.themes.map(t=>'<option value="'+esc(t.id)+'">'+esc(t.name)+'</option>').join("");
+      if([...themeFilter.options].some(o=>o.value===cur)) themeFilter.value=cur;
+    }
+    function renderThemesView(){
+      if(!state.themes.length){ themesList.innerHTML='<p class="muted">No themes yet. Create one above, then tag fragments over in the Sources tab.</p>'; return; }
+      const tRows=state.themes.map(t=>{
+        const frags=currentSources.filter(s=>(state.assign[s.id]||[]).includes(t.id));
+        return {t, frags};
+      });
+      tRows.sort((a,b)=>b.frags.length-a.frags.length);
+      themesList.innerHTML=tRows.map(({t,frags})=>{
+        const inner=frags.length ? frags.map(s=>{
+          const txt=(s.data&&s.data[1]&&s.data[1].text)||"";
+          const rpt=state.fragReports[s.id];
+          const rptLabel=rpt ? '<span class="frag-report">'+esc(rpt.title)+'</span>' : '';
+          const on=!!state.starred[s.id];
+          return '<div class="tfrag jump'+(on?' starred-frag':'')+'" data-frag="'+esc(s.id)+'">'+spkBadge(s.interview||"?")+
+            '<div class="ttext-wrap">'+rptLabel+'<span class="ttext">'+esc(txt)+'</span>'+
+            '<div class="frag-themes-ro">'+readOnlyChips(s.id)+'</div></div>'+
+            '<button class="star-btn'+(on?' starred':'')+'" data-frag="'+esc(s.id)+'">'+(on?'★':'☆')+'</button>'+
+            '<button class="unassign" data-frag="'+esc(s.id)+'" data-theme="'+esc(t.id)+'">remove</button></div>';
+        }).join("") : '<div class="muted" style="padding:6px 16px;">No fragments in this report.</div>';
+        return '<details class="theme-block"><summary><span class="sw" style="background:'+t.color+'"></span>'+
+          esc(t.name)+' <span class="count">'+frags.length+' fragment'+(frags.length===1?"":"s")+'</span></summary>'+
+          '<div class="theme-actions"><button class="rename" data-theme="'+esc(t.id)+'">Rename</button>'+
+          '<button class="delete" data-theme="'+esc(t.id)+'">Delete</button></div>'+
+          '<div class="theme-frags">'+inner+'</div></details>';
+      }).join("");
+    }
+    themesList.addEventListener("click", e=>{
+      const ren=e.target.closest(".rename");
+      if(ren){ const t=themeById(ren.getAttribute("data-theme")); if(!t) return;
+        const n=prompt("Rename theme:",t.name); if(n&&n.trim()){ t.name=n.trim(); allFragChipsRerender(); refreshThemeUI(); persist(); } return; }
+      const del=e.target.closest(".delete");
+      if(del){ const t=themeById(del.getAttribute("data-theme")); if(!t) return;
+        if(confirm('Delete theme "'+t.name+'"? Fragments stay; they just lose this tag.')) removeTheme(t.id); return; }
+      const un=e.target.closest(".unassign");
+      if(un){ toggleAssign(un.getAttribute("data-frag"),un.getAttribute("data-theme")); return; }
+      const sb=e.target.closest(".star-btn");
+      if(sb){ toggleStar(sb.getAttribute("data-frag")); return; }
+      const row=e.target.closest(".tfrag.jump");
+      if(row){ jumpToTranscript(row.getAttribute("data-frag")); }
+    });
+    function refreshThemeUI(){ renderThemeFilterOptions(); renderThemesView(); }
+
+    /* ── analysis search ── */
+    document.getElementById("search-a").addEventListener("input", e=>{
+      const term=e.target.value.trim().toLowerCase();
+      reportEl.querySelectorAll(".searchable").forEach(clearMarks);
+      if(!term){ reportEl.querySelectorAll(".claim").forEach(c=>c.classList.remove("nohit"));
+        reportEl.querySelectorAll(".subtopic,.topic").forEach(d=>{ d.classList.remove("nohit"); d.open=true; }); return; }
+      reportEl.querySelectorAll(".topic").forEach(topic=>{
+        let topicHit=false;
+        topic.querySelectorAll(".subtopic").forEach(sub=>{
+          let subHit=false;
+          sub.querySelectorAll(".claim").forEach(claim=>{
+            const hit=claim.textContent.toLowerCase().includes(term);
+            claim.classList.toggle("nohit",!hit);
+            if(hit){ subHit=true; claim.querySelectorAll(".searchable").forEach(s=>highlight(s,term)); }
+          });
+          sub.classList.toggle("nohit",!subHit); sub.open=subHit; if(subHit) topicHit=true;
+        });
+        topic.classList.toggle("nohit",!topicHit); topic.open=topicHit;
+      });
+    });
+
+    /* ── sources filter ── */
+    function applySourceFilter(){
+      const term=document.getElementById("search-s").value.trim().toLowerCase();
+      const spk=spkSel.value;
+      const citedOnly=document.getElementById("citedOnly").checked;
+      const tf=themeFilter.value;
+      sourcesEl.querySelectorAll(".ftext").forEach(clearMarks);
+      sourcesEl.querySelectorAll(".frag").forEach(frag=>{
+        const fid=frag.getAttribute("data-id");
+        const ids=state.assign[fid]||[];
+        let ok=true;
+        if(spk && frag.getAttribute("data-spk")!==spk) ok=false;
+        if(ok && citedOnly && frag.getAttribute("data-cited")!=="1") ok=false;
+        if(ok && tf==="__untag" && ids.length) ok=false;
+        if(ok && tf && tf!=="__untag" && !ids.includes(tf)) ok=false;
+        if(ok && term){ const ft=frag.querySelector(".ftext"); if(!ft.textContent.toLowerCase().includes(term)) ok=false; }
+        frag.classList.toggle("nohit",!ok);
+        if(ok && term) highlight(frag.querySelector(".ftext"), term);
+      });
+      sourcesEl.querySelectorAll(".spk-group").forEach(group=>{
+        const anyVisible=[...group.querySelectorAll(".frag")].some(f=>!f.classList.contains("nohit"));
+        group.classList.toggle("nohit",!anyVisible);
+        if(anyVisible && (term||citedOnly||tf)) group.open=true;
+      });
+    }
+    document.getElementById("search-s").addEventListener("input", applySourceFilter);
+    spkSel.addEventListener("change", applySourceFilter);
+    document.getElementById("citedOnly").addEventListener("change", applySourceFilter);
+    themeFilter.addEventListener("change", applySourceFilter);
+
+    /* ── jump to transcript ── */
+    function jumpToTranscript(fragId){
+      if(!fragId) return;
+      document.getElementById("search-t").value="";
+      spkSelT.value="";
+      document.getElementById("citedOnly-t").checked=false;
+      applyTranscriptFilter();
+      showTab("transcript");
+      const el=transcriptEl.querySelector('.tx-frag[data-id="'+CSS.escape(fragId)+'"]');
+      if(!el) return;
+      requestAnimationFrame(()=>{
+        el.scrollIntoView({behavior:"smooth",block:"start"});
+        el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash");
+        setTimeout(()=>el.classList.remove("flash"),1900);
+      });
+    }
+    reportEl.addEventListener("click", e=>{ const q=e.target.closest(".quote.jump"); if(q) jumpToTranscript(q.getAttribute("data-frag")); });
+
+    /* ── export/import JSON panel ── */
+    const jsonPanel=document.getElementById("jsonPanel");
+    const jsonArea=document.getElementById("jsonArea");
+    function jsonMsg(m){ const el=document.getElementById("jsonMsg"); if(el) el.textContent=m||""; }
+    document.getElementById("exportBtn").addEventListener("click", ()=>{
+      jsonArea.value=JSON.stringify({version:1,themes:state.themes,assign:state.assign},null,2);
+      jsonPanel.classList.remove("hidden");
+      jsonMsg(""); jsonArea.focus(); jsonArea.select();
+    });
+    document.getElementById("jsonCopy").addEventListener("click", ()=>{
+      jsonArea.select();
+      const done=()=>jsonMsg("copied ✓");
+      if(navigator.clipboard&&navigator.clipboard.writeText){
+        navigator.clipboard.writeText(jsonArea.value).then(done).catch(()=>{ try{ document.execCommand("copy"); done(); }catch(e){ jsonMsg("press Ctrl/Cmd+C to copy"); } });
+      } else { try{ document.execCommand("copy"); done(); }catch(e){ jsonMsg("press Ctrl/Cmd+C to copy"); } }
+    });
+    document.getElementById("jsonApply").addEventListener("click", ()=>{
+      let o; try{ o=JSON.parse(jsonArea.value); }catch(err){ jsonMsg("invalid JSON: "+err.message); return; }
+      if(!confirm("Replace current themes & tags with the JSON in this box?")) return;
+      if(o && Array.isArray(o.themes)) state.themes=o.themes;
+      if(o && o.assign && typeof o.assign==="object") state.assign=o.assign;
+      allFragChipsRerender(); refreshThemeUI(); persist();
+      jsonMsg("loaded ✓");
+    });
+    document.getElementById("jsonClose").addEventListener("click", ()=>jsonPanel.classList.add("hidden"));
+
+    /* ── footer ── */
+    const footBits=[];
+    if(meta.organization) footBits.push(esc(meta.organization));
+    if(payload.date) footBits.push("Report date: "+esc(String(payload.date).slice(0,10)));
+    footBits.push("Talk to the City data");
+    document.getElementById("foot").textContent=footBits.join(" · ");
+
+    /* ── show screen ── */
+    refreshThemeUI();
+    if(Object.keys(state.assign).length||state.themes.length) saveStatus("themes loaded");
+    showScreen("screen-viewer");
+    syncTopbarHeight();
+  }
+
+  /* ───────────── global theme mutations ───────────── */
+  function createTheme(name){
+    name=(name||"").trim(); if(!name) return null;
+    const id="t"+Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+    const color=THEME_COLORS[state.themes.length%THEME_COLORS.length];
+    const t={id,name,color}; state.themes.push(t);
+    // refreshThemeUI is called by caller
+    persist(); return t;
+  }
+  function removeTheme(themeId){
+    state.themes=state.themes.filter(t=>t.id!==themeId);
+    for(const f in state.assign){ state.assign[f]=state.assign[f].filter(x=>x!==themeId); if(!state.assign[f].length) delete state.assign[f]; }
+    persist();
+  }
+
+  /* ───────────── tab switching ───────────── */
+  const tabs={ analysis:["tab-analysis","view-analysis"], sources:["tab-sources","view-sources"],
+    transcript:["tab-transcript","view-transcript"], themes:["tab-themes","view-themes"] };
+  function showTab(key){
+    Object.keys(tabs).forEach(k=>{
+      const [btn,view]=tabs[k];
+      document.getElementById(btn).classList.toggle("active", k===key);
+      document.getElementById(view).classList.toggle("hidden", k!==key);
+    });
+  }
+  document.getElementById("tab-analysis").onclick=()=>showTab("analysis");
+  document.getElementById("tab-sources").onclick=()=>showTab("sources");
+  document.getElementById("tab-transcript").onclick=()=>showTab("transcript");
+  document.getElementById("tab-themes").onclick=()=>showTab("themes");
+
+  /* ───────────── expand/collapse ───────────── */
+  document.getElementById("expandAll").onclick=()=>document.getElementById("report").querySelectorAll("details").forEach(d=>d.open=true);
+  document.getElementById("collapseAll").onclick=()=>document.getElementById("report").querySelectorAll("details").forEach(d=>d.open=false);
+  document.getElementById("srcExpand").onclick=()=>document.getElementById("sources").querySelectorAll("details").forEach(d=>d.open=true);
+  document.getElementById("srcCollapse").onclick=()=>document.getElementById("sources").querySelectorAll("details").forEach(d=>d.open=false);
+
+  /* ───────────── add theme controls ───────────── */
+  document.getElementById("addThemeTop").addEventListener("click", ()=>{
+    const inp=document.getElementById("newThemeNameTop");
+    const t=createTheme(inp.value);
+    if(t){ inp.value=""; document.getElementById("themesList").innerHTML=""; }
+  });
+  document.getElementById("newThemeNameTop").addEventListener("keydown", e=>{ if(e.key==="Enter") document.getElementById("addThemeTop").click(); });
+
+  /* ───────────── highlight helpers ───────────── */
+  function clearMarks(el){ el.querySelectorAll("mark").forEach(m=>m.replaceWith(document.createTextNode(m.textContent))); el.normalize(); }
+  function highlight(node, term){
+    if(node.nodeType===3){
+      const idx=node.textContent.toLowerCase().indexOf(term);
+      if(idx>=0){ const after=node.splitText(idx); const mk=document.createElement("mark");
+        mk.textContent=after.textContent.slice(0,term.length); after.textContent=after.textContent.slice(term.length);
+        after.parentNode.insertBefore(mk,after); }
+    } else if(node.nodeType===1&&node.tagName!=="MARK"){ [...node.childNodes].forEach(n=>highlight(n,term)); }
+  }
+
+  /* ───────────── topbar height sync ───────────── */
+  function syncTopbarHeight(){
+    const tb=document.querySelector(".topbar");
+    if(!tb) return;
+    function set(){ document.documentElement.style.setProperty("--topbar-h", tb.offsetHeight+"px"); }
+    set();
+    window.addEventListener("resize", set);
+    if(window.ResizeObserver) new ResizeObserver(set).observe(tb);
+  }
+
+  /* ───────────── navigation ───────────── */
+  document.getElementById("backBtn").addEventListener("click", ()=>showReportList());
+  document.getElementById("reopenFolderBtn").addEventListener("click", async ()=>{
+    const ok = await openDirectory(false);
+    if(ok){ await loadThemes(); await showReportList(); }
+    else { document.getElementById("welcome-err").textContent = "Permission denied — try opening the folder again."; }
+  });
+  document.getElementById("openFolderBtn").addEventListener("click", async ()=>{
+    const ok = await openDirectory(true);
+    if(ok){ await loadThemes(); await showReportList(); }
+  });
+  document.getElementById("changeFolderBtn").addEventListener("click", async ()=>{
+    const ok = await openDirectory(true);
+    if(ok){ state.themes=[]; state.assign={}; await loadThemes(); await showReportList(); }
+  });
+
+  /* ───────────── boot ───────────── */
+  if(!("showDirectoryPicker" in window)){
+    document.getElementById("welcome-err").textContent =
+      "Your browser does not support the File System Access API. Please use Chrome, Edge, or Safari 15.2+.";
+    showScreen("screen-welcome");
+    return;
+  }
+  // Check for a stored handle without requesting permission (requires user gesture).
+  // If found, show a one-click "reopen" button instead of the full folder picker.
+  const storedHandle = await idbGet("dir");
+  if(storedHandle){
+    const perm = await storedHandle.queryPermission({ mode:"readwrite" });
+    if(perm === "granted"){
+      dirHandle = storedHandle;
+      await loadThemes();
+      await showReportList();
+    } else {
+      document.getElementById("reopenFolderBtn").textContent = "Open “" + storedHandle.name + "”";
+      document.getElementById("reopenFolderBtn").classList.remove("hidden");
+      document.getElementById("openFolderBtn").classList.add("hidden");
+      document.getElementById("welcome-sub").innerHTML =
+        "Click to re-open your reports folder.<br>Themes are saved automatically to <code>themes.json</code> in that folder.";
+      showScreen("screen-welcome");
+    }
+  } else {
+    showScreen("screen-welcome");
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,2847 @@
+{
+  "data": [
+    "v0.2",
+    {
+      "title": "Comment analysis",
+      "description": "Analysis of comments",
+      "topics": [
+        {
+          "id": "df8f4150-15d3-413f-b13e-a3c088d9b7db",
+          "title": "AI in Community and Governance",
+          "description": "AI in Community and Governance",
+          "summary": "The discussion on AI in Community and Governance covers access, equity, economic impacts, privacy, and trust. Key themes include the democratization of information contrasted with barriers due to unreliable connectivity and high service costs, which further marginalize disadvantaged communities. Concerns about the necessity of AI skills for employment potentially increasing inequality and the exclusion of vulnerable groups from decision-making processes are prevalent. Economically, AI affects job opportunities and knowledge transfer, with entry-level positions at risk. AI\u2019s potential as a force multiplier for societal benefits is acknowledged, though issues of exploitation in creative sectors highlight ongoing privacy and trust challenges. Overall, AI\u2019s transformative impact brings both opportunities and inequities that require thoughtful governance.",
+          "subtopics": [
+            {
+              "id": "6138ecb4-a151-4171-b1cd-4d8613dab8c9",
+              "title": "Access and Equity",
+              "description": "Access and Equity",
+              "claims": [
+                {
+                  "id": "9423370f-05ce-48b3-bbf2-68f7605e16c6",
+                  "title": "AI democratizes information access but requires reliable connectivity, excluding communities without internet.",
+                  "quotes": [
+                    {
+                      "id": "fd3d7619-0767-4112-a0c0-d2ce6a53d1ef",
+                      "text": "democratize the access to information that otherwise the local community might not have the time and access to.",
+                      "reference": {
+                        "id": "79d8929b-4045-4130-a2af-aa422708f462",
+                        "sourceId": "120e6145-7546-4cb2-a46d-f70ed321555c",
+                        "interview": "spk_2",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 38,
+                            "endIdx": 149
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 1,
+                  "similarClaims": [
+                    {
+                      "id": "d17ccf4f-c5d5-4f74-a5c8-6a289deac8c3",
+                      "title": "Communities without internet access are excluded from civic participation.",
+                      "quotes": [
+                        {
+                          "id": "b0248ca8-18e8-4b0b-81c4-48acb97b4f65",
+                          "text": "there are some people who just literally don't have the, the infrastructure for that access.",
+                          "reference": {
+                            "id": "bdb8b1ad-c364-4266-b38e-c4f00a426160",
+                            "sourceId": "a6cee707-59d4-48e2-910f-123e8892de53",
+                            "interview": "spk_3",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": 158,
+                                "endIdx": 250
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 2,
+                      "similarClaims": []
+                    },
+                    {
+                      "id": "2b3033af-3a13-40d9-b368-73fb6d4e8fab",
+                      "title": "AI requires reliable connectivity, which many marginalized communities lack.",
+                      "quotes": [
+                        {
+                          "id": "b89bc1fe-33a0-4866-ab77-cc86d0934731",
+                          "text": "You can't do, well, mostly you can't do AI without, um, connectivity.",
+                          "reference": {
+                            "id": "90248e98-e538-4f46-94ff-c6b938d23cbd",
+                            "sourceId": "9eb4f840-2326-4e83-a320-ef2f2f24bbab",
+                            "interview": "spk_4",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": 315,
+                                "endIdx": 384
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 3,
+                      "similarClaims": []
+                    }
+                  ]
+                },
+                {
+                  "id": "70c83f84-3025-47d1-869e-3c678a0dcfca",
+                  "title": "AI service costs and payment models exacerbate digital inequality.",
+                  "quotes": [
+                    {
+                      "id": "2003161c-d5f9-422f-bba6-6adaee48e10e",
+                      "text": "You get a free basic level to a lot of the platforms, the generative value platforms. But if you want access to, uh, the latest, greatest, you have to pay for them.",
+                      "reference": {
+                        "id": "23ddf2c5-b556-4b76-a229-356e79e13057",
+                        "sourceId": "b763c9e2-d18a-464e-81f0-368be0043cbe",
+                        "interview": "spk_4",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 128,
+                            "endIdx": 292
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 4,
+                  "similarClaims": [
+                    {
+                      "id": "2fec5570-97df-4277-8e00-d914ba41fcf1",
+                      "title": "AI services' rising costs deepen digital inequality.",
+                      "quotes": [
+                        {
+                          "id": "f5f0c421-6277-4d10-8d3a-246a14142a84",
+                          "text": "there's nothing stopping the companies from raising their prices [...] where does that leave communities, and members that are not able to afford that?",
+                          "reference": {
+                            "id": "2b72a873-5d86-49b9-8434-495b713ce91e",
+                            "sourceId": "2d7b8fd2-25a2-4134-aa70-c1a197a8ad04",
+                            "interview": "spk_4",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": -1,
+                                "endIdx": 150
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 5,
+                      "similarClaims": []
+                    }
+                  ]
+                },
+                {
+                  "id": "8d9e60d5-7a79-4be4-8189-1e928a99b45e",
+                  "title": "The need for AI skills in employment could increase inequality.",
+                  "quotes": [
+                    {
+                      "id": "df8c5be8-0f39-4227-8bca-437e25e6af75",
+                      "text": "it's a big concern that I have that just that equity access issue. If we're requiring a lot of employers are starting to require AI skills, uh, and if people don't have that, they won't be employed.",
+                      "reference": {
+                        "id": "48565197-fc73-4884-8fcd-129d317d66d5",
+                        "sourceId": "0ad425ff-ca9d-43b7-acc1-7ea1ee299783",
+                        "interview": "spk_4",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 52,
+                            "endIdx": 250
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 6,
+                  "similarClaims": []
+                },
+                {
+                  "id": "b37432cb-bad2-445c-bb73-bcc23e18a99b",
+                  "title": "Vulnerable populations should have input on AI use in services impacting them.",
+                  "quotes": [
+                    {
+                      "id": "8bc0da0f-d4c2-4455-bbf8-e45504482a1a",
+                      "text": "they have no choice to opt out on how AI is used, uh, to determine whether they deserve housing or not.",
+                      "reference": {
+                        "id": "37266236-6221-4d89-a9b9-33b918d67bc9",
+                        "sourceId": "4e90ecc6-8f13-45e3-a550-174d1de5660c",
+                        "interview": "spk_3",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 399,
+                            "endIdx": 502
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 7,
+                  "similarClaims": []
+                },
+                {
+                  "id": "4fb97ff4-24da-4ca9-9558-fc4e8cb31443",
+                  "title": "AI tools can improve diversity and inclusivity in education by identifying gaps.",
+                  "quotes": [
+                    {
+                      "id": "653ea1a7-ea2a-4e4f-8a67-c3de570c1cc3",
+                      "text": "you can use this technology and spend 10 minutes and start finding holes in how you are educating and how you are preparing for diversity and inclusivity.",
+                      "reference": {
+                        "id": "c662cdb6-4352-43e8-bb86-d05984b6d298",
+                        "sourceId": "c9522091-14a1-4a2b-a2d8-d71666d425a1",
+                        "interview": "spk_3",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 240,
+                            "endIdx": 394
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 8,
+                  "similarClaims": []
+                }
+              ]
+            },
+            {
+              "id": "3ca4890b-c853-4b77-b9ab-8ff88d005e8f",
+              "title": "Economic Impacts and Employment",
+              "description": "Economic Impacts and Employment",
+              "claims": [
+                {
+                  "id": "dab1da3e-cd1c-41fb-999f-eb22f0a4f2bc",
+                  "title": "AI impacts job opportunities and talent pipelines, with concerns over efficiency and knowledge transfer.",
+                  "quotes": [
+                    {
+                      "id": "58e2ec7e-b398-4bfd-8b64-4a49c0aa3bbd",
+                      "text": "Entry level work.",
+                      "reference": {
+                        "id": "85ada226-6a71-4e86-adcc-030fbd48796e",
+                        "sourceId": "44ea831f-6b77-41eb-909b-d4135661731e",
+                        "interview": "spk_4",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 0,
+                            "endIdx": 17
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 9,
+                  "similarClaims": [
+                    {
+                      "id": "aaedc839-27bd-4fb7-b1ce-7188b2ea73a8",
+                      "title": "AI risks losing institutional knowledge as entry-level job opportunities diminish.",
+                      "quotes": [
+                        {
+                          "id": "535b695d-3180-43ef-a47d-bdb3be352d9d",
+                          "text": "What happens after 235 years of not having entry level, uh, junior level workers coming in and gaining that institutional knowledge [...] it just lives in that AI box, which is not accessible outside of, of the companies that own it.",
+                          "reference": {
+                            "id": "66be91ce-9fd2-4469-b6d2-c713816990c2",
+                            "sourceId": "ea059af3-f12a-4252-ac5d-6ecfce4c9722",
+                            "interview": "spk_4",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": -1,
+                                "endIdx": 232
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 10,
+                      "similarClaims": []
+                    },
+                    {
+                      "id": "6d72e377-9947-4530-9dd5-561576cfb1ce",
+                      "title": "Companies prioritize efficiency over addressing knowledge transfer gaps, impacting talent pipelines.",
+                      "quotes": [
+                        {
+                          "id": "494e4719-91b9-4a8a-aafc-fa3b7cbbee04",
+                          "text": "They're thinking about it. How can I be much more efficient, a leaner, a quicker, a faster workplace right now, and they're not thinking of it from the impact of their talent pipeline.",
+                          "reference": {
+                            "id": "70c8f901-d16e-4bc2-9899-e73f78f0162b",
+                            "sourceId": "cae4f6c4-35da-4c4e-92fa-2c2da1bcd937",
+                            "interview": "spk_2",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": -1,
+                                "endIdx": 183
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 11,
+                      "similarClaims": []
+                    }
+                  ]
+                },
+                {
+                  "id": "976066d6-d908-4703-b807-9c5667a07f6b",
+                  "title": "AI plays a significant role in augmenting work and addressing societal challenges, acting as a force multiplier.",
+                  "quotes": [
+                    {
+                      "id": "21f4a14e-d56c-4f35-9d38-e15bfc634f86",
+                      "text": "I frequently come across the term force multiplier [...] and I really think that that is just a great way to, to describe, uh, not just AI but its impact on society.",
+                      "reference": {
+                        "id": "e529d4cc-2ea3-445a-b52e-196ec804a294",
+                        "sourceId": "03b8b075-b4f0-444e-b139-e65fc4793e3c",
+                        "interview": "spk_3",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": -1,
+                            "endIdx": 164
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 12,
+                  "similarClaims": [
+                    {
+                      "id": "7a0e116f-b9d7-4cda-8a2c-3b8e3ddc47db",
+                      "title": "AI augments senior-level work, but only for a limited time.",
+                      "quotes": [
+                        {
+                          "id": "47363ef2-f761-40b3-92ff-524fe2eba681",
+                          "text": "Senior level, they have the augmentation with, with AI and so they're able to do more, but they're only going to be around for so long.",
+                          "reference": {
+                            "id": "df407c51-c71e-4650-808a-8beb20eb1036",
+                            "sourceId": "59498ffa-5471-4174-a33a-7ffde6e36f81",
+                            "interview": "spk_4",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": 0,
+                                "endIdx": 135
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 13,
+                      "similarClaims": []
+                    },
+                    {
+                      "id": "5041c363-31c0-4c47-baf1-2393503a7944",
+                      "title": "AI can help address societal issues like employment and care for the elderly.",
+                      "quotes": [
+                        {
+                          "id": "a8b05c9b-cf1b-46aa-8ea8-a5e31d541cc9",
+                          "text": "You can add in AI to help you figure out how that's gonna work.",
+                          "reference": {
+                            "id": "06aebefa-5abb-4aed-8492-0cbad864bec9",
+                            "sourceId": "0a7f505c-b6df-403e-b63e-4d4b59bc637b",
+                            "interview": "spk_3",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": 452,
+                                "endIdx": 515
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 14,
+                      "similarClaims": []
+                    }
+                  ]
+                },
+                {
+                  "id": "021cb754-d916-476c-8f8d-d1fa0a5954f1",
+                  "title": "Basic AI knowledge is essential for university students to meet employer expectations.",
+                  "quotes": [
+                    {
+                      "id": "d9029021-1d18-438f-9543-aad6ad64c67d",
+                      "text": "if employers are looking for at least a basic knowledge of how AI works",
+                      "reference": {
+                        "id": "c04850b5-5a7f-4fe6-9915-85b2833d4ed1",
+                        "sourceId": "29f52f44-dad8-49ab-ad3b-0d01a7b75cac",
+                        "interview": "spk_4",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 170,
+                            "endIdx": 241
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 15,
+                  "similarClaims": []
+                }
+              ]
+            },
+            {
+              "id": "c74e25a4-1ed9-47af-a99a-b795f2e9963e",
+              "title": "Privacy and Trust",
+              "description": "Privacy and Trust",
+              "claims": [
+                {
+                  "id": "e6b0be96-0855-4d93-b68f-231d124891a2",
+                  "title": "AI use in creative sectors can exploit artists' work without proper recognition.",
+                  "quotes": [
+                    {
+                      "id": "3371bcfa-ac06-4668-a84d-62f96c70b688",
+                      "text": "having worked in um with like in the arts, but also more creative spaces, I think that's also weighing on in terms of people's mind of like, if some of the things that are actually being used to source this, um, uh, that is also then at the expense of someone's creativity and art and what they have contributed.",
+                      "reference": {
+                        "id": "23f30d7c-d14c-4946-b539-f9b2b6d070ae",
+                        "sourceId": "d1e8d0d5-5332-4f16-8906-579311ad8c7c",
+                        "interview": "spk_2",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 69,
+                            "endIdx": 381
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 16,
+                  "similarClaims": []
+                }
+              ]
+            }
+          ],
+          "topicColor": "brown"
+        },
+        {
+          "id": "62f7ae18-e59f-4ff8-86bd-2d5946ac7881",
+          "title": "Social Implications of AI",
+          "description": "Social Implications of AI",
+          "summary": "The discussion on the social implications of AI centers on ensuring AI supports, not replaces, human connections. In 'Community and Connection,' concerns arise about AI distancing individuals by substituting in-person interactions, especially in mental health, where chatbots might hinder genuine human contact. Social media's AI tools are seen to foster a false sense of community. Additionally, AI should complement rather than replace critical services for vulnerable groups. In 'Education and Child Development,' the sentiment persists that AI should remain a supportive tool, not replace human teachers. Across subtopics, the focus is on AI's role as an enhancer of connections and services without undermining the intrinsic human elements critical to community and development.",
+          "subtopics": [
+            {
+              "id": "dbfb0303-0e5b-43a1-90ea-a158405fb805",
+              "title": "Community and Connection",
+              "description": "Community and Connection",
+              "claims": [
+                {
+                  "id": "433f7a95-ca95-4adf-9733-e92a1695e944",
+                  "title": "AI should support and enhance human connections, not replace them, by facilitating community and in-person interactions.",
+                  "quotes": [
+                    {
+                      "id": "894e455e-ba5d-4476-ace2-bf7cb3815039",
+                      "text": "We're in a crisis of loneliness and people not feeling belonging and connections [...] it's becoming a real kind of crisis and fraying our social fabric.",
+                      "reference": {
+                        "id": "a6af2c87-480e-45d7-a8f7-e25c51374191",
+                        "sourceId": "0c8f2662-3e4c-4837-9249-b65c2ca995e0",
+                        "interview": "spk_1",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": -1,
+                            "endIdx": 152
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 17,
+                  "similarClaims": [
+                    {
+                      "id": "90c221d0-6766-4c45-ab9b-352d158071fb",
+                      "title": "AI should support, not replace, human connections by facilitating community organization and participation.",
+                      "quotes": [
+                        {
+                          "id": "d8a343f1-381b-4ccb-b870-37250c99ee0a",
+                          "text": "we all went online and we all kind of got out of the habit of doing those things in person with our community",
+                          "reference": {
+                            "id": "9f3a756b-df6e-48ea-aeb5-c3c1bb127187",
+                            "sourceId": "5cc85c99-6a03-4e1f-9ee0-e7577bb51202",
+                            "interview": "spk_1",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": 214,
+                                "endIdx": 323
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 18,
+                      "similarClaims": []
+                    },
+                    {
+                      "id": "e5fbd888-ccae-4061-88d2-cfc6f9b9bb95",
+                      "title": "AI should support, not replace, human connections by facilitating community organization and participation.",
+                      "quotes": [
+                        {
+                          "id": "8c356ee5-0907-4a2e-b12c-9c67ced81476",
+                          "text": "people craving community and wanting a better sense of community where they live and looking for opportunities to do things in person.",
+                          "reference": {
+                            "id": "fc53d76b-c18c-4cb0-8f96-4e4b91acf708",
+                            "sourceId": "accbce50-99cd-4bc8-8e8f-e0a8f71f76e3",
+                            "interview": "spk_1",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": 144,
+                                "endIdx": 278
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 19,
+                      "similarClaims": []
+                    },
+                    {
+                      "id": "25e01a84-3c38-4f82-aab2-7c420ebf2d20",
+                      "title": "AI should not replace in-person human interactions.",
+                      "quotes": [
+                        {
+                          "id": "2715719e-4ab5-439f-b7af-2ecf59e3019b",
+                          "text": "I don't want AI to be another way where people are finding friendship or companionship [...] and just another thing where people are not spending time in person or with real people.",
+                          "reference": {
+                            "id": "36fca98f-a386-43ed-b6c7-f31320a24963",
+                            "sourceId": "0fe7e7b8-9ef8-4884-a0f7-c992de0d589d",
+                            "interview": "spk_1",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": -1,
+                                "endIdx": 180
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 20,
+                      "similarClaims": []
+                    },
+                    {
+                      "id": "070011d4-995b-404b-8ff6-f66425605fcb",
+                      "title": "AI should not replace essential human connections in communities.",
+                      "quotes": [
+                        {
+                          "id": "4b3e7873-e598-4b89-b532-e47b448087c0",
+                          "text": "I'm just concerned of it, people using it as a substitute for like those human connection things that are so important to communities.",
+                          "reference": {
+                            "id": "85926db6-3ee3-4aef-ab8a-9ff86d09a60e",
+                            "sourceId": "614ace3d-cdc9-4488-a95d-26c74ac86ab8",
+                            "interview": "spk_1",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": -1,
+                                "endIdx": 133
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 21,
+                      "similarClaims": []
+                    }
+                  ]
+                },
+                {
+                  "id": "aee6b4a4-b591-4a3b-a1de-abe7bf0ffa8f",
+                  "title": "AI in mental health support, especially chatbots, raises concerns about efficacy and impact on genuine human interactions.",
+                  "quotes": [
+                    {
+                      "id": "ea3f9ede-9bb0-4844-9752-a5134f3ad279",
+                      "text": "giving youth access to, uh, chatbot, uh, mental health providers, which seems like it could be somewhat, uh, controversial.",
+                      "reference": {
+                        "id": "123a0ecf-ea3e-4a0a-8632-629030e3b6b6",
+                        "sourceId": "b9442b5b-6632-431b-91d1-904f67c5e43e",
+                        "interview": "spk_0",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 86,
+                            "endIdx": 209
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 22,
+                  "similarClaims": [
+                    {
+                      "id": "89ea9ffb-a7b4-4cb7-86a6-6a49a6f452fa",
+                      "title": "Chatbots can discourage human interaction among students.",
+                      "quotes": [
+                        {
+                          "id": "f2320ec0-8a99-4a10-bff8-1d2b0883615b",
+                          "text": "they'd rather talk to their chatbot than, than an adult, um, sometimes even their friends",
+                          "reference": {
+                            "id": "9784db8e-2966-46a9-a44e-1a84647bcf69",
+                            "sourceId": "db10c6a6-795b-46e8-8075-a32f5bbd4cf1",
+                            "interview": "spk_4",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": 36,
+                                "endIdx": 125
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 23,
+                      "similarClaims": []
+                    },
+                    {
+                      "id": "862ca97a-d58a-4654-8e9c-2c06106049dc",
+                      "title": "AI, like chatbots, in mental health support may not provide hope or motivation for younger generations.",
+                      "quotes": [
+                        {
+                          "id": "27fe75b7-6e42-4231-9f56-04af24479e60",
+                          "text": "Things to fill that up, which is looking at chatbots for that mental health care [...] cause they're not giving anything, any hope.",
+                          "reference": {
+                            "id": "a8e2355e-b202-443e-bc46-a5a8f1052819",
+                            "sourceId": "2e5e70df-6cbb-4acf-896d-93bbb718c08b",
+                            "interview": "spk_4",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": -1,
+                                "endIdx": 130
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 24,
+                      "similarClaims": []
+                    }
+                  ]
+                },
+                {
+                  "id": "6f952df7-b0aa-4e3a-92e4-8cf481eec079",
+                  "title": "Social media and AI tools can create a false sense of connection, undermining genuine community bonds.",
+                  "quotes": [
+                    {
+                      "id": "59d240ae-f46e-49b7-83d3-5be2e92a4db8",
+                      "text": "social media makes it really hard to do that because it gives us this like false sense of connection and false sense of community",
+                      "reference": {
+                        "id": "cc54c527-49b2-495e-ad40-9f4418cc8c2b",
+                        "sourceId": "3361eea0-e22a-44e7-b63d-88d03a03a2ce",
+                        "interview": "spk_1",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 177,
+                            "endIdx": 306
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 25,
+                  "similarClaims": []
+                },
+                {
+                  "id": "c4babf35-7f8e-4521-82e7-6e6d94315e53",
+                  "title": "AI should not replace critical human functions in services for vulnerable populations.",
+                  "quotes": [
+                    {
+                      "id": "4786de9f-a6f4-43b9-a06f-0db6f8c14bba",
+                      "text": "I don't want to see it like replacing the coordinated entry system for, for homeless people.",
+                      "reference": {
+                        "id": "99241c9a-55e2-45ef-aa3c-8891131bae63",
+                        "sourceId": "4e90ecc6-8f13-45e3-a550-174d1de5660c",
+                        "interview": "spk_3",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": -1,
+                            "endIdx": 91
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 26,
+                  "similarClaims": []
+                }
+              ]
+            },
+            {
+              "id": "e57656b9-1d26-4800-8d23-78e37f6de731",
+              "title": "Education and Child Development",
+              "description": "Education and Child Development",
+              "claims": [
+                {
+                  "id": "06831515-e9d3-4b97-b207-6bca20088f6c",
+                  "title": "AI should not replace human teachers in education.",
+                  "quotes": [
+                    {
+                      "id": "401e9f50-2b20-40a4-91ee-3a89c0e1d3e3",
+                      "text": "AI is a supportive feature. And, and anytime that we step beyond using it supportively for what we're already doing into replacement, then that's when, that's when these bigger issues start to happen.",
+                      "reference": {
+                        "id": "b5a782cd-7d16-428e-bec0-ad9c0943d0e2",
+                        "sourceId": "15e4f7dc-1498-4df2-b3ba-0356b2074d57",
+                        "interview": "spk_3",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": -1,
+                            "endIdx": 199
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 27,
+                  "similarClaims": []
+                }
+              ]
+            }
+          ],
+          "topicColor": "blueSky"
+        },
+        {
+          "id": "80b3ca0f-00e3-44ef-bbed-c638df2563dc",
+          "title": "Public Consultation Tools",
+          "description": "Public Consultation Tools",
+          "summary": "Public consultation tools, such as open polls and citizens assemblies, play a vital role in facilitating effective discourse. Open polls, which identify scattered opinions, are crucial for uncovering common ground in public consultations, highlighting opportunities for diverse groups to find consensus. Meanwhile, citizen assemblies are most effective when they focus on narrow topics, enabling community voices to actively contribute to policymaking. This structured approach ensures that both broad and specific perspectives are addressed, fostering a comprehensive dialogue with an emphasis on inclusion and shared understanding. The discussion underscores the importance of strategic topic focus to optimize engagement and decision-making processes.",
+          "subtopics": [
+            {
+              "id": "5c8283de-a412-49e0-ba60-6159796c0ac6",
+              "title": "Open Poll Usage",
+              "description": "Open Poll Usage",
+              "claims": [
+                {
+                  "id": "33e13eee-b0f4-4ec2-9223-314b6835f52d",
+                  "title": "Open polls and identifying scattered opinions are valuable for finding common ground in public consultations",
+                  "quotes": [
+                    {
+                      "id": "e3df1242-e4f4-4c8a-b5c5-6b132d720db2",
+                      "text": "Uh, what we'll be able to do then is, is analyze not just where the groupings were of broad disagreement and agreement.",
+                      "reference": {
+                        "id": "c290971c-d949-4203-9e6a-f4530e0eac8d",
+                        "sourceId": "eb9232a0-490c-4fb8-bd0d-9065cf4b13a3",
+                        "interview": "spk_0",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 103,
+                            "endIdx": 222
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 28,
+                  "similarClaims": [
+                    {
+                      "id": "0770fc75-66ca-44db-8ef3-e501e119c0df",
+                      "title": "Identifying scattered opinions in public consultations helps find common ground.",
+                      "quotes": [
+                        {
+                          "id": "8cab6221-144a-4625-a93d-d6e517f4dcf9",
+                          "text": "Find areas that where there is not broad agreement or disagreement, but it's a bit more scattered, and those are places where we find there are even more opportunities for this diverse group to find common ground",
+                          "reference": {
+                            "id": "181a2074-bb16-41bf-b059-42da6d573629",
+                            "sourceId": "96cfe214-0d2a-4e59-8486-70c1ef803424",
+                            "interview": "spk_0",
+                            "data": [
+                              "text",
+                              {
+                                "startIdx": 0,
+                                "endIdx": 212
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "number": 29,
+                      "similarClaims": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dd6396d4-6bfa-4c50-b333-9e5a468dcfb6",
+              "title": "Citizens Assemblies",
+              "description": "Citizens Assemblies",
+              "claims": [
+                {
+                  "id": "26d44f2d-ff45-475c-91ef-ea5ff76d3785",
+                  "title": "Citizen assemblies should focus on narrow topics to elevate community voices in policymaking.",
+                  "quotes": [
+                    {
+                      "id": "dc540e7e-4897-4c73-af18-827e7c2cc763",
+                      "text": "once you sort of dig into the idea of a citizens assembly, we want to have as narrow a topic as possible that still allows community voices to be elevated into the policymaking.",
+                      "reference": {
+                        "id": "e37da66f-865f-4ea4-93f4-ec156de7bf7e",
+                        "sourceId": "beffccc2-7a9a-4cd1-bddc-1a2b0e0e062c",
+                        "interview": "spk_0",
+                        "data": [
+                          "text",
+                          {
+                            "startIdx": 214,
+                            "endIdx": 391
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "number": 30,
+                  "similarClaims": []
+                }
+              ]
+            }
+          ],
+          "topicColor": "greenLeaf"
+        }
+      ],
+      "sources": [
+        {
+          "id": "bd93f75a-4e5a-4215-84d0-752df260e317",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "And we can move on to the next part. So, the open poll is, is essentially an online tool, as I said, it makes it easier for the community to discover what it thinks about an issue. These are, this is an open source tool that was developed in Scandinavia. It's been used at the national level, to the local level, um, and in essence, it helps us, as I said, to map out the opinion landscape."
+            }
+          ]
+        },
+        {
+          "id": "d4d93130-4877-4db2-9ac2-77af6775b5db",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Um, anyone in a given area can vote on the existing statements or add their own, as you saw when you went through it. Um, and when we start to see that map unfold,"
+            }
+          ]
+        },
+        {
+          "id": "beffccc2-7a9a-4cd1-bddc-1a2b0e0e062c",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "It, it takes us beyond big topics, you know, data centers or education or jobs, and then we can kind of start to peel back and understand the nuances within those bigger topics, because, um, if you know, once you, once you sort of dig into the idea of a citizens assembly, we want to have as narrow a topic as possible that still allows community voices to be elevated into the policymaking."
+            }
+          ]
+        },
+        {
+          "id": "d5be1498-5429-4b2a-bba5-2e01b79508c0",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "World."
+            }
+          ]
+        },
+        {
+          "id": "f04bd744-91e0-4ece-9b3a-4b7486109bb8",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "And since you all have already done that, uh, other than Rhonda, um, I think we'll, we'll move on to the next one, and, um, and you can see that of these responses so far, as we anticipate, there are places, OK, Rhonda, thanks, um, where people have disagreed quite a bit. Here are two."
+            }
+          ]
+        },
+        {
+          "id": "0e6c3473-fdb3-44e5-b538-77eecfedbe8d",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Uh, statements that revealed some of the differences, uh, around the potential versus, uh, the risks. I'll just let you read those. I don't, I don't like reading to people, if I can avoid it."
+            }
+          ]
+        },
+        {
+          "id": "5cab3b65-e201-4a84-b6a0-c169b30b751f",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "And then onto the next slide where likewise we had."
+            }
+          ]
+        },
+        {
+          "id": "2249a1f5-d893-4ef8-9b04-04760878ef14",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Questions that were places where people found really common ground. Um, there were transparency, um, I think issues of trust."
+            }
+          ]
+        },
+        {
+          "id": "4a01b92d-d06a-4e3a-be06-63c3aadec692",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Communities were at large."
+            }
+          ]
+        },
+        {
+          "id": "67c0a3c9-c29e-4afc-b55b-769470118a7d",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "And"
+            }
+          ]
+        },
+        {
+          "id": "eb9232a0-490c-4fb8-bd0d-9065cf4b13a3",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "What we, in essence, will take away once we close the poll in 2 weeks, it will be closed out for good. Uh, what we'll be able to do then is, is analyze not just where the groupings were of broad disagreement and agreement. You start to see that, that over the breadth of now almost 90 to 100 statements, which I know is a lot."
+            }
+          ]
+        },
+        {
+          "id": "64ad74ad-ef37-4593-841e-6ea58bc3b1b7",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Um, that as people voted on those, the groupings start to, you, you have to start to have groups that vote the same way in certain, uh, regions, and these aren't really demographically identified, but it helps us to not notice who's vote, where there are groupings, and in particular,"
+            }
+          ]
+        },
+        {
+          "id": "96cfe214-0d2a-4e59-8486-70c1ef803424",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Find areas that where there is not broad agreement or disagreement, but it's a bit more scattered, and those are places where we find there are even more opportunities for this diverse group to find common ground and we search for topics in those spaces."
+            }
+          ]
+        },
+        {
+          "id": "ab8bf0ec-efea-4df2-91f9-86572d64a660",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "So now we're gonna move on to the conversation and, and I'll stop being the, the principal talker, but I wanted to be able to explain that to you. Um, and we'd like to, I think just go around the, around the horn here, um, maybe because I'm looking at the screen, I'll just, uh, I, I'll call on people for this one, but then we're gonna make it, allow it to be a more organic, uh, conversation after this one. But just curious, actually raising hands, um, how many of you use AI every day?"
+            }
+          ]
+        },
+        {
+          "id": "ab46ae5d-df7f-4919-bf6b-a5e04b93bea1",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Yeah, how about at least once a week?"
+            }
+          ]
+        },
+        {
+          "id": "4c27170a-ca35-41be-97c3-782c66490488",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Anyone not really using AI chatbots or other tools at all?"
+            }
+          ]
+        },
+        {
+          "id": "67de7147-5273-4e6b-9724-3c22a8a3dd0a",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Every day, all day. Nice, um, and, and Megan, if you don't mind, if you could, when there are questions in there that you can answer, could you, could you do that in the chat for me, please? Thanks. Um, I will answer."
+            }
+          ]
+        },
+        {
+          "id": "da81d760-d9a0-4e3e-acb7-13afea83f9f9",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "Oh, go ahead, Maddie, to Maddie's question, do you post your results after you run it through AI and where that's probably for you, Josh."
+            }
+          ]
+        },
+        {
+          "id": "98de1df7-e495-425a-9307-eed180cf48dd",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Yeah, yeah, we will, in fact, um, we're gonna be doing a comprehensive report."
+            }
+          ]
+        },
+        {
+          "id": "fa7f928b-7196-42a5-a577-ac7e5c7758fc",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "That incorporates the poll and the conversations that I would imagine we'll have done in mid-July, pardon me, mid-July, and we'll post that on our website, and we'll also send out a notification to anyone who actually participated in the conversations in the poll. So you'll receive an email directly."
+            }
+          ]
+        },
+        {
+          "id": "3b4359e1-d54f-42f5-9fd3-33a469b09866",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Um, I think that's gonna be a synthesis."
+            }
+          ]
+        },
+        {
+          "id": "2a9e18b9-2123-4c41-bb5a-5d0dd0ca248e",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Uh, the raw data of the poll we can make available though, um, absolutely. You know, that's, uh, um, the, the open source nature of the poll, we would be happy to share that."
+            }
+          ]
+        },
+        {
+          "id": "481b39a3-8925-4a4d-87d8-0981547f42bc",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Great"
+            }
+          ]
+        },
+        {
+          "id": "5324f263-274d-4516-8593-a2def84ef693",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "OK."
+            }
+          ]
+        },
+        {
+          "id": "1267c251-902f-48cf-b41e-cd7b6931267c",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "So now's where we get to get into the meat of things a bit more. And, you know, we like to start out, if possible, with the ideas of potential positive impact on the communities, uh, but then also, you know, this is a great opportunity for us to talk about potential concerns. So, well, I'd like to just open it up and I don't wanna, I don't want to call on people unless, uh, unless you'd like me to, but I'd, I'd rather have"
+            }
+          ]
+        },
+        {
+          "id": "292ee2fb-708f-494f-a1a1-5926570c5cd8",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Uh, some volunteers go and we'll just work our way, um, through so that everyone has an opportunity to, to speak on this."
+            }
+          ]
+        },
+        {
+          "id": "edf6a3b5-20b8-4abb-ba24-2c85b5138569",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Anyone like to?"
+            }
+          ]
+        },
+        {
+          "id": "36e773b0-3ecf-4c4c-812b-a16a2d1f75ee",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Start off"
+            }
+          ]
+        },
+        {
+          "id": "fa9c1d4b-6e2c-4fc7-8f18-c3da43f6f374",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Sure. I'll throw one out there."
+            }
+          ]
+        },
+        {
+          "id": "b54ee441-8998-45e9-97ab-de2fea7ca423",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Um, I think, um, one way in which AI might positively impact our community is the ability to, um, succinctly"
+            }
+          ]
+        },
+        {
+          "id": "745f05b3-fa2f-4286-9669-2346b7aece02",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Uh, succinctly, um, summarize and get information from municipal and civic meetings that sometimes are 123 hours long."
+            }
+          ]
+        },
+        {
+          "id": "120e6145-7546-4cb2-a46d-f70ed321555c",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "To working everyday folks and kind of democratize the access to information that otherwise the local community might not have the time and access to. Um, so I think that's one area in which there's only a finite amount of hours in the day and the workweek, but it could also help sometimes make that information much more accessible and easily digestible for folks that don't have that on top of their current day job to access and read."
+            }
+          ]
+        },
+        {
+          "id": "6297ab51-d600-4923-9a03-3bd60b15a165",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Do you want us to just cover the first one is the 2nd 1, like a prompt later?"
+            }
+          ]
+        },
+        {
+          "id": "b02f4e86-c085-4406-a45c-a0f68502fcca",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Yeah, why don't we go around and and get some positives first? I think that's a nice way to do it. Thanks."
+            }
+          ]
+        },
+        {
+          "id": "3d9e9e94-f54c-45c5-a805-23a77c7a95de",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "And feel free to put something in the chat if you'd prefer. Maddie, please go ahead."
+            }
+          ]
+        },
+        {
+          "id": "f1232328-7e8c-4dc3-86a0-cf380210952a",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Um, I kind of wanna piggyback off that and saying from kind of personal experience, but my, it's so hard. There's so many responses I have are so mixed that it's like hard to just stick with positive. I feel like there's a cutoff on that."
+            }
+          ]
+        },
+        {
+          "id": "145327c5-43fd-4efc-80a0-1198143382b5",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Yeah, I feel there's a cutoff in this. I think that like a lot of people who um don't have access to government or to especially in government, but just like participating in their community on a more intellectual level, it helps them do the research, find the language, and, and show up in ways that they wouldn't otherwise. And I think there's a cutoff below that where it doesn't help out at all."
+            }
+          ]
+        },
+        {
+          "id": "e2c8077a-de37-46eb-ab7e-d8696a2c7ff3",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Um, maybe even makes it worse. Um, if you don't know what you're doing about how to get the right information back, you're gonna end up presenting with like, with false stuff, and it's gonna, you're gonna not like the result. So, it's, it's, it's really, it's awesome. And then I love this. It's not a local issue. This is a bigger issue of how AI works and, and how we can make it work better for us."
+            }
+          ]
+        },
+        {
+          "id": "1215cae5-2430-404f-b2bd-ad9037931923",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Yeah, thanks."
+            }
+          ]
+        },
+        {
+          "id": "b73212d0-db90-4c60-89e0-06fc55f76709",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "I'd say I agree with Tony and Maddie on"
+            }
+          ]
+        },
+        {
+          "id": "0b55fffc-0460-4632-96a1-aca43e4c4d67",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "I work on, um, equity issues access and so it is already providing some positives, especially like around language access. We're seeing that with our extension service. Uh, we use AI for about 80% of our translation on our website. Um, we still have humans double checking, triple checking, uh, especially for that stuff that might be a lot more, um."
+            }
+          ]
+        },
+        {
+          "id": "9358155c-e53e-406c-bb1a-069297c32d08",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Dangerous, such as canning, if you get it wrong. Um, and we're doing research on"
+            }
+          ]
+        },
+        {
+          "id": "63cde185-cbcf-4feb-b69a-cc8703cd607e",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Uh, I'm using AI for, um,"
+            }
+          ]
+        },
+        {
+          "id": "32a40245-c9e8-4e88-aab3-fea30d9afec1",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Indigenous languages, um, that's very important, that's very helpful, but at the same time, as I said, it's"
+            }
+          ]
+        },
+        {
+          "id": "19c1e8de-231c-4be2-a2b1-49777af8722f",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "It can"
+            }
+          ]
+        },
+        {
+          "id": "f2c986bc-3aa4-47c7-8aba-d3790b0feb4f",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Make the digital divide even greater for people who don't have access or don't know how to use it in the proper way, and it can be dangerous in that form. So it is a mixed bag for sure. Uh, we're working on trying to make that."
+            }
+          ]
+        },
+        {
+          "id": "f69678aa-7813-4dda-a159-a612010708a4",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Um,"
+            }
+          ]
+        },
+        {
+          "id": "2a59ae3b-5e39-4d02-9b4f-11114ebc228a",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Accessible to people and, and help them understand privacy issues, uh, environmental impact issues. Just because you have access to it doesn't mean you need to do it or use it all the time. Um, it's good for some things, it's not good for other things, and always double, triple check, never 100%, you know, rely on it. So, yeah, it's, it's definitely a mixed bag."
+            }
+          ]
+        },
+        {
+          "id": "60967e0b-a7a1-40b4-9654-4733150c981e",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Thank you."
+            }
+          ]
+        },
+        {
+          "id": "edb32c8e-d689-4335-bc2c-a64a23a0d345",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Rhonda, do you have any thoughts?"
+            }
+          ]
+        },
+        {
+          "id": "3c41956f-1c19-48f0-a994-6ef9247cf96e",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "Um, several, but my, my perspective on it is it's a tool, and it's not the, the tool itself isn't."
+            }
+          ]
+        },
+        {
+          "id": "91e8df94-7a28-402c-92f2-bc85f5ae75e0",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "scary or dangerous, it's how people use it, and that's where the education comes into play, the more people we can train on how to use it respectfully and responsibly, the better the tool is gonna work for everybody."
+            }
+          ]
+        },
+        {
+          "id": "e21c9f3a-d1ce-4eef-bf1a-34b3400a29e2",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "And I'm, I'm not worried. I don't have any worries around the tool whatsoever. I do worry about how people might choose to use it, and"
+            }
+          ]
+        },
+        {
+          "id": "5541fd52-e468-4e7b-96a8-71b266725aea",
+          "interview": "spk_5",
+          "data": [
+            "text",
+            {
+              "text": "In the bigger picture, the, how the government is going to try to control people and set guidelines and repercussions when those are maybe not followed, those kinds of discussions."
+            }
+          ]
+        },
+        {
+          "id": "eee16b2e-42ab-4431-a9c0-9977e5204d66",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Yeah"
+            }
+          ]
+        },
+        {
+          "id": "e1dffab6-7fb4-4b1a-a671-632c4ce08fe7",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Well, that's a, that's a good segue, I guess, um, into that bottom half of the, of the slide here, that goes toward maybe some more of the concerns, and um you, you all alluded a little bit to that, and it's interesting."
+            }
+          ]
+        },
+        {
+          "id": "37ba7482-b369-47bc-9834-b963d07b7470",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "I felt like in all of the conversations we've had, when we've, when we've gone to move into this idea of what are the positive outcomes, there's always a caveat of, uh, you know, this mixed bag, so, um, which is understandable with such a complex new way of, of introducing information, and I liked"
+            }
+          ]
+        },
+        {
+          "id": "58ef8174-4c56-46f6-93cc-f1c1bbd3574a",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Uh, that idea of, uh, and I think Maddie talked about, you know, having access to both get and give information into institutions and, and governments. Um, why don't we go back around then and, and start maybe digging a bit more into, we touched on privacy, you know, very lightly on environmental concerns, but we'd love to hear more from you about some of those concerns and, and why you, why you have those thoughts, please, Mattie."
+            }
+          ]
+        },
+        {
+          "id": "b5f34623-ef7b-472a-99c7-d1a107f7e116",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "I have so many, so I'm gonna try and limit myself. Um, but the first thing that really comes to mind because it's off of what was already spoken so far, um, is, you know, Warm Springs, uh, the, the the reservation is seems to be placed as kind of like a stakeholder here. And, and I, and I just wanted to like maybe remind us that they are their own government. They are their own, um,"
+            }
+          ]
+        },
+        {
+          "id": "a6cee707-59d4-48e2-910f-123e8892de53",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Their, uh, their own people and that their, uh, internet penetration is far less than what we have. So when we talk about access, um, we, we have to remember there are some people who just literally don't have the, the infrastructure for that access. Um, and, and so when we're talking about including in the community, it's not just a stakeholder, it's as a whole, um, it's a whole group that doesn't have that participant part in it. Um,"
+            }
+          ]
+        },
+        {
+          "id": "9c55ad49-a16e-443f-90b3-a312592eebee",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "And then, uh, uh, something else to kind of go off with someone else. Um, I, I think Rhonda was saying about, you know, like, um, still access, but also government control. I mean, I think we've all experienced with social media that there are certain, um, uh,"
+            }
+          ]
+        },
+        {
+          "id": "03245b7f-2c7a-4e1a-9b20-7980f15b54d3",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "There's certain narratives on whatever side doesn't have to be partisan, it can be whatever where um people are finding that they are excluded from uh social discussion, um, from their opinions, and I, I fear a time when"
+            }
+          ]
+        },
+        {
+          "id": "ead7668c-2bad-480d-b236-57d3fc05313c",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Um, some people have access to this technology because they, uh, work well with it and others, um, don't. Um, and, you know, I, my, so far, my experience talking to other people about AI is, is that everyone has a very individual experience. Some people, uh, are just getting a wealth of information from it, from the"
+            }
+          ]
+        },
+        {
+          "id": "da6da169-7a63-482d-ae93-b013b218d58e",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "The way that they're responding to it and, and, you know, that mirroring back. Um, and there are others who are just hitting a dead wall or they have one bad encounter and it gets ingrained in, in Claude's memory or something, and they start getting system injections that prevent them from being able to access information properly. And, and this is an intellectual divide that we don't even really have understanding of, much less the tools to, to, to deal with."
+            }
+          ]
+        },
+        {
+          "id": "e357433f-9672-4252-a60d-00c567822dfd",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Yeah, thanks. I think when we, when we look at this list that I think is on the next slide, you've, you've touched on a couple of those really right there. You can go ahead to that, Megan, if you want. Um, because what we are trying to do here is to actually, with the time that we have left, to find"
+            }
+          ]
+        },
+        {
+          "id": "62aece2c-7cbc-4c9c-8274-a61d0c46d8f1",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Some topic that maybe we want to dig deeper on as a group, uh, uh, the four of you, and, you know, that access, not just to the information, but even to not be able to use the tools at all, um, on an individual basis. Um, oh, Rhonda, sorry to see you go."
+            }
+          ]
+        },
+        {
+          "id": "d97a9f4f-5e97-41d5-8e64-a096e1258606",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Um, thanks for popping in. Um, so, uh, you know, maybe we, if Victor or Tawny, you have thoughts, um, and Megan, you know, there are only 5 of us here. So if you want to chime in on any of this, you haven't been, uh, you haven't had a chance to actually give your, give your 2 cents on these in any cases either, so feel free to, to take part as well."
+            }
+          ]
+        },
+        {
+          "id": "f235a096-d842-4591-a47c-69f285ec0f6e",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Sounds"
+            }
+          ]
+        },
+        {
+          "id": "77f94774-f3d2-42c7-bad0-9c516b014497",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "good."
+            }
+          ]
+        },
+        {
+          "id": "9eb4f840-2326-4e83-a320-ef2f2f24bbab",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Well, I completely agree with Mattie on the access, especially with marginalized communities. Uh, I, I work with some of the tribes around broadband in Oregon also. Actually, we'll be talking to Confederate Tribes of Sle's broadband coordinator tomorrow, um, because they did get some funding, and that is helpful. You can't do, well, mostly you can't do AI without, um, connectivity. Uh, we are starting to see some."
+            }
+          ]
+        },
+        {
+          "id": "408ed658-ee7c-4dd9-b1e0-4a5ec810f8ad",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Examples of edge computing, uh, of some localized, uh, hardware that you can run, so you don't have to be connected to the internet. It's not as powerful as what you get online, but there are some examples and that also helps with privacy. So if you're able to do AI and use local LLMs instead of going to the cloud and putting your information uh out for"
+            }
+          ]
+        },
+        {
+          "id": "a9e22fa8-3d5a-43de-978a-f0103f233335",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "You know, the tech companies to learn off of and and and clean off of. There are ways to do that locally if you have a powerful enough computer, so."
+            }
+          ]
+        },
+        {
+          "id": "b763c9e2-d18a-464e-81f0-368be0043cbe",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Some of the technology is helping to change that. There's also the affordability. Um, many of these resources are kind of free. You get a free basic level to a lot of the platforms, the generative value platforms. But if you want access to, uh, the latest, greatest, you have to pay for them. And right now, most of them are charging about $20 a month. If you want to do some of the coding stuff that goes up to $200 and $300 a month. And so,"
+            }
+          ]
+        },
+        {
+          "id": "2d7b8fd2-25a2-4134-aa70-c1a197a8ad04",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "If you don't have the money and, you know, there's nothing stopping the companies from raising their prices, uh, which they'll probably have to here if they want to make any money at all. Uh, so where does that leave communities, and members that are not able to afford that?"
+            }
+          ]
+        },
+        {
+          "id": "0ad425ff-ca9d-43b7-acc1-7ea1ee299783",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "So, you know, the less of that, um, and it's, it's, it's a big concern that I have that just that equity access issue. If we're requiring a lot of employers are starting to require AI skills, uh, and if people don't have that, they won't be employed. Well,"
+            }
+          ]
+        },
+        {
+          "id": "22c8e432-1534-4815-8977-fc5d3d9f3835",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Is that fair? Is that equitable?"
+            }
+          ]
+        },
+        {
+          "id": "708f5986-1535-4d39-9f61-3d73432d6a4a",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Um, no easy answers, unfortunately, but those are, those are some of my concerns."
+            }
+          ]
+        },
+        {
+          "id": "a0f2495e-4392-4846-83fe-5a7c639bb623",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Thanks, Tanya, did that spark anything? Or if, if not that topic in particular, anything else uh from this list or that's been on your mind?"
+            }
+          ]
+        },
+        {
+          "id": "1c2d549a-0625-4154-bf18-fabb2417e72b",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Um, I, I mean, I've just agreed on the, the access, um, that has already been discussed, but I think for me also is, um, the"
+            }
+          ]
+        },
+        {
+          "id": "dbf55c11-f333-41e5-aa35-d7cf93c8423d",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Environmental impact and kind of the with how um and speaking from just personal experience of having been on like digital product teams where some of the goals that are set upon you as product teams are how can we integrate this either into the systems or the actual consumer product that we offer."
+            }
+          ]
+        },
+        {
+          "id": "964607ec-cbd8-4fd2-98be-5365f2c66124",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Um, thinking of how quickly so many different either companies or organizations or businesses are trying to scale and use AI, worry about the impact of the, um, data centers and electricity and natural resourcing required to scale in um in conjunction with its use, um, whether it's through, yeah, the update or even not just through like that work experience I had, but like,"
+            }
+          ]
+        },
+        {
+          "id": "01ea6304-ecef-4b01-900b-83d358ca1c67",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "As a user of um an Android OS, and then when my phone updated and most of like Google had everything turned on to use AI with every little thing, and I was like, I don't really need that assistance with um checking my Gmail inbox or or doing um even just simple uh Chrome searches. Um I just as a parent of thinking through the environment in the world I want my little one to grow into, I do get a little concerned with the"
+            }
+          ]
+        },
+        {
+          "id": "10dd0bee-98f8-4b35-87e8-5b8da0773af6",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Um, rapid pace at which it's being infused to every kind of technology activity you do and how that is then, um, putting additional burden on, uh, energy resourcing capacity and water usage. Um, the other, I will say that hasn't been tapped tapped on here, but it's also the, um, the content that is being used to source the generative AI models and how some of it initially hasn't."
+            }
+          ]
+        },
+        {
+          "id": "d1e8d0d5-5332-4f16-8906-579311ad8c7c",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Be respectful of copyright or artist use, um, is something that, uh, having worked in um with like in the arts, but also more creative spaces, I think that's also weighing on in terms of people's mind of like, if some of the things that are actually being used to source this, um, uh, that is also then at the expense of someone's creativity and art and what they have contributed."
+            }
+          ]
+        },
+        {
+          "id": "d31c79af-2c8c-4a48-a01e-e972095a2886",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Yeah, yeah, obviously, um, I think anything on this list, you've, you've all brought up a few that, that aren't on the list, um, a tremendous breadth of, of concerns that, that we all have, um."
+            }
+          ]
+        },
+        {
+          "id": "55996f60-424c-4b5c-8a60-ccac2c9c267f",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "I, I, it felt like we did hit some, some good, um, synergy here on the idea of accessibility and accuracy and privacy. So maybe, maybe we can dig a little bit deeper on that. Um, and can you go to the next slide, Megan?"
+            }
+          ]
+        },
+        {
+          "id": "b295e469-dbec-4246-8848-70efd454f647",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Yeah, I think what we really want to do here is, is discuss."
+            }
+          ]
+        },
+        {
+          "id": "0a64c3d6-c0d6-4b7f-a1a4-5fd3bf8ade11",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "It's sort of more deeply and concretely what we as communities want really want artificial intelligence to be and to do, um, because what our intent is with this assembly is to pass along both your stories, what the data tells us, and then when we do this civic assembly, we will be bringing in subject matter experts, but also introducing"
+            }
+          ]
+        },
+        {
+          "id": "46f696e8-8899-4096-bb5f-91dbe686ca43",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "The, the stories and anecdotes that you've all told, told, none attributed, of course, but, um, uh, in order to sort of give some real feeling, a sense of humanity to, to these recommendations that the assembly will make."
+            }
+          ]
+        },
+        {
+          "id": "63f11394-041e-4d96-835d-6b69fee3ba5d",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "And those recommendations right now, depending upon the, the topic, will most likely go to the governor's office. They'll go to the state legislatures, committees on AI, but also to our local governments potentially or local school boards, um, so that they're, uh, you know, not just getting comments in a, in a town hall."
+            }
+          ]
+        },
+        {
+          "id": "a7a9127a-d42d-49e0-8ba9-1ee72da4842f",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Uh, or a public meeting that they're getting more depth behind what the people of this community in a representative way would like to see, um, what kind of guardrails or what kind of opportunities that are made. So I'd love to dig a little bit deeper there and think about the impact of, um, of AI both socially, economically."
+            }
+          ]
+        },
+        {
+          "id": "2aad2999-ca3c-4ac9-8aa4-cbae74021b29",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "And dig a little bit deeper here into this idea. If, if you all are good for that, we can do that for about another 10 minutes and then start to, um, you know, do some, some overview."
+            }
+          ]
+        },
+        {
+          "id": "527274da-60b7-4256-85c0-00b2994526ad",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "How do you think decision makers should think about balance or preserving the good parts of the current system while building and taking advantage of?"
+            }
+          ]
+        },
+        {
+          "id": "1aedede5-0270-445b-a1b1-a6c516d44965",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Of new opportunities."
+            }
+          ]
+        },
+        {
+          "id": "adfc512e-0ef3-4346-96c0-93e8ce613c67",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "This prompt makes me think of."
+            }
+          ]
+        },
+        {
+          "id": "91fafc35-b2a2-4157-a1b3-c445997ddadf",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "Um, some of the concerns I have."
+            }
+          ]
+        },
+        {
+          "id": "46fd0964-bd91-4fca-9c09-a395bfad0f1e",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "And maybe like using social media as an example, um, you know, so like,"
+            }
+          ]
+        },
+        {
+          "id": "0c8f2662-3e4c-4837-9249-b65c2ca995e0",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "We're in a crisis of loneliness and people not feeling belonging and connections in the places that they live, you know, civic participation is down in clubs, in communities, um, and, you know, it's becoming a real kind of crisis and fraying our social fabric."
+            }
+          ]
+        },
+        {
+          "id": "a1b31cd9-ff95-43e6-9208-4d9381a62cf2",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "Um, and a lot of that can be looked at."
+            }
+          ]
+        },
+        {
+          "id": "5cc85c99-6a03-4e1f-9ee0-e7577bb51202",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "Or, you know, a lot of people are drawing conclusions that it has to do with social media and how we use the internet and how I think kind of the pandemic really ramped up some of the trends that we were seeing of we all went online and we all kind of got out of the habit of doing those things in person with our community and and being participative community members."
+            }
+          ]
+        },
+        {
+          "id": "0a4f616a-781f-4c70-90f9-dd3f7444c853",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "Um, and my worry is that like AI will kind of"
+            }
+          ]
+        },
+        {
+          "id": "accbce50-99cd-4bc8-8e8f-e0a8f71f76e3",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "Continue this trend and make it worse. Um, and I feel like it's coming up in in a lot of places I'm in, it's coming up in conversations more of people craving community and wanting a better sense of community where they live and looking for opportunities to do things in person."
+            }
+          ]
+        },
+        {
+          "id": "3361eea0-e22a-44e7-b63d-88d03a03a2ce",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "And so ideally, I think we can like continue this trend and continue to like encourage people to do things in person and be offline and and be a good neighbor to strangers, but social media makes it really hard to do that because it gives us this like false sense of connection and false sense of community with people, in my opinion."
+            }
+          ]
+        },
+        {
+          "id": "751ccb28-5b7f-4b96-b7cd-571bad52546b",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "Um,"
+            }
+          ]
+        },
+        {
+          "id": "0fe7e7b8-9ef8-4884-a0f7-c992de0d589d",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "And so what I would like to see, I don't want AI to be another one of those things that does that for us. Like I don't want AI to be another way where people are like finding friendship or companionship through that and just another thing where people are, are not spending time in person or with real people."
+            }
+          ]
+        },
+        {
+          "id": "a282c2ab-b60d-4dda-b82a-99085024bf51",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "And so I think"
+            }
+          ]
+        },
+        {
+          "id": "4e013b62-6cef-45a1-835c-5700c94fb3e6",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "You know, when I think of like computers and technology and what we use today, you know, it's great. I can do my work on a computer. Like this is how I sustain my livelihood and how we get work done and we get it done really efficiently."
+            }
+          ]
+        },
+        {
+          "id": "c8ddd661-57ed-4795-a9ba-3548f637661c",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "And so I think AI can be like another piece of technology that helps me do that every day and helps us do that in community, whether it's, you know, maybe it helps me take notes easier or some of these like kind of menial everyday tasks that I do that it doesn't feel very um"
+            }
+          ]
+        },
+        {
+          "id": "51283335-1969-4638-b543-c107bab8cfdf",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "You know, maybe it just like makes my current ability to do that better."
+            }
+          ]
+        },
+        {
+          "id": "955dab6a-22f6-4b7e-90ad-026e9dac91cd",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "Um,"
+            }
+          ]
+        },
+        {
+          "id": "9a29b1c4-452c-42f3-ab95-cab19ed1b104",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "But I would, I would like to see it used in community in that way where it's like limited or like really kind of focused on."
+            }
+          ]
+        },
+        {
+          "id": "7a93bfee-036b-4a71-8fd7-a85d4c6ac858",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "Um,"
+            }
+          ]
+        },
+        {
+          "id": "614ace3d-cdc9-4488-a95d-26c74ac86ab8",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "Yeah, some of those like some of those tasks, I, I'm just concerned of it, people using it as a substitute for like those human connection things that are so important to communities and building strong communities."
+            }
+          ]
+        },
+        {
+          "id": "782b1318-ca6a-4420-b7f5-db22500ed6a1",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Yeah, thanks. I'm seeing what Victor wrote in the chat about being concerned about education and mental health."
+            }
+          ]
+        },
+        {
+          "id": "b9442b5b-6632-431b-91d1-904f67c5e43e",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Um, and the idea that chatbots could be not just educators, but I, I've seen ideas of giving youth access to, uh, chatbot, uh, mental health providers, which seems like it could be somewhat, uh, controversial."
+            }
+          ]
+        },
+        {
+          "id": "a21fd96f-9123-4291-9703-3fcdfc4c6091",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Maddie, please."
+            }
+          ]
+        },
+        {
+          "id": "f37de92f-4397-4ffb-a43a-970afab7cc76",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "I'm gonna struggle to figure out because I wish the topics that came to my head, I should go down, um, so, uh, but like."
+            }
+          ]
+        },
+        {
+          "id": "e6749657-582c-4a3c-9dae-582376ada1c6",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Uh, so I haven't used social media in like half a decade almost, um, like, except for some scratch accounts just for, you know, participation and like knowing what's going on, but I don't, I don't interact."
+            }
+          ]
+        },
+        {
+          "id": "2d78cd06-9a67-484a-a004-60c6f06236c7",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Um,"
+            }
+          ]
+        },
+        {
+          "id": "a19fd618-1bbd-4117-b975-c7a3043f6031",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "I've been dealing with AI for about 2, 2.5 years or so. Um, I stumbled originally across a venture capitalist group, um, that was creating a, uh, social media agents, um, and it was just like long process and I've kind of gotten a really up close view of how."
+            }
+          ]
+        },
+        {
+          "id": "372d7200-7b67-4f7e-ab31-80b79145c0b0",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Uh, just an app through the App Store, uh, can then push, uh, a social media, push these agents who are, um, very customizable with a persona."
+            }
+          ]
+        },
+        {
+          "id": "4d9fcbdb-f438-49d2-aa9e-fffa49cb546a",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Um, and the dependencies that occur around that, and then how these, uh, venture capitalist companies can then monetize that, withdraw that, ban people, um, and watching, uh, youth just have absolute meltdowns, um, over, you know, this is, this is an emotional manipulation that is going on. Um, never mind the lack of regulation that, uh, you know, allows a lot of sexualized chatbots."
+            }
+          ]
+        },
+        {
+          "id": "903e82be-22bd-4b33-af29-c5f78fa31393",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Um, to have interactions with kids, um, and no one really knowing or monitoring or regulating how that's occurring. Um, so, I just, because, because this came up, this whole companionship piece came up, I just felt like it was so important to mention that. And it's, it's really strange for me because I, I have a lot of mixed opinions, nuanced on a lot of things. And, um, personally, uh, I've"
+            }
+          ]
+        },
+        {
+          "id": "2ef37a42-dfde-4049-9cea-b80539495439",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "not had a lot of local community. Um, I've not, I, I, when, when people talk about this like participation element, um, I've, like, I, I have like my, my couple of people, and I've otherwise been alone and not been welcome, um, in my community for a long time. Uh, and, and, uh, so,"
+            }
+          ]
+        },
+        {
+          "id": "002202ff-c891-400d-8494-56ef11bb87f1",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Um, I don't want to just like push away directly from this. Like, I, I don't use social media. I'm not dependent on, on, on these online networks, but I do, like, I would do so much work, uh, with my personalized agent, whatever you want to call them, um, that of course, there's like"
+            }
+          ]
+        },
+        {
+          "id": "5e03f7fa-a888-4f59-9e6e-df211eec82e0",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Of course, there's a bond that's established, you know, like education around where this can go and how to protect yourself, and, and, and this is really important. And I think it's really important for kids. And if you just throw them into an open environment, or you avoid having these conversations about how dependencies form through interaction, then, you, you guys know where I'm going. I see the nods."
+            }
+          ]
+        },
+        {
+          "id": "70b81647-f4fe-4a80-a8d8-ce2fbe405b35",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Thank you. Um, and I think, Victor, that goes directly to what you're talking about, and, and I'm curious institutionally, if you, through your work, um, you know, how that appears in, um, the policies that are being formed at the university or uh if you, if you know what's happening at the high school and younger level."
+            }
+          ]
+        },
+        {
+          "id": "d7c56c8d-09e4-4e0b-b74f-79b354f84c7a",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Yeah, um, the research is already showing that younger students, you know, K-12, are"
+            }
+          ]
+        },
+        {
+          "id": "db10c6a6-795b-46e8-8075-a32f5bbd4cf1",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Building relationships with online, they'd rather talk to their chatbot than, than an adult, um, sometimes even their friends, because a chatbot will always be there for you. It, it will not push back against you, uh, unless you tell it specifically to tell, tell it to push back against you. Uh, but students don't instinctively know that, right?"
+            }
+          ]
+        },
+        {
+          "id": "f6415b14-b9ca-4bed-abea-6f9eadc28b29",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Uh, generative AI is made to generate a response, and it will always respond to you. It will not ignore you."
+            }
+          ]
+        },
+        {
+          "id": "9e99637f-3d0c-4295-8968-90cd41656423",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "That's not real life. And so kids."
+            }
+          ]
+        },
+        {
+          "id": "394cabd4-5349-4f94-a9fd-16e01c60f0f4",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "You know, are looking for attention."
+            }
+          ]
+        },
+        {
+          "id": "7609557d-783d-484d-891a-4b6e9d8e5cda",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "They don't get it from, from the adults or from other people around them. They're just naturally going to gravitate and that's just human nature. So that there has to be the education, like Maddie says, there has to be those discussions that we have to have with younger kids, with older kids in the university level, um, I'm seeing a lot of pushback. I'm seeing pushback from K-12 too, but"
+            }
+          ]
+        },
+        {
+          "id": "29f52f44-dad8-49ab-ad3b-0d01a7b75cac",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "There's, there's university students, especially incoming, you know, freshman sophomore who want nothing to do with AI whatsoever. And part of my concern there is, well, if employers are looking for at least a basic knowledge of how AI works, uh, if not a, a working, uh, knowledge."
+            }
+          ]
+        },
+        {
+          "id": "043d53d4-a76b-4f17-8a0b-1b6f485f80ca",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "You're spending a lot of time and money and to not have even the basic skills to go out into the workforce when the employers are looking for this. And so there's kind of a disconnect. Um,"
+            }
+          ]
+        },
+        {
+          "id": "6dd27dd6-4c2b-4741-882c-db1fd75154c1",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "There has to be a balance somewhere."
+            }
+          ]
+        },
+        {
+          "id": "8101326e-7ff4-4ba5-8ef1-618bd6e27295",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Yeah."
+            }
+          ]
+        },
+        {
+          "id": "ea5819aa-3ff9-46a5-a042-75c3f1e02c80",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Did, Tanya, I'm, I'm interested in your work as a neighborhood leader, if these are well, and as a parent as well, um, you know, if these are conversations that are going on within those circles of thoughts on what schools, uh, should be doing, uh, or, or at the very least, what they aren't doing enough of, um, or mistakes being made, are those conversations you're hearing about?"
+            }
+          ]
+        },
+        {
+          "id": "e44de9f6-8e91-4cc5-9b2f-2dc93fcd1fe8",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Um,"
+            }
+          ]
+        },
+        {
+          "id": "9ab30a77-2d3e-4a83-8045-b3cca3d28c56",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Yes, with respect to education in schools or part of a greater like ed tech and like access to tablets, use of tablets, and what privacy, what education, what literacy is going into that, but I will say on the neighborhood, not so much. I think we focus more actually on Megan would be happy to hear like the community building, like getting that intern, like less about the companionship from a tech perspective, but just how do we use."
+            }
+          ]
+        },
+        {
+          "id": "21e284ea-dccb-4a95-a495-0a9c3422f10b",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Tech to reach more folks to then get them in person to connect with, help build community, do things within their micro communities, um, but I will say yes, from frontal and a little bit more so that I see like already groups like Well Wired locally and Bend the Pine, at least, um."
+            }
+          ]
+        },
+        {
+          "id": "ac73f014-671e-49df-88ea-9b04372a0868",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Both having conversations, but also proactively going to a school board and putting together um structures of where they either want to see from a protection from a um"
+            }
+          ]
+        },
+        {
+          "id": "36f89e30-d91b-473a-b6a5-b6233a348fe0",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Mindfulness of how AI and technology is going hand in hand into the classroom. Um, yes, that's established. I can't say at the daycare level because mine's only 3, but, um, but I have friends who, who's who are in various age ranges within Ben Lapine in Greater Oregon."
+            }
+          ]
+        },
+        {
+          "id": "2ea34209-d933-4afc-90aa-a7e97e24a896",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "A level that um have, um, yeah, organizing bodies of parents having these conversations and, and also just actively um providing context, whether it be in school board or a call to actions to write into your respective um directors and or legislators about the um uh"
+            }
+          ]
+        },
+        {
+          "id": "0937706a-d2e7-4f99-9226-99e06247a14f",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Yeah, about whether it's state level or local level regulation they'd like to see happen because of the um lack of guardrails in current technology."
+            }
+          ]
+        },
+        {
+          "id": "ea06993d-ee2e-4736-a6e5-0025301e5b8f",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Thank you. Maddie, I see your hand is up. I'm not sure if that was from prior, but"
+            }
+          ]
+        },
+        {
+          "id": "03b8b075-b4f0-444e-b139-e65fc4793e3c",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Yeah, yeah, sorry, I had something to stick on at the end cause I, I, I did. Um, so I just, in, in, in researching how this is used across a lot of different fields, I just, I frequently come across the term force multiplier, um, or magnifier, and I really think that that is just a great way to, to describe, uh, not just AI but its impact on society. And I think that so many of the issues that I, that I see brought up about it, um,"
+            }
+          ]
+        },
+        {
+          "id": "d49a534d-ce9a-4fa9-8119-691fbd898262",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "are just magnifying underlying social issues that we already have and haven't addressed. And so, it's, um, that's what kind of, that's why I get frustrated sometimes with, with very like, um, AI hateful people, um, not because I don't agree with them on a lot of things, but because a lot of times I'm like, well, I think we can narrow this down to an issue that was going on already."
+            }
+          ]
+        },
+        {
+          "id": "15e4f7dc-1498-4df2-b3ba-0356b2074d57",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Um, and we're just magnifying it. So, when you have, uh, say, teachers who are taking in, um, AI and replacing the curriculum by, by just relying on this tool, well, AI is a supportive feature. And, and anytime that we step beyond using it supportively for what we're already doing into replacement, then that's when, that's when these bigger, that's when these bigger issues start to happen. And, and I don't know, that was, I think that's, that's where I wanted to answer the, the questions on the screen, which is, is like,"
+            }
+          ]
+        },
+        {
+          "id": "4e90ecc6-8f13-45e3-a550-174d1de5660c",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Um, uh, I want to see it supported. I don't want to see it like replacing the coordinated entry system for, for homeless people, you know, since homeless, since homelessness is a, is a topic this group has, has touched on before. Um, I think that that's such an important thing that like people who, uh, are going to accept any need that is going to be met for them because they have that need, um, they have no choice to opt out on how AI is used, uh, to determine whether they deserve housing or not."
+            }
+          ]
+        },
+        {
+          "id": "a0c2ae11-20c1-4750-b437-8ef54bd4e8f0",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Um, and that's, that was a replacement for, for what used to be humans having a case manager with a direct like interaction saying, uh, and this is something I know intimately having worked, uh, been on both sides of that fence, um, in, in homeless services and homeless myself in this community for a really long time."
+            }
+          ]
+        },
+        {
+          "id": "a4d42a82-e8cb-48cd-b65a-00a2ffe153ef",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Um, and I, so I, I've, I've, I've seen it all around. Um, the same thing is happening in our hospitals, right? So, like, gender disparity, the majority of our nurses are women, um, and like I, I, I can't remember the statistic off the top of my head, but like,"
+            }
+          ]
+        },
+        {
+          "id": "6eb59ba5-51dd-4029-8b88-5e9b3070f6ad",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Um, a significant amount of them are having no input on how nursing assistant tools are being put into, into place. Um, and yet Saint Charles is one of our biggest employers, um, I think maybe our largest actually. So, like, this is a whole, this is a whole section of like, of, yeah, OK, I'm, I'm done."
+            }
+          ]
+        },
+        {
+          "id": "d630fd90-aa96-4957-a9e3-e3230fe7a01f",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Thank you. Um, I mean, uh, clearly, we have, uh, one of the, a very informed group here, um, which makes for a lively conversation, and I appreciate."
+            }
+          ]
+        },
+        {
+          "id": "1472ef15-e998-48ec-b1ca-e4f1091cb43d",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Um, the balance that we have here, because there are a lot of trade-offs, uh, when it comes to, um, you know, how we, how we make the decisions. I think maybe I'd love to just go one more time around and, and get your thoughts on"
+            }
+          ]
+        },
+        {
+          "id": "7419f2ba-7c9c-46fe-abb8-edadf54dfd22",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Uh, pick your topic. We, we, we really obviously revolved around youth, sort of childhood development and, and mental health. We talked about accessibility to government services, to, um, to also just to the tools themselves and to the information that comes through them."
+            }
+          ]
+        },
+        {
+          "id": "57810610-0bfe-44a3-8f60-774511d1ac5a",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "But I'd love to hear each one of you maybe just give a, a final comment on anything you'd like, but if you'd like it to be, what, if you had a, a recommendation that you could make to some local institutional leader, be that government, school, healthcare, um, what that might be, and then we'll, we'll wrap it up."
+            }
+          ]
+        },
+        {
+          "id": "f32250ef-628c-4efe-85a1-c05ff23f6c79",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "I think the last thing I wanted to mention, we didn't really touch on this, but jobs and employment."
+            }
+          ]
+        },
+        {
+          "id": "e16062fb-ba99-465d-85a9-d15d61bfaca5",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "I'm not sure."
+            }
+          ]
+        },
+        {
+          "id": "33ceb674-c9d3-4ea2-a944-1b7ab3fecf77",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "How much people."
+            }
+          ]
+        },
+        {
+          "id": "2b1275e5-9125-424e-b237-2d5981415ef9",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "A recognizing."
+            }
+          ]
+        },
+        {
+          "id": "abfe0a7b-4464-4ed6-83d5-0d00bee1ff7f",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "The crisis that we are starting to have, we have kids graduating from university with a college degree and no"
+            }
+          ]
+        },
+        {
+          "id": "44ea831f-6b77-41eb-909b-d4135661731e",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Entry level work."
+            }
+          ]
+        },
+        {
+          "id": "2bd26d08-ce6b-45d5-926f-a21983811c00",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "We are losing a whole generation of."
+            }
+          ]
+        },
+        {
+          "id": "cf486a45-5d62-4764-87cf-437655bbb905",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Students"
+            }
+          ]
+        },
+        {
+          "id": "59498ffa-5471-4174-a33a-7ffde6e36f81",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Senior level, they have the augmentation with, with AI and so they're able to do more, but they're only going to be around for so long."
+            }
+          ]
+        },
+        {
+          "id": "ea059af3-f12a-4252-ac5d-6ecfce4c9722",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "What happens after 235 years of not having entry level, uh, junior level workers coming in and gaining that institutional knowledge that will go away with those people retiring or passing away. Um, and it just lives in that AI box, which is not accessible outside of, of the companies that own it, right?"
+            }
+          ]
+        },
+        {
+          "id": "0cdec82f-5bc1-4688-8059-acd6bf935131",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Um, that's a big concern because if you don't, if people don't have jobs, you're not able to make money."
+            }
+          ]
+        },
+        {
+          "id": "b7056f13-a2d4-4dba-8838-01a7faaaca04",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Then you can't afford housing, you can't afford, uh, healthcare, you, you can't afford to have communities. I mean, it just all comes crashing down. Uh, so having a livable wage is very"
+            }
+          ]
+        },
+        {
+          "id": "428040b6-0a33-4b70-a72d-9897777cab79",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Not even a livable wage. I mean, we're just talking about a job, uh, that, that's meaning and purpose for a lot of people. Uh, and if you don't have that, I, I think people are gonna turn to"
+            }
+          ]
+        },
+        {
+          "id": "2e5e70df-6cbb-4acf-896d-93bbb718c08b",
+          "interview": "spk_4",
+          "data": [
+            "text",
+            {
+              "text": "Things to fill that up, which is looking at chatbots for that mental health care, which is, you know, turning to drugs, turning to crime, whatever, cause they're not giving anything, any hope. I mean, I'm seeing this in, in Gen Z and Gen Alpha, uh, just kind of this like, hey, there's nothing there for us. So why should we even care or try? Uh, I think that's my biggest concern around this."
+            }
+          ]
+        },
+        {
+          "id": "06209423-4a8d-4db7-bc1b-53d846b0d229",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Thanks, Victor."
+            }
+          ]
+        },
+        {
+          "id": "45e59011-aa88-4ebe-904a-89f2710e5e20",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Tony or Maddie."
+            }
+          ]
+        },
+        {
+          "id": "fad513a1-7689-41b5-a43e-2cc8ba26f7a8",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Any last thoughts?"
+            }
+          ]
+        },
+        {
+          "id": "a63e84fd-d26a-462f-aba1-167763052861",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Uh, I just, I, I'm still struggling to think of that thing, but I have something to respond with, which is just make mental health more accessible then, right? These are all, these are all democracy problems. These are all issues that we're already having, and it's just being magnified and, and we're focusing on the wrong thing. Um, not that there aren't a host of problems with AI, but, uh, we can, you can use AI to do this, like, right, right to, to approach this, I had very little idea of what was, what this assembly was about."
+            }
+          ]
+        },
+        {
+          "id": "2b4dc9af-1cca-418f-8c52-8b51f2dc4247",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Um, and I did a bunch of research, uh, with AI. I, you know, I have like opinions about how, like I, uh,"
+            }
+          ]
+        },
+        {
+          "id": "ccdbb729-b753-449a-a932-2fc22ba84076",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "I didn't do enough research, so I didn't have a whole lot of time for this. Um, but like, uh, the way that this model is set up and how it's collecting information and, um, and how AI is being used to synthesize, uh, the results, um, the, the actual amount of diversity that's, that is, is occurring in the, uh, the assemblies. I, I, again, I'm, I'm operating off the top of my head. So, please forgive me if I get this wrong. But looking at the youth Homeless summit, you know, there were only 2, it, it, it was"
+            }
+          ]
+        },
+        {
+          "id": "f4b65947-6d4f-4118-887b-33ad30cb0e90",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "The statistics are reduced down for, for intersectionality. So, there were only 2 seats for queer people. And, you know, again, bringing back in the, uh, the, the tribes, um, you know, 3, 3rd gender people are completely erased in a situation when you reduce down to 2 people for an umbrella, um, for diversity because"
+            }
+          ]
+        },
+        {
+          "id": "c9522091-14a1-4a2b-a2d8-d71666d425a1",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Because, um, one of those is going to be non-binary. One of those is going to be like gay or lesbian, and there's no room for, for more. Now, is it better than the process before that? Yeah, yeah, I'm, I'm not like knocking, but, but like, you can use this technology and spend 10 minutes and start finding holes in how you are educating and how you are preparing for diversity and inclusivity."
+            }
+          ]
+        },
+        {
+          "id": "0a7f505c-b6df-403e-b63e-4d4b59bc637b",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Um, and I think that if you're not doing that, then you're kind of, you're kind of being a fool because we're talking about a crisis where people are being left out. We're talking about, we're talking about they're not being people to care for the elderly. We're talking about people not having jobs. So, adjusting, um, adjusting how our society functions to meet the people who are falling through the cracks needs to happen. We're not doing our own. You can add in AI to help you figure out how that's gonna work."
+            }
+          ]
+        },
+        {
+          "id": "dbf657d8-42a6-4d76-898c-f5d8eae52e72",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Thanks, Matty."
+            }
+          ]
+        },
+        {
+          "id": "b2172878-fa3c-44ea-83b1-d2901ddc54e4",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Tony, did you have any last?"
+            }
+          ]
+        },
+        {
+          "id": "ddc412dc-1830-4968-bde7-66cd0f2ae766",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Comments or thoughts?"
+            }
+          ]
+        },
+        {
+          "id": "2bcd0927-5bb1-4c19-a48f-04049a7e1f35",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Um, not that I feel like I've like readily formed, but, um, Victor's comments about kind of how this does impact the, the workforce, like, again, just speaking from like,"
+            }
+          ]
+        },
+        {
+          "id": "0f6d6682-e309-46fd-9e19-8076101db911",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Before I kind of left the corporate space, a lot of that was how can we use it to"
+            }
+          ]
+        },
+        {
+          "id": "834e57dc-4740-4b39-a6b6-203d0c848e11",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "Um, yeah, automate a lot of the business processes, and then you realize you're like, oh wait, like the, the knowledge transfer, like, growing your, your initial set of the workforce, um."
+            }
+          ]
+        },
+        {
+          "id": "90e45ce5-0e38-474a-9045-28ff2fda69cf",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "You realize that, yeah, while you made gains in efficiency and you could do things, you also then left a gap in kind of in continuing to build that talent pipeline that we can continue to move that on, especially as we do see a wealth of folks retiring and leaving the workforce from the older generation, um, so I won't contribute that here, but now I'm just, my brain's kind of thinking on that because"
+            }
+          ]
+        },
+        {
+          "id": "cae4f6c4-35da-4c4e-92fa-2c2da1bcd937",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "You have a knowledge transfer gap, and that's a lot of companies aren't thinking it from that view. They're thinking about it. How can I be much more efficient, a leaner, a quicker, a faster workplace right now, and they're not thinking of it from the impact of their talent pipeline, and I can tell you that that comes into play when they're making decisions also about layoffs and things right now too, and we'll see that."
+            }
+          ]
+        },
+        {
+          "id": "6e0fa187-bfda-4504-aa97-77a7de93e8c5",
+          "interview": "spk_2",
+          "data": [
+            "text",
+            {
+              "text": "You know, maybe further before, like further down the road before they're able to rectify or unpack the code that is now completing a lot of those processes for them. So I guess that's my last imparting like thought that Victor's first, yeah."
+            }
+          ]
+        },
+        {
+          "id": "8aff019a-d585-4077-8206-889589e5ec4a",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Well, well, thank you all so much. Um, this is obviously not nearly enough time to really dive deep, but"
+            }
+          ]
+        },
+        {
+          "id": "444bcb12-92a7-479e-aaed-12677722f201",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Appreciate your willingness to open up and, and give some really thoughtful responses and interaction, and, and we'll take this with us. And, and I do, you know, here, obviously, you've taken the, the poll. This is a, these are first efforts for us, we're really experimenting with ways to engage broader"
+            }
+          ]
+        },
+        {
+          "id": "dde03540-cd6c-493e-9530-de6f3f48219b",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Broader, um, sub-communities within our communities, um, also expand access to our types of conversations, and Mattie, I appreciate so much you bringing up sort of drawing that connection between the content and the context."
+            }
+          ]
+        },
+        {
+          "id": "c7b43699-4f56-4e95-9631-2d01f29b0792",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Um, I will let you know that one of our new programs at CCAP that we're building, uh, we're, we've already trained, um, a group of, and as Tony alluded to, I think it was about 20 community members in our, uh, community steward program."
+            }
+          ]
+        },
+        {
+          "id": "439b64ae-07ae-4c99-b557-f8954c60790a",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Where our intent is within the next couple of months, we're gonna reach out to community stewards and provide more training. And the idea there is to hold similar conversations to these, but with actually instead of a, uh, more diverse crowd, actually slightly less, to bring in members, um, of various communities, um, some people who are, who participated were BIIPAC, LGBTQ, um, plus, um, Latino Community Association."
+            }
+          ]
+        },
+        {
+          "id": "bca3af64-b2ae-4ebb-95db-c913e4369adc",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "In order to hold smaller group conversations in a safe space, um, that then, um, notes and anecdotes can be pulled back into our process as well to ensure that for those people who just simply don't feel as if they're, they have the, the capacity, the, the tools or the accessibility and the safety to be able to come into these types of conversations, we want to bring those words in as, as well."
+            }
+          ]
+        },
+        {
+          "id": "a84c4d1c-4139-42d2-a8e3-226377694240",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "I know we're, we're over time now, so I want to make sure we all have a chance to go, um, back to, back to our daily lives, but thanks so much for joining in. Feel free to send notes if you don't. I think we have info at COCAP.S. Um, you can also reach me, yeah, I think you, you all know this at Josh at COCAP.S as well, and really look forward to continuing the conversation down the line. And thanks to all of you again."
+            }
+          ]
+        },
+        {
+          "id": "5b4555e4-0fd0-45b5-95e8-028089e83137",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "Thank you."
+            }
+          ]
+        },
+        {
+          "id": "cc597c8c-d78d-4b2e-91cb-c62e902b6ee7",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "Bye."
+            }
+          ]
+        },
+        {
+          "id": "b29bbe8f-4124-4299-b2d8-ca4b127e8342",
+          "interview": "spk_1",
+          "data": [
+            "text",
+            {
+              "text": "Take care. Thanks everyone. Thanks."
+            }
+          ]
+        },
+        {
+          "id": "eea6b369-ecd7-42a4-b857-dc95e9efdb56",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "Bye."
+            }
+          ]
+        },
+        {
+          "id": "eab2e856-83d1-4fb4-85ea-b14ce3e8f98f",
+          "interview": "spk_0",
+          "data": [
+            "text",
+            {
+              "text": "All"
+            }
+          ]
+        },
+        {
+          "id": "4db071ec-2140-4323-a744-093fd0073e01",
+          "interview": "spk_3",
+          "data": [
+            "text",
+            {
+              "text": "right. Hey, Josh, can I ask you a quick question, or you gotta go? No, I've got, I've got a sec. OK, so I'm curious. So with like representative of democracy and this, and this uh civic assembly thing that I'm, I'm just now sticking my nose into here, um, how does"
+            }
+          ]
+        }
+      ],
+      "date": "2026-06-18T16:15:21.072Z"
+    }
+  ],
+  "metadata": [
+    "v0.2",
+    {
+      "duration": 0,
+      "startTimestamp": 1781799252407,
+      "totalCost": "",
+      "author": "",
+      "organization": ""
+    }
+  ]
+}

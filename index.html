@@ -177,6 +177,30 @@
   .nohit { display:none !important; }
   .hidden { display:none !important; }
   footer { margin-top:30px; color:#aaa; font-size:0.78rem; text-align:center; }
+
+  /* ── transcript side panel ── */
+  .tx-overlay { position:fixed; inset:0; background:rgba(0,0,0,0.18); z-index:40; }
+  .tx-panel {
+    position:fixed; top:0; right:0; bottom:0; width:44%; max-width:680px; min-width:320px;
+    background:#fff; box-shadow:-4px 0 24px rgba(0,0,0,0.13); z-index:41;
+    display:flex; flex-direction:column; transform:translateX(100%);
+    transition:transform 0.22s cubic-bezier(.4,0,.2,1);
+  }
+  .tx-panel.open { transform:translateX(0); }
+  .tx-panel-header {
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 18px; border-bottom:1px solid #e2e2e2; flex-shrink:0;
+  }
+  .tx-panel-title { font-weight:600; font-size:0.9rem; color:#1a1a1a; }
+  .tx-panel-close { border:none; background:none; font-size:1.4rem; cursor:pointer; color:#888; line-height:1; padding:0 4px; }
+  .tx-panel-close:hover { color:#333; }
+  .tx-panel-body { overflow-y:auto; flex:1; padding:12px 0; }
+  .pf { display:flex; gap:10px; padding:8px 18px; border-bottom:1px solid #f0f0f0; }
+  .pf.pf-active { background:#fffbea; border-left:3px solid #f0b429; padding-left:15px; }
+  .pf-left { flex-shrink:0; display:flex; flex-direction:column; align-items:center; gap:4px; padding-top:2px; }
+  .pf-ord { font-size:0.72rem; color:#bbb; font-weight:500; min-width:20px; text-align:center; }
+  .pf-main { flex:1; min-width:0; }
+  .pf-text { font-size:0.88rem; color:#222; line-height:1.55; }
 </style>
 </head>
 <body>
@@ -314,6 +338,15 @@
     <input id="popNewName" type="text" placeholder="New theme…">
     <button id="popNewAdd">Add &amp; tag</button>
   </div>
+</div>
+
+<div id="tx-overlay" class="tx-overlay hidden"></div>
+<div id="tx-panel" class="tx-panel hidden">
+  <div class="tx-panel-header">
+    <span class="tx-panel-title" id="tx-panel-title"></span>
+    <button class="tx-panel-close" id="tx-panel-close">×</button>
+  </div>
+  <div class="tx-panel-body" id="tx-panel-body"></div>
 </div>
 
 <script>
@@ -647,21 +680,12 @@
     const sb = e.target.closest(".star-btn"); if(sb){ toggleStar(sb.getAttribute("data-frag")); return; }
     const ttext = e.target.closest(".ttext.jump[data-frag]");
     if(!ttext) return;
-    const fragId = ttext.getAttribute("data-frag");
-    const r = allThemesFragReport[fragId];
-    if(!r) return;
-    loadReport(r);
-    showTab("transcript");
-    requestAnimationFrame(() => {
-      const el = document.getElementById("transcript").querySelector('.tx-frag[data-id="'+CSS.escape(fragId)+'"]');
-      if(!el) return;
-      el.scrollIntoView({behavior:"smooth", block:"start"});
-      el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash");
-      setTimeout(() => el.classList.remove("flash"), 1900);
-    });
+    openTranscriptPanel(ttext.getAttribute("data-frag"));
   }
   document.getElementById("starred-list").addEventListener("click", jumpFromHomepage);
   document.getElementById("all-themes-list").addEventListener("click", jumpFromHomepage);
+  document.getElementById("tx-panel-close").addEventListener("click", closeTranscriptPanel);
+  document.getElementById("tx-overlay").addEventListener("click", closeTranscriptPanel);
 
   /* ───────────── report viewer ───────────── */
   let currentSources = [];  // used by themes view
@@ -1220,7 +1244,43 @@
     const demoed = await tryDemoMode();
     if(!demoed) showScreen("screen-welcome");
   }
+  /* ───────────── transcript side panel ───────────── */
+  function openTranscriptPanel(fragId){
+    const r = allThemesFragReport[fragId];
+    if(!r) return;
+    const sources = r.payload.sources || [];
+    const panel = document.getElementById("tx-panel");
+    const overlay = document.getElementById("tx-overlay");
+    document.getElementById("tx-panel-title").textContent = r.name.replace(/\.json$/i, "");
+    document.getElementById("tx-panel-body").innerHTML = sources.map((s, i) => {
+      const txt = (s.data && s.data[1] && s.data[1].text) || "";
+      const active = s.id === fragId;
+      return '<div class="pf'+(active?' pf-active':'')+'" data-id="'+esc(s.id)+'">' +
+        '<div class="pf-left"><span class="pf-ord">'+(i+1)+'</span></div>' +
+        '<div class="pf-main">'+spkBadge(s.interview||"unknown")+'<div class="pf-text">'+esc(txt)+'</div></div>' +
+        '</div>';
+    }).join("");
+    overlay.classList.remove("hidden");
+    panel.classList.remove("hidden");
+    requestAnimationFrame(() => {
+      panel.classList.add("open");
+      const active = panel.querySelector(".pf-active");
+      if(active) active.scrollIntoView({ block:"center" });
+    });
+  }
+
+  function closeTranscriptPanel(){
+    const panel = document.getElementById("tx-panel");
+    const overlay = document.getElementById("tx-overlay");
+    panel.classList.remove("open");
+    panel.addEventListener("transitionend", () => {
+      panel.classList.add("hidden");
+      overlay.classList.add("hidden");
+    }, { once: true });
+  }
+
 })();
 </script>
+
 </body>
 </html>

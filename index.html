@@ -30,6 +30,10 @@
   .rlist-header button { margin-left:auto; padding:6px 12px; border:1px solid #ccc;
     background:#fff; border-radius:6px; cursor:pointer; font-size:0.85rem; }
   .rlist-header button:hover { background:#f0f0f0; }
+  .demo-badge { font-size:0.78rem; color:#b45309; background:#fef3c7; border:1px solid #fcd34d;
+    border-radius:10px; padding:3px 10px; font-weight:600; margin-left:auto; }
+  #editModeBtn { margin-left:8px; font-size:0.82rem; padding:5px 12px; background:#5aa469; color:#fff; border-color:#5aa469; }
+  #editModeBtn:hover { background:#4a9058; }
   .rlist-wrap { max-width:880px; margin:0 auto; padding:28px 20px; }
   .rlist-title { font-size:1.1rem; color:#888; font-weight:500; margin:0 0 16px; }
   .rlist-grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap:14px; }
@@ -193,8 +197,10 @@
 <!-- REPORT LIST SCREEN -->
 <div id="screen-reports" class="hidden">
   <div class="rlist-header">
-    <span class="folder-label">📁 <strong id="folder-name"></strong></span>
+    <span class="folder-label" id="folder-label">📁 <strong id="folder-name"></strong></span>
+    <span id="demo-badge" class="demo-badge hidden">Demo Mode — read only</span>
     <button id="changeFolderBtn">Change folder</button>
+    <button id="editModeBtn" class="open-btn hidden">Open folder to edit</button>
   </div>
   <div class="rlist-wrap">
     <p class="rlist-title" id="rlist-status"></p>
@@ -277,7 +283,7 @@
         tab (each fragment has a <em>+ tag</em> button). Themes and tags are shared across all reports and saved
         automatically to <code>themes.json</code> in your folder.
       </div>
-      <div class="controls">
+      <div class="controls" id="theme-edit-controls">
         <input type="text" id="newThemeNameTop" placeholder="New theme name…" autocomplete="off">
         <button id="addThemeTop">Add theme</button>
         <button id="exportBtn">View / edit themes.json</button>
@@ -323,6 +329,7 @@
 
   /* ───────────── shared state ───────────── */
   let dirHandle = null;
+  let demoMode = false;
   // themes + assignments are shared across all reports
   const state = { themes: [], assign: {}, fragReports: {}, starred: {} };
   let allThemesFragReport = {};
@@ -410,7 +417,51 @@
       if(o && o.starred && typeof o.starred === "object") state.starred = o.starred;
     } catch(e){ /* themes.json doesn't exist yet — start fresh */ }
   }
+
+  /* ───────────── demo mode (fetch-based) ───────────── */
+  async function tryDemoMode(){
+    try {
+      const mRes = await fetch("./reports/manifest.json");
+      if(!mRes.ok) return false;
+      const manifest = await mRes.json();
+      const tRes = await fetch("./reports/" + THEMES_FILENAME);
+      if(tRes.ok){
+        const o = await tRes.json();
+        if(o && Array.isArray(o.themes)) state.themes = o.themes;
+        if(o && o.assign) state.assign = o.assign;
+        if(o && o.fragReports) state.fragReports = o.fragReports;
+        if(o && o.starred) state.starred = o.starred;
+      }
+      const reports = [];
+      for(const name of manifest){
+        try {
+          const res = await fetch("./reports/" + name);
+          if(!res.ok) continue;
+          const data = await res.json();
+          if(data && Array.isArray(data.data) && data.data[0] === "v0.2" && data.data[1]){
+            const payload = data.data[1];
+            const meta = (data.metadata && data.metadata[1]) || {};
+            reports.push({ name, payload, meta });
+          }
+        } catch(e){ /* skip bad file */ }
+      }
+      demoMode = true;
+      applyDemoUI();
+      await showReportList(reports);
+      return true;
+    } catch(e){ return false; }
+  }
+  function applyDemoUI(){
+    document.getElementById("demo-badge").classList.remove("hidden");
+    document.getElementById("folder-label").classList.add("hidden");
+    document.getElementById("changeFolderBtn").classList.add("hidden");
+    document.getElementById("editModeBtn").classList.remove("hidden");
+    document.getElementById("theme-edit-controls").classList.add("hidden");
+    document.getElementById("saveStatus").style.display = "none";
+  }
+
   function themeById(id){ return state.themes.find(t=>t.id===id); }
+  function starBtn(fragId, on){ if(demoMode) return ""; return '<button class="star-btn'+(on?' starred':'')+'" data-frag="'+esc(fragId)+'">'+(on?'★':'☆')+'</button>'; }
   function readOnlyChips(fragId){
     return (state.assign[fragId]||[]).map(tid=>{
       const t=themeById(tid); if(!t) return "";
@@ -477,15 +528,15 @@
   }
 
   /* ───────────── report list screen ───────────── */
-  async function showReportList(){
-    document.getElementById("folder-name").textContent = dirHandle.name;
-    document.getElementById("rlist-status").textContent = "Scanning…";
+  async function showReportList(preloaded){
+    if(!demoMode) document.getElementById("folder-name").textContent = dirHandle.name;
+    document.getElementById("rlist-status").textContent = demoMode ? "" : "Scanning…";
     showScreen("screen-reports");
 
-    const reports = await scanReports();
+    const reports = preloaded || await scanReports();
     const status = reports.length
       ? reports.length + " report" + (reports.length===1?"":"s") + " found"
-      : "No reports found in this folder.";
+      : "No reports found.";
     document.getElementById("rlist-status").textContent = status;
 
     const grid = document.getElementById("report-list");
@@ -554,7 +605,7 @@
             '<div class="frag-themes-ro">'+readOnlyChips(fid)+'</div>' +
             '<span class="frag-meta">'+esc(f.reportTitle)+' | '+esc(f.speaker)+'</span>' +
           '</div>' +
-          '<button class="star-btn starred" data-frag="'+esc(fid)+'">★</button>' +
+          starBtn(fid, true) +
         '</div>'
       ).join("");
       starredSection.classList.remove("hidden");
@@ -579,7 +630,7 @@
             '<div class="frag-themes-ro">'+readOnlyChips(fid)+'</div>' +
             '<span class="frag-meta">' + esc(f.reportTitle) + ' | ' + esc(f.speaker) + '</span>' +
           '</div>' +
-          '<button class="star-btn'+(on?' starred':'')+'" data-frag="'+esc(fid)+'">'+(on?'★':'☆')+'</button>' +
+          starBtn(fid, on) +
         '</div>';
       }).join("") : '<div class="muted" style="padding:6px 16px 10px;">No fragments tagged.</div>';
 
@@ -716,9 +767,14 @@
       const ids=state.assign[fragId]||[];
       let h="";
       ids.forEach(tid=>{ const t=themeById(tid); if(!t) return;
-        h+='<span class="theme-chip" style="background:'+t.color+'22;border-color:'+t.color+'">'+esc(t.name)+
-           '<button class="chip-x" title="remove" data-frag="'+esc(fragId)+'" data-theme="'+esc(tid)+'">×</button></span>'; });
-      h+='<button class="tag-btn" data-frag="'+esc(fragId)+'">+ tag</button>';
+        if(demoMode){
+          h+='<span class="theme-chip" style="background:'+t.color+'22;border-color:'+t.color+'">'+esc(t.name)+'</span>';
+        } else {
+          h+='<span class="theme-chip" style="background:'+t.color+'22;border-color:'+t.color+'">'+esc(t.name)+
+             '<button class="chip-x" title="remove" data-frag="'+esc(fragId)+'" data-theme="'+esc(tid)+'">×</button></span>';
+        }
+      });
+      if(!demoMode) h+='<button class="tag-btn" data-frag="'+esc(fragId)+'">+ tag</button>';
       return h;
     }
     function renderFragThemes(fragId){
@@ -732,7 +788,7 @@
       let h='<div class="frag'+(cited?' cited':'')+'" data-id="'+esc(f.s.id)+'" data-spk="'+esc(spk)+'" data-cited="'+(cited?1:0)+'">';
       const isStarred=!!state.starred[f.s.id];
       if(isStarred) h=h.replace('class="frag','class="frag starred-frag');
-      h+='<div class="frag-left"><span class="ord">'+(f.ord+1)+'</span><button class="star-btn'+(isStarred?' starred':'')+'" data-frag="'+esc(f.s.id)+'">'+(isStarred?'★':'☆')+'</button></div><div class="frag-main">';
+      h+='<div class="frag-left"><span class="ord">'+(f.ord+1)+'</span>'+starBtn(f.s.id,isStarred)+'</div><div class="frag-main">';
       if(showSpk) h+=spkBadge(spk);
       if(cited) h+='<div class="cite-labels">'+citeLabelsInner(f.s.id)+'</div>';
       h+='<span class="searchable ftext jump" data-frag="'+esc(f.s.id)+'">'+esc(txt)+'</span>';
@@ -771,7 +827,7 @@
         h+='<div class="frag tx-frag'+(cited?' cited':'')+'" data-id="'+esc(s.id)+'" data-spk="'+esc(s.interview||"unknown")+'" data-cited="'+(cited?1:0)+'">';
         const isStar=!!state.starred[s.id];
         if(isStar) h=h.replace(/"frag tx-frag/,'"frag tx-frag starred-frag');
-        h+='<div class="frag-left"><span class="ord">'+(i+1)+'</span><button class="star-btn'+(isStar?' starred':'')+'" data-frag="'+esc(s.id)+'">'+(isStar?'★':'☆')+'</button></div><div class="frag-main">';
+        h+='<div class="frag-left"><span class="ord">'+(i+1)+'</span>'+starBtn(s.id,isStar)+'</div><div class="frag-main">';
         h+=spkBadge(s.interview||"unknown");
         if(cited) h+='<div class="cite-labels">'+citeLabelsInner(s.id)+'</div>';
         h+='<span class="ftext">'+esc(txt)+'</span>';
@@ -898,13 +954,13 @@
           return '<div class="tfrag jump'+(on?' starred-frag':'')+'" data-frag="'+esc(s.id)+'">'+spkBadge(s.interview||"?")+
             '<div class="ttext-wrap">'+rptLabel+'<span class="ttext">'+esc(txt)+'</span>'+
             '<div class="frag-themes-ro">'+readOnlyChips(s.id)+'</div></div>'+
-            '<button class="star-btn'+(on?' starred':'')+'" data-frag="'+esc(s.id)+'">'+(on?'★':'☆')+'</button>'+
-            '<button class="unassign" data-frag="'+esc(s.id)+'" data-theme="'+esc(t.id)+'">remove</button></div>';
+            starBtn(s.id,on)+
+            (demoMode?'':'<button class="unassign" data-frag="'+esc(s.id)+'" data-theme="'+esc(t.id)+'">remove</button>')+'</div>';
         }).join("") : '<div class="muted" style="padding:6px 16px;">No fragments in this report.</div>';
         return '<details class="theme-block"><summary><span class="sw" style="background:'+t.color+'"></span>'+
           esc(t.name)+' <span class="count">'+frags.length+' fragment'+(frags.length===1?"":"s")+'</span></summary>'+
-          '<div class="theme-actions"><button class="rename" data-theme="'+esc(t.id)+'">Rename</button>'+
-          '<button class="delete" data-theme="'+esc(t.id)+'">Delete</button></div>'+
+          (demoMode?'':'<div class="theme-actions"><button class="rename" data-theme="'+esc(t.id)+'">Rename</button>'+
+          '<button class="delete" data-theme="'+esc(t.id)+'">Delete</button></div>')+
           '<div class="theme-frags">'+inner+'</div></details>';
       }).join("");
     }
@@ -1113,33 +1169,56 @@
     const ok = await openDirectory(true);
     if(ok){ state.themes=[]; state.assign={}; await loadThemes(); await showReportList(); }
   });
+  document.getElementById("editModeBtn").addEventListener("click", async ()=>{
+    if(!("showDirectoryPicker" in window)){
+      alert("Your browser does not support the File System Access API. Please use Chrome, Edge, or Safari 15.2+.");
+      return;
+    }
+    const ok = await openDirectory(true);
+    if(ok){
+      demoMode = false;
+      document.getElementById("demo-badge").classList.add("hidden");
+      document.getElementById("folder-label").classList.remove("hidden");
+      document.getElementById("editModeBtn").classList.add("hidden");
+      document.getElementById("changeFolderBtn").classList.remove("hidden");
+      state.themes=[]; state.assign={}; state.fragReports={}; state.starred={};
+      await loadThemes();
+      await showReportList();
+    }
+  });
 
   /* ───────────── boot ───────────── */
-  if(!("showDirectoryPicker" in window)){
-    document.getElementById("welcome-err").textContent =
-      "Your browser does not support the File System Access API. Please use Chrome, Edge, or Safari 15.2+.";
-    showScreen("screen-welcome");
+  // ?demo param forces demo mode (useful for testing and for shared/deployed links)
+  if(new URLSearchParams(location.search).has("demo")){
+    const demoed = await tryDemoMode();
+    if(!demoed){ document.getElementById("welcome-err").textContent = "Could not load reports for demo."; showScreen("screen-welcome"); }
     return;
   }
-  // Check for a stored handle without requesting permission (requires user gesture).
-  // If found, show a one-click "reopen" button instead of the full folder picker.
+  // Try to restore a previously-granted folder handle first.
+  // If none, attempt demo mode (fetch-based). Only show welcome screen as last resort.
   const storedHandle = await idbGet("dir");
-  if(storedHandle){
+  if(storedHandle && "showDirectoryPicker" in window){
     const perm = await storedHandle.queryPermission({ mode:"readwrite" });
     if(perm === "granted"){
       dirHandle = storedHandle;
       await loadThemes();
       await showReportList();
     } else {
-      document.getElementById("reopenFolderBtn").textContent = "Open “" + storedHandle.name + "”";
-      document.getElementById("reopenFolderBtn").classList.remove("hidden");
-      document.getElementById("openFolderBtn").classList.add("hidden");
-      document.getElementById("welcome-sub").innerHTML =
-        "Click to re-open your reports folder.<br>Themes are saved automatically to <code>themes.json</code> in that folder.";
-      showScreen("screen-welcome");
+      // Try demo mode silently in background; show welcome over it if it fails
+      const demoed = await tryDemoMode();
+      if(!demoed){
+        document.getElementById("reopenFolderBtn").textContent = "Open “" + storedHandle.name + "”";
+        document.getElementById("reopenFolderBtn").classList.remove("hidden");
+        document.getElementById("openFolderBtn").classList.add("hidden");
+        document.getElementById("welcome-sub").innerHTML =
+          "Click to re-open your reports folder.<br>Themes are saved automatically to <code>themes.json</code> in that folder.";
+        showScreen("screen-welcome");
+      }
     }
   } else {
-    showScreen("screen-welcome");
+    // No stored handle — try demo mode, fall back to welcome screen
+    const demoed = await tryDemoMode();
+    if(!demoed) showScreen("screen-welcome");
   }
 })();
 </script>

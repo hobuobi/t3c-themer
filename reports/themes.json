@@ -130,6 +130,61 @@
       "id": "tmqnxt9c7w0wn",
       "name": "accuracy",
       "color": "#4aa6a6"
+    },
+    {
+      "id": "tmqtwuz4yh3et",
+      "name": "data",
+      "color": "#7A4A6A"
+    },
+    {
+      "id": "tmqyohzoddj64",
+      "name": "older adults",
+      "color": "#B8531A"
+    },
+    {
+      "id": "tmqyopsqsq32a",
+      "name": "power",
+      "color": "#6B6567"
+    },
+    {
+      "id": "tmqyouyxyke6x",
+      "name": "humanity",
+      "color": "#8A5A2A"
+    },
+    {
+      "id": "tmqyowswhfao6",
+      "name": "instant gratification",
+      "color": "#7491BD"
+    },
+    {
+      "id": "tmqytj8nw9105",
+      "name": "writing",
+      "color": "#8A5A2A"
+    },
+    {
+      "id": "tmqytp9yhzoj0",
+      "name": "self-expression",
+      "color": "#6B8E4E"
+    },
+    {
+      "id": "tmqytrmcehd5b",
+      "name": "bias",
+      "color": "#A33A1F"
+    },
+    {
+      "id": "tmqytsjgjv7mf",
+      "name": "errors",
+      "color": "#7A4A6A"
+    },
+    {
+      "id": "tmqyugx4kxwa4",
+      "name": "medicine",
+      "color": "#DB7445"
+    },
+    {
+      "id": "tmqyuhce3hrrs",
+      "name": "uncertainty",
+      "color": "#7A4A6A"
     }
   ],
   "assign": {
@@ -495,6 +550,232 @@
     "4f0efdfe-8cd7-46af-af83-ce9fc0c48086": [
       "tmqjwuofsbtrm",
       "tmqjwuloq2a98"
+    ],
+    "4300cb0c-d0ed-415c-b322-fbb3b2d363fd": [
+      "tmqjwwshx4uyd"
+    ],
+    "b1f90676-b762-4121-8261-5285e3819af0": [
+      "tmqjwxvp5zh61",
+      "tmqjxlvbf7yt5"
+    ],
+    "33260714-b117-4560-9611-7db039df55ab": [
+      "tmqjxib1t2wcd"
+    ],
+    "59ed3e8b-d3bc-4310-83d1-fa2c51df3c4b": [
+      "tmqjwuofsbtrm",
+      "tmqjwuloq2a98"
+    ],
+    "74732ca3-9d98-409b-a8f3-181313b1e8a3": [
+      "tmqjwuloq2a98",
+      "tmqjwuofsbtrm"
+    ],
+    "2d1a624c-ff71-40a3-b4c6-91978d984dda": [
+      "tmqjwwshx4uyd",
+      "tmqjwuloq2a98"
+    ],
+    "eef4e8f7-1be3-471c-a4cd-1a3a4430d744": [
+      "tmqjx9csxvxlh"
+    ],
+    "466e0ff1-39ed-476d-9fdf-ee14898bdc34": [
+      "tmqjx9csxvxlh",
+      "tmqjwuofsbtrm"
+    ],
+    "84127303-b3ad-4ac4-9b67-730fb92a1a69": [
+      "tmqjwwshx4uyd"
+    ],
+    "dbe1761e-4630-4a08-8d49-aedbcdb6b91d": [
+      "tmqjx9csxvxlh"
+    ],
+    "e6a34dab-b635-4686-adba-5a714c523ec3": [
+      "tmqjwuofsbtrm"
+    ],
+    "88db7dff-2f24-42ff-abf0-13874fbad99a": [
+      "tmqnxt9c7w0wn"
+    ],
+    "91afb219-1e13-4990-a903-366aabea5244": [
+      "tmqjzvxxdqg12"
+    ],
+    "9d948141-35a8-40cb-953a-f2f29301625a": [
+      "tmqjzvxxdqg12"
+    ],
+    "c60fd74b-1afb-4829-9229-2f6a81fe6396": [
+      "tmqjwwshx4uyd"
+    ],
+    "d3dd1fa9-c5b7-40b2-a449-f4a9b4fe5802": [
+      "tmqjwuofsbtrm"
+    ],
+    "8c65f465-f5f8-4408-adb5-e511d4677d87": [
+      "tmqjx4sokai3o"
+    ],
+    "cc51a3fa-2780-46d0-9301-fa64265f57c7": [
+      "tmqjzvxxdqg12"
+    ],
+    "80e645fc-ac80-44e7-907a-54ab5f0dce0d": [
+      "tmqjwzubqpdu5"
+    ],
+    "2cc63e5f-992a-4bcd-a9c4-5324ef25ee59": [
+      "tmqyohzoddj64",
+      "tmqjx2dt9ww44"
+    ],
+    "9a69bc19-55ce-4a0a-9b45-e8025f65e3f0": [
+      "tmqyopsqsq32a"
+    ],
+    "f2d3e980-3712-4c9d-ac8d-dd6451c3cdc2": [
+      "tmqjwuofsbtrm"
+    ],
+    "2ff935e1-7c15-4f34-bd11-e927e576a60f": [
+      "tmqjztotvnyz7"
+    ],
+    "7871e861-56d6-4fd4-ad4f-c6e00a0090c2": [
+      "tmqyouyxyke6x"
+    ],
+    "5ca036c0-4315-42e0-a43a-d82d4bd48927": [
+      "tmqjx9csxvxlh"
+    ],
+    "48784da4-b563-4209-9130-31331782f2f6": [
+      "tmqjxhz9bnpcq"
+    ],
+    "1e9596e2-304a-45d6-93eb-025604cde167": [
+      "tmqjx2dt9ww44",
+      "tmqyowswhfao6"
+    ],
+    "4d4eee33-a2d4-4b3c-8d9b-cbbfe1955071": [
+      "tmqjzl41mp4io"
+    ],
+    "e407185b-e006-4894-975c-eb712765ae32": [
+      "tmqjzbumjani9"
+    ],
+    "f735aac0-ae4b-4d00-a9dd-37e3be065c46": [
+      "tmqjzbumjani9",
+      "tmqjzje1p2us4"
+    ],
+    "91ac77a9-cb3c-49ac-af50-2a04a3d9a9e5": [
+      "tmqjzbumjani9",
+      "tmqjzje1p2us4"
+    ],
+    "3d214790-626b-487d-8870-8be56c604f5b": [
+      "tmqjxhz9bnpcq"
+    ],
+    "7b5d1db8-7398-44cb-b285-bbb3e77911f5": [
+      "tmqjxamx39xix"
+    ],
+    "08d81ee2-fc32-4eda-9d35-d9016a9431cf": [
+      "tmqjzje1p2us4",
+      "tmqjx2dt9ww44"
+    ],
+    "30c0d647-1127-4cdc-a027-ada51546def9": [
+      "tmqjx2dt9ww44"
+    ],
+    "3e2457c6-f672-4eaa-bbbe-389dca5fe0aa": [
+      "tmqjx2dt9ww44"
+    ],
+    "a5ccd4b5-6c78-4998-be8c-050ce3680187": [
+      "tmqjx2dt9ww44"
+    ],
+    "e340b4e0-7988-4814-851b-decc259c55ec": [
+      "tmqytj8nw9105"
+    ],
+    "a5a6224d-2139-40af-b2a4-d414a75f8d32": [
+      "tmqjzvxxdqg12"
+    ],
+    "26c206df-9a1f-4dac-9ffb-59826dd4936c": [
+      "tmqjzje1p2us4"
+    ],
+    "119adac9-a1a1-42c0-886f-d3e499b93d42": [
+      "tmqyouyxyke6x"
+    ],
+    "ca243b1a-dcc2-4daf-b207-ec94b8998efa": [
+      "tmqjzje1p2us4"
+    ],
+    "f4a31078-1100-4797-8b71-e826145f8666": [
+      "tmqjzje1p2us4"
+    ],
+    "f12d5863-e0c0-4488-a31b-a9f1a9bee26e": [
+      "tmqytj8nw9105"
+    ],
+    "c372165f-082e-4d5d-8a0e-9ff7322992c1": [
+      "tmqjx3eaod6ep",
+      "tmqytp9yhzoj0"
+    ],
+    "cfc1f611-cb7e-4b6a-b68b-e8abc4bfc447": [
+      "tmqjxlvbf7yt5"
+    ],
+    "2ed68ddc-ce0d-4937-ab65-74452738138b": [
+      "tmqytrmcehd5b"
+    ],
+    "57dd24a2-b06a-479b-8012-44acbc30de1a": [
+      "tmqytsjgjv7mf"
+    ],
+    "935e5fd7-b5cb-4551-82e8-f03385a85808": [
+      "tmqyouyxyke6x",
+      "tmqytsjgjv7mf"
+    ],
+    "9bfe54b9-8a34-4b89-9c95-1b38845de660": [
+      "tmqyouyxyke6x",
+      "tmqjzbumjani9"
+    ],
+    "e2e405ca-6fc4-4a35-b8ce-57615cdf2cf9": [
+      "tmqyouyxyke6x"
+    ],
+    "46b7c67b-44ab-49fb-9a26-5142c4de97d0": [
+      "tmqjx8kl61sgn",
+      "tmqjzbumjani9"
+    ],
+    "6125c6f7-16cf-436b-a50d-b77d9fb8d748": [
+      "tmqjzbumjani9",
+      "tmqjzje1p2us4"
+    ],
+    "20a16231-e158-4eb5-9a4d-b2adf7f6d41e": [
+      "tmqjxhz9bnpcq"
+    ],
+    "9878fab1-5a2d-4844-8823-6ea5b7a367d5": [
+      "tmqjxhz9bnpcq"
+    ],
+    "e5e60a7b-5580-4b25-b6c1-30515851169a": [
+      "tmqyouyxyke6x"
+    ],
+    "0215d702-ec95-4801-96b7-46079de3a549": [
+      "tmqjzje1p2us4",
+      "tmqjwzubqpdu5"
+    ],
+    "89a27c02-2d5d-43f9-818c-51c605d2b30b": [
+      "tmqjxlvbf7yt5"
+    ],
+    "2cfef53a-d2dc-4b23-8a23-6b7e082343bd": [
+      "tmqytj8nw9105",
+      "tmqytp9yhzoj0"
+    ],
+    "784a9b93-6646-4cb0-9d69-cab690152009": [
+      "tmqjzje1p2us4"
+    ],
+    "636d605c-1716-43f0-a0c7-a9aeac1266ec": [
+      "tmqjwzubqpdu5"
+    ],
+    "e6ed0272-9bf1-42d6-913e-4417874e36b4": [
+      "tmqjzl41mp4io",
+      "tmqjwwshx4uyd"
+    ],
+    "17306c3a-3cdc-4105-9ba8-50f09fad23a4": [
+      "tmqjzl41mp4io",
+      "tmqjxlvbf7yt5",
+      "tmqjx3eaod6ep"
+    ],
+    "c7f7d56f-e102-47b4-bf41-c0e88141b591": [
+      "tmqjx8kl61sgn"
+    ],
+    "7625ed6b-568a-4361-b2d8-726384ea44e0": [
+      "tmqjx8kl61sgn",
+      "tmqyugx4kxwa4"
+    ],
+    "11f71e87-2720-4961-bb9d-38f89a9d58ec": [
+      "tmqyuhce3hrrs"
+    ],
+    "95a817f8-c7da-42b7-af1d-1d94a9a8b95c": [
+      "tmqjx2dt9ww44"
+    ],
+    "ca53b826-9120-4284-811e-5c217568dc68": [
+      "tmqjwwshx4uyd",
+      "tmqjxamx39xix"
     ]
   },
   "fragReports": {
@@ -1133,6 +1414,414 @@
       "date": "2026-06-01T13:32:13.405Z",
       "text": "Um, microbiota and all that kind of stuff, not just, uh, you know, mammals and so on. So I think those three things, uh, but that's where I see, uh, AI is driving data centers and driving consumption to the point that we have to figure out a way to stop that, uh, or else it's going to just exacerbate the problems that we're having trying to maintain a livable planet.",
       "speaker": "spk_5"
+    },
+    "4300cb0c-d0ed-415c-b322-fbb3b2d363fd": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "I, I, I think a point that I was trying to make earlier on is that AI happened to us. Um-hum. We weren't asked about it. We weren't given a choice. It, it was part of the package that comes. It's kind of like getting somebody hooked on a drug.",
+      "speaker": "spk_5"
+    },
+    "b1f90676-b762-4121-8261-5285e3819af0": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "Uh, you get them started bit by bit, it fills in, you get, oh, hey, this is kind of handy, and you get to kind of liking that. And the more you use it, the more you kind of like it, the more you get hooked on it. Then the more data centers we have to build, and that's where I come from. I'm about the environment. So there you talk about the many aspects of AI. The data centers is the major aspect of AI that I'm concerned with right now, so.",
+      "speaker": "spk_5"
+    },
+    "33260714-b117-4560-9611-7db039df55ab": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "it's how much, it's how much is the company, are the companies willing to spend to make that happen. Um, again, this, uh, this is where I, I come down. This should be part of the cost of doing business. AI is very expensive to run.",
+      "speaker": "spk_0"
+    },
+    "59ed3e8b-d3bc-4310-83d1-fa2c51df3c4b": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "Endless supply of water. It is not. It is glacier and snow melt and look at the mountains today. We can see that the glaciers are leaving the mountains. OK, but we've still got Opal Springs water. It's still bubbling up, so it's endless. No, it's not, folks. And where are they going to want to put data centers? They're going to want to put data centers where they can get the water.",
+      "speaker": "spk_5"
+    },
+    "74732ca3-9d98-409b-a8f3-181313b1e8a3": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "Oh, it's settling, and they're saying that around data centers, the temperature around the data center rises from 2 to 16 degrees, depending upon the size of the data center, and that we don't need to get any hotter here in the",
+      "speaker": "spk_5"
+    },
+    "2d1a624c-ff71-40a3-b4c6-91978d984dda": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "I would like to see legislation in place before we get the data centers.",
+      "speaker": "spk_5"
+    },
+    "eef4e8f7-1be3-471c-a4cd-1a3a4430d744": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "That is our sacred land and that's what we've gathered gathered our traditional foods from time immorial.",
+      "speaker": "spk_3"
+    },
+    "466e0ff1-39ed-476d-9fdf-ee14898bdc34": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "Our water is under attack, is how I feel. That's my concern. My concern is the next 7 generations, not just for my people, not just for indigenous people, but for all people. My concern is for, for your children, your grandchildren, your great great grandchildren. We are all humans here.",
+      "speaker": "spk_3"
+    },
+    "84127303-b3ad-4ac4-9b67-730fb92a1a69": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "You know, we weren't asked, our people weren't asked along the Columbia River Gorge and, and they're building them anyways, and, and our people are, are standing up against these things and.",
+      "speaker": "spk_3"
+    },
+    "dbe1761e-4630-4a08-8d49-aedbcdb6b91d": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "Eventually for database uh to make sure that they are off grid and powering themselves because they're not causing this issue to the environment that they're doing because I, I'm also Native American and my children are registered to the mountain, so we're, we, we see the same value as everyone else.",
+      "speaker": "spk_6"
+    },
+    "e6a34dab-b635-4686-adba-5a714c523ec3": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "These, if they leach into any type of water source, gone, gone, so you buy, you just wasted hundreds of millions of dollars coming in. Now you owe the whole community hundreds of millions of dollars to fix what you've done.",
+      "speaker": "spk_6"
+    },
+    "88db7dff-2f24-42ff-abf0-13874fbad99a": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "And it, it takes a lot of people standing up to say that we're done, we're done with this. We don't technically need AI. AI is infancy state right now, so you're not doing, I don't know if you guys have anybody here talked to any of the AI that's out there right now, co-pilot, Gemini, any. It's BS. It lies to you a lot. OK, I catch it on a daily basis. I caught it last night telling me why my one of my apps wasn't number one, OK? And it will tell you we are rigged.",
+      "speaker": "spk_6"
+    },
+    "91afb219-1e13-4990-a903-366aabea5244": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "Building back that because you can't just take away jobs and call it that, that, that'll suck the money out of any state, but if they're not gonna be willing to train people of the jobs that they're taking away, then they don't belong in that area.",
+      "speaker": "spk_6"
+    },
+    "9d948141-35a8-40cb-953a-f2f29301625a": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "Be rolling in cash. That's not how it works. They bring in a construction team to build the data center, and when they're done, then they roll out and they, they hire a few janitorial staff and a few, uh, technicians to swap out hard drives and motherboards.",
+      "speaker": "spk_0"
+    },
+    "c60fd74b-1afb-4829-9229-2f6a81fe6396": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "and. Yeah, but, but, but what we're hearing, I, I'm sorry, but I, I do listen to the news and I do read, but what we're hearing is there's too many times that they come in, the deal is done before the community even gets to talk about it.",
+      "speaker": "spk_5"
+    },
+    "d3dd1fa9-c5b7-40b2-a449-f4a9b4fe5802": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "To quickly fact check things as opposed to sifting Google, if that makes any sense. Um, what worries me, the biggest things that worry me is the before and after EPA impacts. What were they before these data centers came? What are they right now? What are they forecasting? What resources are we talking about using as far as water and electricity? Those seem to be the top two commodities that are discussed, and those have me deeply alarmed. Now the",
+      "speaker": "spk_7"
+    },
+    "8c65f465-f5f8-4408-adb5-e511d4677d87": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "The other thing that has me worried is this is such a hot topic that there's a lot of, it's almost like you cannot keep up. Entrepreneurs don't move at the speed of government, we move at the speed of business. But with everything that's going on, it really feels like even us, we just cannot keep up with everything that is going on. And I think to his point, yes, the burden of regulation now falls on us. There's a bunch of high profile.",
+      "speaker": "spk_7"
+    },
+    "cc51a3fa-2780-46d0-9301-fa64265f57c7": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "I don't want to see jobs taken. I don't build AI to take jobs. I build them to make you more profitable or more an extension of your arm. I, I believe that if you're gonna take a job, you need to be able to provide another way of, of earning for that person as well. So we, you can train them how to do, how to sell your AI. Yeah, exactly, you know, just there's another job opportunity there for them, even if they don't like it. At least you're providing them.",
+      "speaker": "spk_6"
+    },
+    "80e645fc-ac80-44e7-907a-54ab5f0dce0d": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "Specifically in Gen Z, millennial and Gen X, because I'm seeing a lot of disruption and utilization and maximization early bird using the tools. As far as the manner in which it's used and the problem solving that it's used, we've transitioned from large language model, which was you telling AI a really, really lengthy, forever prompt. Now we've gone to agentic to AI and now it's something that you can actually just tell something and minimize your prompt.",
+      "speaker": "spk_7"
+    },
+    "2cc63e5f-992a-4bcd-a9c4-5324ef25ee59": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "So on the entrepreneur side, this is definitely going to have some results. As far as rapid, I don't know, I, I couldn't tell you. I'm a little scared myself, um, so on the, on the impact, I'm seeing movement, Gen Z, millennial Gen X, a lot of good movement. Boomers, what I'm seeing on the boomer side, fact checking is very real. I'm seeing a lot, not a lot, but the minimal amount that I'm seeing of boomers using it, I'm seeing them utilize it.",
+      "speaker": "spk_7"
+    },
+    "9a69bc19-55ce-4a0a-9b45-e8025f65e3f0": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "Yeah. I, I think, though, uh, what I'm hearing is it's the big guys that are wanting the mega centers and such as that. And, um, am, am I wrong in, in thinking that this is all about power? He who has the most data center capacity has the most power.",
+      "speaker": "spk_5"
+    },
+    "f2d3e980-3712-4c9d-ac8d-dd6451c3cdc2": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "You know this guy hasn't announced it. He's not putting a lot of PR into it, Bezos specifically, but in his roadmap and his acquisitions, he, he's going after those little units. A lot of them are going down the road of nuclear, which has me really, really scared.",
+      "speaker": "spk_7"
+    },
+    "2ff935e1-7c15-4f34-bd11-e927e576a60f": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "don't do AI, but I, I see enough of it on, on like Facebook and such, you, you know, um, and, uh, you know, if you're an artist, I can see where they're coming from. Um-hum. Uh, if you're a singer, I, I can see where, see where they're coming from, a musician.",
+      "speaker": "spk_5"
+    },
+    "7871e861-56d6-4fd4-ad4f-c6e00a0090c2": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "I would actually counter argue that and say you're actually more important than you think. You're a wisdom keeper. Oh,",
+      "speaker": "spk_7"
+    },
+    "5ca036c0-4315-42e0-a43a-d82d4bd48927": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "It, it might be more the, the um people that are more indigenous and connected to the earth.",
+      "speaker": "spk_5"
+    },
+    "48784da4-b563-4209-9130-31331782f2f6": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "Uh, or, yeah, 5 years or older, I can guarantee that it's connected into, into the network. Hm. And they, they probably know the location of it, your cell phone. They definitely know the location of. Yeah, surveillance. Um,",
+      "speaker": "spk_0"
+    },
+    "1e9596e2-304a-45d6-93eb-025604cde167": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "I feel like people are a little too much into instant gratification and want instant information instead of actually putting the time to research and learn. I feel like, uh, AI right now isn't designed to give you accurate information. It's designed to.",
+      "speaker": "spk_8"
+    },
+    "4d4eee33-a2d4-4b3c-8d9b-cbbfe1955071": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "Tell you what you want to hear and then we have students fast tracking through school with those kind of things, not getting the accurate information.",
+      "speaker": "spk_8"
+    },
+    "e407185b-e006-4894-975c-eb712765ae32": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "It doesn't read tone and it doesn't read emotion, but the more that you use it, it's literally meant to predict you, and you can find it if you pay attention to it, but it does require a level of awareness, which has me worried about mental health. I just came from a graduation, you know, and the biggest thing that, that has me concerned about Generation Z and now Generation A is you hear these terms of like this is.",
+      "speaker": "spk_7"
+    },
+    "f735aac0-ae4b-4d00-a9dd-37e3be065c46": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "There's this loneliness epidemic, you know, and, and what that leads me to is the mental health part, because if we have this tool that you're using regularly that now starts predicting you and starts reading you, and that burden of reading that falls on the end user, how does that end user know what all it's doing is validating you and your emotions as opposed to the problem that you're trying to solve?",
+      "speaker": "spk_7"
+    },
+    "91ac77a9-cb3c-49ac-af50-2a04a3d9a9e5": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "But you got Alexa too. Um-hum. And with her, maybe you don't need as many friends.",
+      "speaker": "spk_5"
+    },
+    "3d214790-626b-487d-8870-8be56c604f5b": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:56:15.948Z",
+      "text": "You have to know how to defend yourself against this if you're going to play in the realm, you know, if you're gonna play the game, you gotta know the full, all the rules to it, and, and protecting yourself is key by shutting down stuff that's on Amazon or Google or whatever because it's always listening, if you don't turn it off, you know, and, and when you're throwing data out there and you're not protecting yourself, it, it, it can, it's all exposed. I",
+      "speaker": "spk_6"
+    },
+    "7b5d1db8-7398-44cb-b285-bbb3e77911f5": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "I mean her concern is that what AI can do is really amplify the voices of just a few people when we're in this community thing we're trying to reach out to the margins and how do we get their voices to get input into AI policy. I'm with you. I, I'm, I, the cancer prediction rates and everything in AI hallelujah. I mean, I love that stuff.",
+      "speaker": "spk_0"
+    },
+    "08d81ee2-fc32-4eda-9d35-d9016a9431cf": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "They're very, very good. You can't even tell if they're real anymore, you know, there's no copyright. There's no credits, there's no nothing, you know, and I picture, uh, you know, some 19 year old guy living in his mother's basement or something, you know, doing all this stuff, and, you know, I really don't know what it is, but to me it's just scary as hell what could happen.",
+      "speaker": "spk_4"
+    },
+    "30c0d647-1127-4cdc-a027-ada51546def9": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "have Google, but then you think about the times when you just used to have the paper map and it seemed, I don't know. Right. Right. I still use it. But I, I just, sometimes I miss them. Yeah,",
+      "speaker": "spk_6"
+    },
+    "3e2457c6-f672-4eaa-bbbe-389dca5fe0aa": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "really nice because it's like that other opinion. Um-hum. And so I'll read that and I'll incorporate part of it. I still don't incorporate all of it, but it's a nice other opinion to have. And it might be that they make a point that you're trying to make, but they make it better. Um-hum. Um-hum. So, yes. Yes. Yeah. I, I use that and it helps particularly,",
+      "speaker": "spk_6"
+    },
+    "a5ccd4b5-6c78-4998-be8c-050ce3680187": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "and I took probably 75 or 80% of that, tuned up a few things, but I, I felt it was like a bunch of hyper caffeinated steroid-driven research reference librarians.",
+      "speaker": "spk_0"
+    },
+    "e340b4e0-7988-4814-851b-decc259c55ec": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "very frustrated when I'm writing something and, and I'm a pretty good writer and uh it'll it'll come up and say, well, how about this, or give me a bunch of words that, you know, I didn't want. It slows me down and I've tried to delete some things and there's one that goes and I've forgotten.",
+      "speaker": "spk_4"
+    },
+    "a5a6224d-2139-40af-b2a4-d414a75f8d32": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "You know, and I, and I can't distinguish between a human being and a machine. And I also, I, you know, when, when you get old, as a lot of us are in this room, you know, there's certain things that are never gonna get replaced by, by this thing, and, you know, I, I don't see a, uh, uh, artificial intelligence up at the pulpit preaching.",
+      "speaker": "spk_4"
+    },
+    "26c206df-9a1f-4dac-9ffb-59826dd4936c": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "no, I appreciate that because I also did some work as a chaplain, and there are chaplain models, and in Japan there are a lot of people who are turning to AI companions as,",
+      "speaker": "spk_0"
+    },
+    "119adac9-a1a1-42c0-886f-d3e499b93d42": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "For no, that's for me is the big question in my own little world, and I don't want to get it because I know we have a bigger, but where's the organic human spirit component in this, especially if it's retrieving a bunch of information and then thinking for itself based on just all this statistical information. Where does the organic come into?",
+      "speaker": "spk_0"
+    },
+    "ca243b1a-dcc2-4daf-b207-ec94b8998efa": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "Well, yeah, exactly. I mean AI can't be expected to have compassion.",
+      "speaker": "spk_5"
+    },
+    "f4a31078-1100-4797-8b71-e826145f8666": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "And again, just having a part of another human being for maybe 10 minutes having a cup of coffee somewhere or whatever, that is what's really missing and that is a pity on all of society and that's your compassion because how do you have compassion if you haven't talked to someone else and gotten to have that little bit of time with them.",
+      "speaker": "spk_6"
+    },
+    "f12d5863-e0c0-4488-a31b-a9f1a9bee26e": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "But, but the point is, and also I, I don't want to see it replacing humans writing because writing is a wonderful skill and it's something I really enjoy. Um-hum. Of course, it'll probably have, of course, the same way. I mean, everybody probably worried that photography would replace painting.",
+      "speaker": "spk_5"
+    },
+    "c372165f-082e-4d5d-8a0e-9ff7322992c1": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "And it didn't really because obviously people like I know a lady who writes stuff, you know, is a member of a writer's group, and I don't think she has any intention of publishing, but I mean you can still write for fun, but still kids don't learn to write. That's the other problem. Kids are people aren't going to learn to write and they're not gonna learn how wonderful it is to be able to use words, you know, to, you know, to express what you mean.",
+      "speaker": "spk_5"
+    },
+    "cfc1f611-cb7e-4b6a-b68b-e8abc4bfc447": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "But it's a tool in the doctor's hands. You still need the doctor.",
+      "speaker": "spk_5"
+    },
+    "2ed68ddc-ce0d-4937-ab65-74452738138b": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "And that hurt a lot of people because they wrote books on how to analyze someone's personality by handwriting. I think that it turned out to be pretty much nonsense, but a lot of people couldn't get jobs because their handwriting happened was too slanted or something, you know, well, this guy's a psychopath.",
+      "speaker": "spk_5"
+    },
+    "57dd24a2-b06a-479b-8012-44acbc30de1a": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "Well, yeah, that's a question too. Yeah, I. Yeah. I made sure. Oh, that. But, but, but. And the thing is I tried, I couldn't find a person to talk to about it. Yes.",
+      "speaker": "spk_5"
+    },
+    "935e5fd7-b5cb-4551-82e8-f03385a85808": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "Uh, basically, I was asked to put it, to identify myself and get, put in a certain number and then get a code. It wouldn't send me a code. I looked up. It says you may not get a code if you, your pattern of use has changed. Hm. Hm. And, well, it said, because, uh, you know, and I was thinking I must have done something that told the robot, you know, that I should,",
+      "speaker": "spk_5"
+    },
+    "9bfe54b9-8a34-4b89-9c95-1b38845de660": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "How in the world would artificial intelligence analyze that? It seems to me there's a human element that someone who is trained and educated and experienced can talk to an individual maybe over a period of weeks or months and say, OK, you've got this issue or that issue, and everybody's a little different and they can fashion a way forward.",
+      "speaker": "spk_4"
+    },
+    "e2e405ca-6fc4-4a35-b8ce-57615cdf2cf9": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "Um, how does a machine ever do that? Because they're, they're again, they're off and on, uh, they're zeros and ones, you know, they may have a collection of everything the human race has ever done, but how do you, how do you get it that focus? That's where I, I can't get my head around that one.",
+      "speaker": "spk_4"
+    },
+    "46b7c67b-44ab-49fb-9a26-5142c4de97d0": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "Well, I, I don't know how the, the technology works, but one of the, the things related to those zeros and ones that AI is particularly good at is pattern recognition. And so it can be good. And in fact there are, are cases in the mental health field where by",
+      "speaker": "spk_1"
+    },
+    "6125c6f7-16cf-436b-a50d-b77d9fb8d748": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "Um, that goes into that. Is that a substitute for all human interaction? Absolutely not, you know, is that a substitute for, for therapy and, and whatever? Absolutely not. But it can be a, a tool.",
+      "speaker": "spk_1"
+    },
+    "20a16231-e158-4eb5-9a4d-b2adf7f6d41e": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "Does anyone, I am just going to jump in here. Does anyone have any sort of hesitancy about personal privacy with this? and I'd be interested to know other people's opinions. I do not use Facebook and I just have, or any sort of social media. I just have philosophical arguments against it for a lot of reasons, but",
+      "speaker": "spk_3"
+    },
+    "9878fab1-5a2d-4844-8823-6ea5b7a367d5": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "Yes. That will come up. I think Alexa, uh. Oh, yes, I think Alexa, I, I've, I, I firmly believe because you are right. You can just have, have coffee and talk about something and all of a sudden you have 50 ads. Yeah. Yeah. So, I've narrowed it down to Alexa. Is who I think it is. But I do like when she does. Well, you don't have Alexa. We don't have",
+      "speaker": "spk_6"
+    },
+    "e5e60a7b-5580-4b25-b6c1-30515851169a": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "And that for me was the question, where's that spiritual component? Where's that organic component, um, but it got me thinking about the algorithms that what if the algorithms become so overbearing, and maybe that's not the right word, but with all, they all put you in one little pigeon hole.",
+      "speaker": "spk_0"
+    },
+    "0215d702-ec95-4801-96b7-46079de3a549": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "An appreciation or an understanding about the interpersonal. And so when they're siloed up in these AI chambers, and they're just getting hearing more and more of those algorithms, feeding them more what they wanna hear.",
+      "speaker": "spk_0"
+    },
+    "89a27c02-2d5d-43f9-818c-51c605d2b30b": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "Still in control, right? We can choose whether we use it or not. We can use what can control what we use it for. We can control that, you know, if we use it to, to give us a draft of something that we read it and write it and edit it and use those, those skills, um, you know, we're not at the point yet, maybe we'll get there, where AI decides.",
+      "speaker": "spk_1"
+    },
+    "2cfef53a-d2dc-4b23-8a23-6b7e082343bd": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "Right, so for every sermon I wrote, I shared some other even subconsciously. So when you talk about at a funeral, I'm sharing something about me. I can't help it. When you talk about writing, I think it gives the audience insights into that individual. Of course",
+      "speaker": "spk_0"
+    },
+    "784a9b93-6646-4cb0-9d69-cab690152009": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "And you know, the reason you used to have a conversation at the airport is because you were bored. You had time to kill, and there was nothing else to do, right? Now you pull out your phone because there is something to do. So in that sense, technology has",
+      "speaker": "spk_1"
+    },
+    "636d605c-1716-43f0-a0c7-a9aeac1266ec": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "Of the dependence on TikTok and all of that and also the cruelty. I don't remember going to school with bullies. I don't remember that. That's very scary to me now with social media, they say such cruel things, and I have a granddaughter who in 8th grade kind of got in the mean girl thing and came to us and said, I don't like this. They want me to text this other little girl something.",
+      "speaker": "spk_6"
+    },
+    "e6ed0272-9bf1-42d6-913e-4417874e36b4": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "Be a leader in using and managing it. Um, they have an AI committee that includes staff and parents and students, you know, who are having these conversations internally. Um, I haven't personally seen any policies or anything that have come out, but I know that's",
+      "speaker": "spk_1"
+    },
+    "17306c3a-3cdc-4105-9ba8-50f09fad23a4": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "Where does critical thinking come into that, though? I mean, to teach kids to think apart from AI or how to channel AI.",
+      "speaker": "spk_0"
+    },
+    "c7f7d56f-e102-47b4-bf41-c0e88141b591": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "Yeah, the change or I don't get to be in control of this, and I wonder how much that's even demographically. I mean, the old salesman in me is thinking, OK, for our age, hey, AI is here, and you know what, it's going to help diagnose your health issues that much faster and that much better. Well, who doesn't want to get behind that?",
+      "speaker": "spk_0"
+    },
+    "7625ed6b-568a-4361-b2d8-726384ea44e0": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "Could have saved my, possibly could have saved my wife's life. Um-hum. Um-hum. And I mean, she died of cancer and we didn't catch it. It wasn't caught until too late to do anything. Yeah. I mean, I don't, you know, I don't, I'm not looking for sympathy or anything. I'm just pointing out that. Yeah. That, that's one thing I definitely would have wished that they had had more, you know. Um-hum. I think they were using some of it, you know, but it was not, you know.",
+      "speaker": "spk_5"
+    },
+    "11f71e87-2720-4961-bb9d-38f89a9d58ec": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "But we haven't achieved any of that. We're not seeing a lot of tangible results right now. And so I think that's part of what makes it scary, you know, because the possibilities are huge",
+      "speaker": "spk_1"
+    },
+    "95a817f8-c7da-42b7-af1d-1d94a9a8b95c": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "Coming from a chatbot and bad information coming from a human is still bad information.",
+      "speaker": "spk_1"
+    },
+    "ca53b826-9120-4284-811e-5c217568dc68": {
+      "title": "Comment analysis",
+      "date": "2026-06-23T07:38:32.902Z",
+      "text": "Which I'm happy to hear you're having community conversations with the marginalized folks because again AI in the information retrieval stage, a lot of it has been put in by white males, not all of it, but a lot of it, but there are a lot of other voices in our community.",
+      "speaker": "spk_0"
     }
   },
   "starred": {
@@ -1156,6 +1845,13 @@
     "7d2bccae-8b6b-49f6-b547-efd4b84ac01c": true,
     "120e6145-7546-4cb2-a46d-f70ed321555c": true,
     "fd95ad77-ced9-4c4b-8805-127c6b6903cb": true,
-    "4cec744e-7ba0-4f8a-bece-dbfc06d5a7b8": true
+    "4cec744e-7ba0-4f8a-bece-dbfc06d5a7b8": true,
+    "7871e861-56d6-4fd4-ad4f-c6e00a0090c2": true,
+    "e407185b-e006-4894-975c-eb712765ae32": true,
+    "119adac9-a1a1-42c0-886f-d3e499b93d42": true,
+    "305166fe-34e7-4103-bbeb-5a49a1c73c56": true,
+    "9bfe54b9-8a34-4b89-9c95-1b38845de660": true,
+    "e5e60a7b-5580-4b25-b6c1-30515851169a": true,
+    "7625ed6b-568a-4361-b2d8-726384ea44e0": true
   }
 }
